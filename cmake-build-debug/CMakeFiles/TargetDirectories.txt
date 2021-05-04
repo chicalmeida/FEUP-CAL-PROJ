@@ -1,0 +1,3 @@
+C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/CMakeFiles/proj.dir
+C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
