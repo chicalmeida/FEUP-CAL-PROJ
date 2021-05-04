@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/proj.dir/Bin.cpp.obj"
   "CMakeFiles/proj.dir/Client.cpp.obj"
   "CMakeFiles/proj.dir/Garbage.cpp.obj"
-  "CMakeFiles/proj.dir/RecicleBin.cpp.obj"
   "CMakeFiles/proj.dir/Truck.cpp.obj"
   "CMakeFiles/proj.dir/main.cpp.obj"
   "libproj.dll.a"

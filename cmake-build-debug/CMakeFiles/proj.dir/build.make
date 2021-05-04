@@ -90,63 +90,63 @@ CMakeFiles/proj.dir/main.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\main.cpp -o CMakeFiles\proj.dir\main.cpp.s
 
 CMakeFiles/proj.dir/Client.cpp.obj: CMakeFiles/proj.dir/flags.make
-CMakeFiles/proj.dir/Client.cpp.obj: Client.cpp
+CMakeFiles/proj.dir/Client.cpp.obj: ../Client.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proj.dir/Client.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Client.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Client.cpp
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Client.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Client.cpp
 
 CMakeFiles/proj.dir/Client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/Client.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Client.cpp > CMakeFiles\proj.dir\Client.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Client.cpp > CMakeFiles\proj.dir\Client.cpp.i
 
 CMakeFiles/proj.dir/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/Client.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Client.cpp -o CMakeFiles\proj.dir\Client.cpp.s
-
-CMakeFiles/proj.dir/RecicleBin.cpp.obj: CMakeFiles/proj.dir/flags.make
-CMakeFiles/proj.dir/RecicleBin.cpp.obj: RecicleBin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj.dir/RecicleBin.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\RecicleBin.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\RecicleBin.cpp
-
-CMakeFiles/proj.dir/RecicleBin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/RecicleBin.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\RecicleBin.cpp > CMakeFiles\proj.dir\RecicleBin.cpp.i
-
-CMakeFiles/proj.dir/RecicleBin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/RecicleBin.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\RecicleBin.cpp -o CMakeFiles\proj.dir\RecicleBin.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Client.cpp -o CMakeFiles\proj.dir\Client.cpp.s
 
 CMakeFiles/proj.dir/Garbage.cpp.obj: CMakeFiles/proj.dir/flags.make
-CMakeFiles/proj.dir/Garbage.cpp.obj: Garbage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proj.dir/Garbage.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Garbage.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Garbage.cpp
+CMakeFiles/proj.dir/Garbage.cpp.obj: ../Garbage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj.dir/Garbage.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Garbage.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Garbage.cpp
 
 CMakeFiles/proj.dir/Garbage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/Garbage.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Garbage.cpp > CMakeFiles\proj.dir\Garbage.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Garbage.cpp > CMakeFiles\proj.dir\Garbage.cpp.i
 
 CMakeFiles/proj.dir/Garbage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/Garbage.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Garbage.cpp -o CMakeFiles\proj.dir\Garbage.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Garbage.cpp -o CMakeFiles\proj.dir\Garbage.cpp.s
+
+CMakeFiles/proj.dir/Bin.cpp.obj: CMakeFiles/proj.dir/flags.make
+CMakeFiles/proj.dir/Bin.cpp.obj: ../Bin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proj.dir/Bin.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Bin.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Bin.cpp
+
+CMakeFiles/proj.dir/Bin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/Bin.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Bin.cpp > CMakeFiles\proj.dir\Bin.cpp.i
+
+CMakeFiles/proj.dir/Bin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/Bin.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Bin.cpp -o CMakeFiles\proj.dir\Bin.cpp.s
 
 CMakeFiles/proj.dir/Truck.cpp.obj: CMakeFiles/proj.dir/flags.make
-CMakeFiles/proj.dir/Truck.cpp.obj: Truck.cpp
+CMakeFiles/proj.dir/Truck.cpp.obj: ../Truck.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/proj.dir/Truck.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Truck.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Truck.cpp
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proj.dir\Truck.cpp.obj -c C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Truck.cpp
 
 CMakeFiles/proj.dir/Truck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/Truck.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Truck.cpp > CMakeFiles\proj.dir\Truck.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Truck.cpp > CMakeFiles\proj.dir\Truck.cpp.i
 
 CMakeFiles/proj.dir/Truck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/Truck.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\cmake-build-debug\Truck.cpp -o CMakeFiles\proj.dir\Truck.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj\Truck.cpp -o CMakeFiles\proj.dir\Truck.cpp.s
 
 # Object files for target proj
 proj_OBJECTS = \
 "CMakeFiles/proj.dir/main.cpp.obj" \
 "CMakeFiles/proj.dir/Client.cpp.obj" \
-"CMakeFiles/proj.dir/RecicleBin.cpp.obj" \
 "CMakeFiles/proj.dir/Garbage.cpp.obj" \
+"CMakeFiles/proj.dir/Bin.cpp.obj" \
 "CMakeFiles/proj.dir/Truck.cpp.obj"
 
 # External object files for target proj
@@ -154,8 +154,8 @@ proj_EXTERNAL_OBJECTS =
 
 proj.exe: CMakeFiles/proj.dir/main.cpp.obj
 proj.exe: CMakeFiles/proj.dir/Client.cpp.obj
-proj.exe: CMakeFiles/proj.dir/RecicleBin.cpp.obj
 proj.exe: CMakeFiles/proj.dir/Garbage.cpp.obj
+proj.exe: CMakeFiles/proj.dir/Bin.cpp.obj
 proj.exe: CMakeFiles/proj.dir/Truck.cpp.obj
 proj.exe: CMakeFiles/proj.dir/build.make
 proj.exe: CMakeFiles/proj.dir/linklibs.rsp

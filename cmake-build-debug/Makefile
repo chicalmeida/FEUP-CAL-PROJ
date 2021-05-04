@@ -142,6 +142,33 @@ proj/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/build
 .PHONY : proj/fast
 
+Bin.obj: Bin.cpp.obj
+
+.PHONY : Bin.obj
+
+# target to build an object file
+Bin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Bin.cpp.obj
+.PHONY : Bin.cpp.obj
+
+Bin.i: Bin.cpp.i
+
+.PHONY : Bin.i
+
+# target to preprocess a source file
+Bin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Bin.cpp.i
+.PHONY : Bin.cpp.i
+
+Bin.s: Bin.cpp.s
+
+.PHONY : Bin.s
+
+# target to generate assembly for a file
+Bin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Bin.cpp.s
+.PHONY : Bin.cpp.s
+
 Client.obj: Client.cpp.obj
 
 .PHONY : Client.obj
@@ -195,33 +222,6 @@ Garbage.s: Garbage.cpp.s
 Garbage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Garbage.cpp.s
 .PHONY : Garbage.cpp.s
-
-RecicleBin.obj: RecicleBin.cpp.obj
-
-.PHONY : RecicleBin.obj
-
-# target to build an object file
-RecicleBin.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.obj
-.PHONY : RecicleBin.cpp.obj
-
-RecicleBin.i: RecicleBin.cpp.i
-
-.PHONY : RecicleBin.i
-
-# target to preprocess a source file
-RecicleBin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.i
-.PHONY : RecicleBin.cpp.i
-
-RecicleBin.s: RecicleBin.cpp.s
-
-.PHONY : RecicleBin.s
-
-# target to generate assembly for a file
-RecicleBin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.s
-.PHONY : RecicleBin.cpp.s
 
 Truck.obj: Truck.cpp.obj
 
@@ -286,15 +286,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... proj
+	@echo ... Bin.obj
+	@echo ... Bin.i
+	@echo ... Bin.s
 	@echo ... Client.obj
 	@echo ... Client.i
 	@echo ... Client.s
 	@echo ... Garbage.obj
 	@echo ... Garbage.i
 	@echo ... Garbage.s
-	@echo ... RecicleBin.obj
-	@echo ... RecicleBin.i
-	@echo ... RecicleBin.s
 	@echo ... Truck.obj
 	@echo ... Truck.i
 	@echo ... Truck.s

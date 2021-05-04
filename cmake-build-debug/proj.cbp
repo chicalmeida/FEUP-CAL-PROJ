@@ -80,28 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Client.cpp">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Bin.cpp">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Client.h">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Bin.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Garbage.cpp">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Client.cpp">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Garbage.h">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Client.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/RecicleBin.cpp">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Garbage.cpp">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/RecicleBin.h">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Garbage.h">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Truck.cpp">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Truck.cpp">
 			<Option target="proj"/>
 		</Unit>
-		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Truck.h">
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Truck.h">
 			<Option target="proj"/>
 		</Unit>
 		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/main.cpp">
