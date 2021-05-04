@@ -142,6 +142,114 @@ proj/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/build
 .PHONY : proj/fast
 
+Client.obj: Client.cpp.obj
+
+.PHONY : Client.obj
+
+# target to build an object file
+Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Client.cpp.obj
+.PHONY : Client.cpp.obj
+
+Client.i: Client.cpp.i
+
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Client.cpp.i
+.PHONY : Client.cpp.i
+
+Client.s: Client.cpp.s
+
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Client.cpp.s
+.PHONY : Client.cpp.s
+
+Garbage.obj: Garbage.cpp.obj
+
+.PHONY : Garbage.obj
+
+# target to build an object file
+Garbage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Garbage.cpp.obj
+.PHONY : Garbage.cpp.obj
+
+Garbage.i: Garbage.cpp.i
+
+.PHONY : Garbage.i
+
+# target to preprocess a source file
+Garbage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Garbage.cpp.i
+.PHONY : Garbage.cpp.i
+
+Garbage.s: Garbage.cpp.s
+
+.PHONY : Garbage.s
+
+# target to generate assembly for a file
+Garbage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Garbage.cpp.s
+.PHONY : Garbage.cpp.s
+
+RecicleBin.obj: RecicleBin.cpp.obj
+
+.PHONY : RecicleBin.obj
+
+# target to build an object file
+RecicleBin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.obj
+.PHONY : RecicleBin.cpp.obj
+
+RecicleBin.i: RecicleBin.cpp.i
+
+.PHONY : RecicleBin.i
+
+# target to preprocess a source file
+RecicleBin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.i
+.PHONY : RecicleBin.cpp.i
+
+RecicleBin.s: RecicleBin.cpp.s
+
+.PHONY : RecicleBin.s
+
+# target to generate assembly for a file
+RecicleBin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/RecicleBin.cpp.s
+.PHONY : RecicleBin.cpp.s
+
+Truck.obj: Truck.cpp.obj
+
+.PHONY : Truck.obj
+
+# target to build an object file
+Truck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Truck.cpp.obj
+.PHONY : Truck.cpp.obj
+
+Truck.i: Truck.cpp.i
+
+.PHONY : Truck.i
+
+# target to preprocess a source file
+Truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Truck.cpp.i
+.PHONY : Truck.cpp.i
+
+Truck.s: Truck.cpp.s
+
+.PHONY : Truck.s
+
+# target to generate assembly for a file
+Truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/Truck.cpp.s
+.PHONY : Truck.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +286,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... proj
+	@echo ... Client.obj
+	@echo ... Client.i
+	@echo ... Client.s
+	@echo ... Garbage.obj
+	@echo ... Garbage.i
+	@echo ... Garbage.s
+	@echo ... RecicleBin.obj
+	@echo ... RecicleBin.i
+	@echo ... RecicleBin.s
+	@echo ... Truck.obj
+	@echo ... Truck.i
+	@echo ... Truck.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

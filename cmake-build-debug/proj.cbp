@@ -80,6 +80,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Client.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Client.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Garbage.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Garbage.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/RecicleBin.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/RecicleBin.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Truck.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/Truck.h">
+			<Option target="proj"/>
+		</Unit>
 		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/main.cpp">
 			<Option target="proj"/>
 		</Unit>
