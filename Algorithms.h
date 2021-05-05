@@ -5,7 +5,7 @@
 #ifndef PROJ_ALGORITHMS_H
 #define PROJ_ALGORITHMS_H
 
-void dijksta();
+void dijkstra();
 void depthFirstSearch();
 void aStar();
 
