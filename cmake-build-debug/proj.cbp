@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Algorithms.h">
+			<Option target="proj"/>
+		</Unit>
 		<Unit filename="C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/Bin.cpp">
 			<Option target="proj"/>
 		</Unit>
