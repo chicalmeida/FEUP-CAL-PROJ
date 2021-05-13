@@ -4,28 +4,25 @@
 
 #ifndef PROJ_CLIENT_H
 #define PROJ_CLIENT_H
-#include <string>
+#include "User.h"
+#include "Bin.h"
 
 using namespace std;
 
 
-class Client {
+class Client : public User{
 private:
-    int NIF;
-    string name;
-    string address;
+    vector<Garbage> cContent;
 public:
     Client();
     Client(int nif);
     Client(int nif, string name, string address);
-    void setNif(int nif);
-    void setName(int name);
-    void setAddress(string address);
-    int getNIF();
-    string getName();
-    string getAddress();
-
-
+    void setGarbage(vector<Garbage> garbage);
+    vector<Garbage> getGarbage();
+    void addGarbage(Garbage gb);
+    void removeGarbage(Garbage gb);
+    double getCurrWeight();
+    void deposit(Bin bin);
 };
 
 

@@ -31,18 +31,17 @@ string Bin::getLocation() {
     return location;
 }
 
-void Bin::setCurrCapacity(double curr) {
-    this->currCapacity=curr;
-}
-
 double Bin::getCurrCapacity() {
-    return currCapacity;
+    double total = 0;
+    for(auto garbage : content){
+        total+=garbage.getWeight();
+    }
+    return total;
 }
 
 void Bin::addElem(Garbage elem) {
-    if(currCapacity<capacity){
+    if(getCurrCapacity()<capacity){
         content.push_back(elem);
-        currCapacity+=elem.getWeight();
     }
     else{
         cout<<"Bin is full\n";
@@ -52,14 +51,12 @@ void Bin::addElem(Garbage elem) {
 
 Bin::Bin() {
     this->capacity=0;
-    this->currCapacity=0;
     this->location="";
     this->content={};
 }
 
-Bin::Bin(double capacity, string location, double currCapacity) {
+Bin::Bin(double capacity, string location) {
     this->capacity=capacity;
     this->location=location;
-    this->currCapacity=currCapacity;
     this->content={};
 }

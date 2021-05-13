@@ -6,47 +6,55 @@
 
 using namespace std;
 
-void Client::setNif(int nif) {
-    this->NIF=nif;
+Client::Client() : User(){
+    cContent = {};
 }
 
-void Client::setName(int name) {
-    this->name=name;
+Client::Client(int nif) : User(nif){
+    cContent = {};
 }
 
-void Client::setAddress(string address) {
-    this->address=address;
+Client::Client(int nif, string name, string address) : User(nif, name, address){
+    cContent = {};
 }
 
-int Client::getNIF() {
-    return NIF;
+void Client::setGarbage(vector<Garbage> garbage){
+    cContent = garbage;
 }
 
-string Client::getName() {
-    return name;
+vector<Garbage> Client::getGarbage(){
+    return cContent;
 }
 
-string Client::getAddress() {
-    return address;
+void Client::addGarbage(Garbage gb){
+    cContent.push_back(gb);
+}
+void Client::removeGarbage(Garbage gb){
+    for(auto it = cContent.begin(); it!=cContent.end(); it++){
+        if(*it == gb){
+            cContent.erase(it);
+            return;
+        }
+    }
 }
 
-Client::Client() {
-    this->NIF=0;
-    this->name="";
-    this->address="";
+double Client::getCurrWeight(){
+    double total = 0;
+    for(auto elem : cContent){
+        total+=elem.getWeight();
+    }
+    return total;
 }
 
-Client::Client(int nif) {
-    this->NIF=nif;
-    this->name="";
-    this->address="";
+void Client::deposit(Bin bin){
+    for(auto garbage : cContent){
+        bin.addElem(garbage);
+        removeGarbage(garbage);
+    }
 }
 
-Client::Client(int nif, string name, string address) {
-    this->NIF=nif;
-    this->name=name;
-    this->address=address;
-}
+
+
 
 
 
