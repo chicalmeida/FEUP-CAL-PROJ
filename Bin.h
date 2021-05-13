@@ -17,10 +17,9 @@ private:
     vector<Garbage> content;
     double capacity;
     string location;
-    double currCapacity;
 public:
     Bin();
-    Bin(double capacity, string location, double currCapacity);
+    Bin(double capacity, string location);
     void setContent(vector<Garbage> content);
     void setCapacity(double capacity);
     void setLocation(string location);

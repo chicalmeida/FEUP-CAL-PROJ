@@ -6,31 +6,28 @@
 #define PROJ_TRUCK_H
 
 #include "Garbage.h"
+#include "User.h"
+#include "Client.h"
 #include <vector>
 #include <iostream>
 
 using namespace std;
 
 
-class Truck {
+class Truck : public User{
 private:
-    int id;
     double capacity;
-    double currCapacity;
     vector<Garbage> tContent;
 public:
     Truck();
-    Truck(int id, double capacity, double curr);
-    void setID(int id);
+    Truck(int nif, double capacity, double curr);
+    Truck(int nif, string name, string address, double capacity, double curr);
     void setCapacity(double capacity);
-    void setCurrCapacity(double curr);
-    void setTContent(vector<Garbage>Tcontent);
-    int getID();
     double getCapacity();
     double getCurCapacity();
     vector<Garbage> getTContent();
     void addGarbage(Garbage elem);
-
+    void pickup(Client client);
 };
 
 

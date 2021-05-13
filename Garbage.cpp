@@ -4,8 +4,30 @@
 
 #include "Garbage.h"
 
+garbageType Garbage::getType(string strtype){
+    garbageType type;
+    if(strtype == "paper"){
+        type = paper;
+    }
+    else if (strtype == "plastic"){
+        type = plastic;
+    }
+    else if (strtype == "glass"){
+        type = glass;
+    }
+    else if (strtype == "metal"){
+        type = metal;
+    }
+    else if (strtype == "organic"){
+        type = organic;
+    }
+    else {
+        cout<<strtype<<" trash type not accepted! (available types are only 'paper', 'plastic', 'glass', 'metal' and 'organic')"<<endl;
+    }
+}
+
 void Garbage::setType(string type) {
-    this->type=type;
+    this->type= type;
 }
 
 void Garbage::setWeight(int weight) {
@@ -28,5 +50,12 @@ Garbage::Garbage() {
 Garbage::Garbage(string type, int weigth) {
     this->type=type;
     this->weight=weigth;
+}
+
+bool Garbage::operator==(Garbage gb){
+    if(type == gb.getType() && weight == gb.getWeight()){
+        return true;
+    }
+    return false;
 }
 
