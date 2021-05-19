@@ -20,14 +20,15 @@ private:
     vector<Garbage> tContent;
 public:
     Truck();
-    Truck(int nif, double capacity, double curr);
-    Truck(int nif, string name, string address, double capacity, double curr);
+    Truck(int nif, string name, double capacity);
+    Truck(int nif, string name, double capacity, Address address);
     void setCapacity(double capacity);
     double getCapacity();
     double getCurCapacity();
     vector<Garbage> getTContent();
     void addGarbage(Garbage elem);
     void pickup(Client client);
+    void deposit();
 };
 
 

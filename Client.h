@@ -15,8 +15,8 @@ private:
     vector<Garbage> cContent;
 public:
     Client();
-    Client(int nif);
-    Client(int nif, string name, string address);
+    Client(int nif, string name);
+    Client(int nif, string name, Address address);
     void setGarbage(vector<Garbage> garbage);
     vector<Garbage> getGarbage();
     void addGarbage(Garbage gb);

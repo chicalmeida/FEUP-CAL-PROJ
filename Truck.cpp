@@ -9,12 +9,12 @@ Truck::Truck() : User(){
     this->capacity=0;
 }
 
-Truck::Truck(int nif, double capacity, double curr) : User(nif){
+Truck::Truck(int nif, string name, double capacity) : User(nif, name){
     this->capacity=capacity;
     this->tContent={};
 }
 
-Truck::Truck(int nif, string name, string address, double capacity, double curr) : User(nif,name,address){
+Truck::Truck(int nif, string name, double capacity, Address address) : User(nif,name,address){
     this->capacity=capacity;
     this->tContent={};
 }
@@ -54,6 +54,10 @@ void Truck::pickup(Client client) {
         addGarbage(elem);
         client.removeGarbage(elem);
     }
+}
+
+void Truck::deposit() {
+    tContent.clear();
 }
 
 

@@ -16,20 +16,17 @@ class Bin {
 private:
     vector<Garbage> content;
     double capacity;
-    string location;
 public:
     Bin();
-    Bin(double capacity, string location);
+    Bin(double capacity);
     void setContent(vector<Garbage> content);
     void setCapacity(double capacity);
-    void setLocation(string location);
     void setCurrCapacity(double curr);
     vector<Garbage> getContent();
     double getCapacity();
-    string getLocation();
     double getCurrCapacity();
     void addElem(Garbage elem);
-
+    void resetBin();
 };
 
 

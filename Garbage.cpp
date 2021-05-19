@@ -26,8 +26,19 @@ garbageType Garbage::getType(string strtype){
     }
 }
 
-void Garbage::setType(string type) {
-    this->type= type;
+bool Garbage::verifyGarbage(string type){
+    if(type == "paper" || type == "plastic" || type == "glass" || type == "metal" || type == "organic"){
+        return true;
+    }
+    return false;
+}
+
+bool Garbage::setType(string type) {
+    if(verifyGarbage(type)) {
+        this->type = type;
+        return true;
+    }
+    return false;
 }
 
 void Garbage::setWeight(int weight) {
@@ -48,7 +59,12 @@ Garbage::Garbage() {
 }
 
 Garbage::Garbage(string type, int weigth) {
-    this->type=type;
+    if(verifyGarbage(type)) {
+        this->type = type;
+    }
+    else{
+        this->type = "";
+    }
     this->weight=weigth;
 }
 
