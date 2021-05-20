@@ -8,23 +8,24 @@
 #include "Garbage.h"
 #include <string>
 #include <vector>
+#include "Address.h"
 using namespace std;
 
 class User {
 protected:
     int NIF;
     string name;
-    string address;
+    Address address;
 public:
     User();
-    User(int nif);
-    User(int nif, string name, string address);
+    User(int nif, string name);
+    User(int nif, string name, Address address);
     void setNif(int nif);
     void setName(int name);
-    void setAddress(string address);
+    void setAddress(Address address);
     int getNIF();
     string getName();
-    string getAddress();
+    Address getAddress();
 };
 
 #endif //BIN_CPP_USER_H

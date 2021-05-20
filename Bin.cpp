@@ -15,20 +15,12 @@ void Bin::setCapacity(double capacity) {
     this->capacity=capacity;
 }
 
-void Bin::setLocation(string location) {
-    this->location=location;
-}
-
 vector<Garbage> Bin::getContent() {
     return content;
 }
 
 double Bin::getCapacity() {
     return capacity;
-}
-
-string Bin::getLocation() {
-    return location;
 }
 
 double Bin::getCurrCapacity() {
@@ -51,12 +43,14 @@ void Bin::addElem(Garbage elem) {
 
 Bin::Bin() {
     this->capacity=0;
-    this->location="";
     this->content={};
 }
 
-Bin::Bin(double capacity, string location) {
+Bin::Bin(double capacity) {
     this->capacity=capacity;
-    this->location=location;
     this->content={};
+}
+
+void Bin::resetBin(){
+    content.clear();
 }

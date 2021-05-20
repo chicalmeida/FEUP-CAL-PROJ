@@ -13,7 +13,7 @@ void User::setName(int name) {
     this->name=name;
 }
 
-void User::setAddress(string address) {
+void User::setAddress(Address address) {
     this->address=address;
 }
 
@@ -25,23 +25,23 @@ string User::getName() {
     return name;
 }
 
-string User::getAddress() {
+Address User::getAddress() {
     return address;
 }
 
 User::User() {
     this->NIF=0;
     this->name="";
-    this->address="";
+    this->address=Address();
 }
 
-User::User(int nif) {
+User::User(int nif, string name) {
     this->NIF=nif;
-    this->name="";
-    this->address="";
+    this->name=name;
+    this->address=Address();
 }
 
-User::User(int nif, string name, string address) {
+User::User(int nif, string name, Address address) {
     this->NIF=nif;
     this->name=name;
     this->address=address;

@@ -10,11 +10,11 @@ Client::Client() : User(){
     cContent = {};
 }
 
-Client::Client(int nif) : User(nif){
+Client::Client(int nif, string name) : User(nif, name){
     cContent = {};
 }
 
-Client::Client(int nif, string name, string address) : User(nif, name, address){
+Client::Client(int nif, string name, Address address) : User(nif, name, address){
     cContent = {};
 }
 

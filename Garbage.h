@@ -16,10 +16,11 @@ private:
     string type;
     int weight;
     garbageType getType(string strtype);
+    bool verifyGarbage(string type);
 public:
     Garbage();
-    Garbage(string type, int weigth);
-    void setType(string type);
+    Garbage(string type, int weight);
+    bool setType(string type);
     void setWeight(int weight);
     string getType();
     int getWeight();
