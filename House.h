@@ -26,3 +26,6 @@ public:
 
 
 #endif //PROJ_HOUSE_H
+
+
+#endif //PROJ_HOUSE_H
