@@ -14,6 +14,7 @@
 #include <limits>
 #include <cmath>
 #include "MutablePriorityQueue.h"
+#include "Path.h"
 
 
 template <class T> class Edge;
@@ -118,6 +119,8 @@ public:
     std::vector<T> getPath(const T &origin, const T &dest) const;
     std::vector<T> dfs() const;
     void dfsVisit(Vertex<T> *v, std::vector<T> & res) const;
+    Path aStarShortestPath(const int id_src, const int id_dest, function<double (pair<double, double>, pair<double, double>)> h);
+
 
 };
 
@@ -260,6 +263,62 @@ void Graph<T>::dfsVisit(Vertex<T> *v, std::vector<T> & res) const {
         if ( ! w->visited)
             dfsVisit(w, res);
     }
+}
+
+template<class T>
+Path Graph<T>::aStarShortestPath(const int id_src, const int id_dest, function<double (pair<double, double>, pair<double, double>)> h) {
+    for (Vertex<T> *vert: vertexSet) {
+        vert->dist = INT_MAX;
+        vert->actualDist = 0;
+        vert->path = NULL;
+        vert->queueIndex = 0;
+    }
+
+    Vertex<T> *src = findVertex(id_src), *dest = findVertex(id_dest), *v;
+    src->dist = h(src->info, dest->info) / ROAD_VEL_MS;
+    MutablePriorityQueue<Vertex<T>> Q;
+    Q.insert(src);
+
+    int iter = 0;
+
+    while (!Q.empty()){
+        iter++;
+        v = Q.extractMin();
+
+        if (v == dest){
+            break;
+        }
+
+        for (Edge<T> *w : v->outgoing){
+            double newDist = v->actualDist + w->weight;
+            double f = newDist + (h(w->dest->info, dest->info) / ROAD_VEL_MS);
+            if (w->dest->dist > f){
+                double d = w->dest->dist;
+                w->dest->dist = f;
+                w->dest->actualDist = newDist;
+                w->dest->path = v;
+                if (d == INT_MAX){
+                    Q.insert(w->dest);
+                }
+                else {
+                    Q.decreaseKey(w->dest);
+                }
+            }
+        }
+    }
+
+    vector<int> path;
+    path.push_back(dest->id);
+    Vertex<T>* vertex = dest;
+    double length=0;
+
+    while (vertex->path != NULL) {
+        length+= vertex->path->getCostTo(vertex->id);
+        vertex = vertex->path;
+        path.emplace(path.begin(), vertex->id);
+    }
+
+    return Path(length,path);
 }
 
 #endif /* GRAPH_H_ */
