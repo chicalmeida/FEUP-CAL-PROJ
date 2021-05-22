@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="proj"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj">
+				<Option output="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/proj.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj/fast">
+				<Option output="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/proj.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Address.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Address.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Bin.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Bin.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Central.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Central.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Client.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Client.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Garbage.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Garbage.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/House.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/House.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Location.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Location.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Truck.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/Truck.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/User.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/User.h">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/main.cpp">
+			<Option target="proj"/>
+		</Unit>
+		<Unit filename="C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
