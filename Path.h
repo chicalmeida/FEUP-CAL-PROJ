@@ -8,13 +8,14 @@
 
 #include <vector>
 #include <unordered_map>
-#include <util/Time.h>
+//#include <util/Time.h>
 
 using namespace std;
 
 /**
  * @brief Path Class
  */
+
 class Path {
     /**
      * @brief Vector with path nodes IDs
@@ -29,7 +30,7 @@ class Path {
     /**
      * @brief Map with POIs and the corresponding cumulative time to get to that node
      */
-    unordered_map<int, Time> POIs;
+    //unordered_map<int, Time> POIs;
 
 public:
     Path();
@@ -38,7 +39,7 @@ public:
     double getLength() const;
     vector<int> getPath() const;
     int getLastNode() const;
-    unordered_map<int, Time> getPOIsTimes() const;
+    //unordered_map<int, Time> getPOIsTimes() const;
 
     /**
      * @brief Join 2 paths
@@ -46,7 +47,7 @@ public:
      */
     void joinPath(const Path &p);
     void addNode(const int &id);
-    void addPOI(const int &id, const Time &time);
+    //void addPOI(const int &id, const Time &time);
 };
 
 

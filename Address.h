@@ -4,8 +4,7 @@
 
 #ifndef PROJ_ADDRESS_H
 #define PROJ_ADDRESS_H
-
-#include "User.h"
+class Location;
 #include "Bin.h"
 #include "Location.h"
 
@@ -14,14 +13,14 @@ using namespace std;
 class Address{
 private:
     int id;
-    Location location;
+    Location *location;
 public:
     Address();
     Address(int id);
-    Address(int id, Location location);
-    void setLocation(Location location);
+    Address(int id, Location *location);
+    void setLocation(Location *location);
     int getId();
-    Location getLocation();
+    Location* getLocation();
 };
 
 

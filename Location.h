@@ -4,9 +4,11 @@
 
 #ifndef PROJ_LOCATION_H
 #define PROJ_LOCATION_H
+class Address;
 
-#include "User.h"
+
 #include "Bin.h"
+#include "Address.h"
 
 using namespace std;
 

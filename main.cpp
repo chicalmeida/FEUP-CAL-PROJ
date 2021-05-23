@@ -1,4 +1,9 @@
-//
-// Created by furta on 23/05/2021.
-//
+#include <iostream>
+#include "Application.h"
+int main() {
+    Application app = Application();
+    app.start();
 
+
+    return 0;
+}
