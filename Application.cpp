@@ -10,6 +10,7 @@ using namespace std;
 Application::Application() {
     currentMenu = buildMenu();
     menuStack.push(currentMenu);
+    readGraph("resources/porto/full_edges.txt");
 }
 
 void Application::start(){
@@ -59,4 +60,9 @@ bool Application::goBack() {
     currentMenu = menuStack.top();
 
     return true;
+}
+
+void Application::readGraph(std::string path){
+    readNodes(path, this->graph);
+    readEdges(path, this->graph);
 }

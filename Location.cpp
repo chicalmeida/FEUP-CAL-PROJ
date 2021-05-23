@@ -12,6 +12,10 @@ Location::Location(){
     addresses.clear();
 }
 
+Location::Location(int id){
+    this->id=id;
+}
+
 Location::Location(int id, double x, double y){
     this->bin = Bin();
     this->id = id;

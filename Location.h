@@ -21,6 +21,7 @@ private:
     double x,y;
 public:
     Location();
+    Location(int id);
     Location(int id, double x, double y);
     Location(int id,double x, double y, Bin bin);
     void addAddress(Address address);
