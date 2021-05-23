@@ -270,7 +270,10 @@ lib/GraphViewerCpp/SFML/src/SFML/Window/clean: lib/GraphViewerCpp/SFML/src/SFML/
 # Target rules for target CMakeFiles/FEUP_CAL_PROJ.dir
 
 # All Build rule for target.
-CMakeFiles/FEUP_CAL_PROJ.dir/all:
+CMakeFiles/FEUP_CAL_PROJ.dir/all: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/all
+CMakeFiles/FEUP_CAL_PROJ.dir/all: lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
+CMakeFiles/FEUP_CAL_PROJ.dir/all: lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+CMakeFiles/FEUP_CAL_PROJ.dir/all: lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target FEUP_CAL_PROJ"
@@ -278,7 +281,7 @@ CMakeFiles/FEUP_CAL_PROJ.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FEUP_CAL_PROJ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 74
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FEUP_CAL_PROJ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/FEUP_CAL_PROJ.dir/rule
