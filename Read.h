@@ -9,7 +9,7 @@
 #include <fstream>
 #include <sstream>
 #include "Graph.h"
-#include "Math.h"
+#include <math.h>
 #include "Location.h"
 
 using namespace std;
