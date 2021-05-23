@@ -12,7 +12,7 @@ Central::Central(int id) : Address(id){
 
 }
 
-Central::Central(int id, Location location) : Address(id,location){
+Central::Central(int id, Location *location) : Address(id,location){
 
 }
 

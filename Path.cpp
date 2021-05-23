@@ -3,7 +3,7 @@
 //
 
 #include "Path.h"
-
+/*
 Path::Path() {
     this->path_length = 0;
     this->path = vector<int>();
@@ -43,3 +43,4 @@ void Path::addPOI(const int &id, const Time &time) {
     if (POIs.find(id) == POIs.end())
         this->POIs.insert(make_pair(id, time));
 }
+*/

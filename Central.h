@@ -16,7 +16,7 @@ private:
 public:
     Central();
     Central(int id);
-    Central(int id, Location location);
+    Central(int id, Location *location);
 };
 
 

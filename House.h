@@ -17,7 +17,7 @@ private:
 public:
     House();
     House(int id);
-    House(int id, Location location);
+    House(int id, Location *location);
     void addHabitant(User habitant);
     bool removeHabitant(User habitant);
     int geNumHabitants();
@@ -28,4 +28,4 @@ public:
 #endif //PROJ_HOUSE_H
 
 
-#endif //PROJ_HOUSE_H
+

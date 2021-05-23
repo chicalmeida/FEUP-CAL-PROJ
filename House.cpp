@@ -12,7 +12,7 @@ House::House(int id) : Address(id){
     habitants.clear();
 }
 
-House::House(int id, Location location) : Address(id, location){
+House::House(int id, Location *location) : Address(id, location){
     habitants.clear();
 }
 
