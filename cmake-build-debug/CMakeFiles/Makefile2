@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = "C:\Users\furta\OneDrive\Área de Trabalho\tomas\projcal\FEUP
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/proj.dir/all
+all:
 
 .PHONY : all
 
@@ -81,36 +81,9 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/proj.dir/clean
+clean:
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/proj.dir
-
-# All Build rule for target.
-CMakeFiles/proj.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\furta\OneDrive\Área de Trabalho\tomas\projcal\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target proj"
-.PHONY : CMakeFiles/proj.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/proj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\furta\OneDrive\Área de Trabalho\tomas\projcal\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/proj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\furta\OneDrive\Área de Trabalho\tomas\projcal\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/proj.dir/rule
-
-# Convenience name for target.
-proj: CMakeFiles/proj.dir/rule
-
-.PHONY : proj
-
-# clean rule for target.
-CMakeFiles/proj.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj.dir\build.make CMakeFiles/proj.dir/clean
-.PHONY : CMakeFiles/proj.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
