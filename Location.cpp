@@ -20,7 +20,7 @@ Location::Location(int id, double x, double y){
     addresses.clear();
 }
 
-Location::Location(int id,, double x, double y, Bin bin){
+Location::Location(int id, double x, double y, Bin bin){
     this->bin = bin;
     this->id = id;
     this->x=x;
@@ -69,6 +69,6 @@ double Location::getY(){
     return y;
 }
 
-bool operator==(Location l){
+bool Location::operator==(Location l){
     return (id==l.getId());
 }

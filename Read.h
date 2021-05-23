@@ -15,9 +15,11 @@
 using namespace std;
 
 void readEdges(string path){
+    Graph<Location> graph;
     ifstream file(path);
     int size,id1,id2;
     int count =0;
+
     if(getline(file,line)){;
         size = stoi(line);
     }
@@ -30,7 +32,12 @@ void readEdges(string path){
         id1 = stoi(str);
         getline(ss,str);
         id2 = stoi(str);
-        //find1,find2, getdistance, addedge;
+        Location l1(id1);
+        Location l2(id2);
+        Vertex<Location> *v1=graph.findVertex(l1);
+        Vertex<Location> *v2=graph.findVertex(l2);
+        double weight = getDistance(v1->getInfo().getX(),v2->getInfo().getX(),v1->getInfo().getY(),v1->getInfo().getY());
+        graph.addEdge(l1,l2,weight);
     }
     file.close();
 }
