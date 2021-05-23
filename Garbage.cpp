@@ -24,6 +24,7 @@ garbageType Garbage::getType(string strtype){
     else {
         cout<<strtype<<" trash type not accepted! (available types are only 'paper', 'plastic', 'glass', 'metal' and 'organic')"<<endl;
     }
+    return type;
 }
 
 bool Garbage::verifyGarbage(string type){
