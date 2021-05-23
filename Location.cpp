@@ -7,18 +7,24 @@
 Location::Location(){
     bin = Bin();
     id = 0;
+    x=0;
+    y=0;
     addresses.clear();
 }
 
-Location::Location(int id){
+Location::Location(int id, double x, double y){
     this->bin = Bin();
     this->id = id;
+    this->x=x;
+    this->x=y;
     addresses.clear();
 }
 
-Location::Location(int id, Bin bin){
+Location::Location(int id,, double x, double y, Bin bin){
     this->bin = bin;
     this->id = id;
+    this->x=x;
+    this->x=y;
     addresses.clear();
 }
 
@@ -54,4 +60,15 @@ vector<Address> Location::getAddresses(){
 
 int Location::getId(){
     return id;
+}
+
+double Location::getX(){
+    return x;
+}
+double Location::getY(){
+    return y;
+}
+
+bool operator==(Location l){
+    return (id==l.getId());
 }

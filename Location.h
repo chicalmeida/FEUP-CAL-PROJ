@@ -18,10 +18,11 @@ private:
     Bin bin;
     vector<Address> addresses;
     int id;
+    double x,y;
 public:
     Location();
-    Location(int id);
-    Location(int id,Bin bin);
+    Location(int id, double x, double y);
+    Location(int id,double x, double y, Bin bin);
     void addAddress(Address address);
     Bin getBin();
     vector<Address> getAddresses();
@@ -29,6 +30,9 @@ public:
     void setBin(Bin bin);
     void resetBin();
     bool removeAddress(Address address);
+    double getX();
+    double getY();
+    bool operator==(Location l);
 };
 
 
