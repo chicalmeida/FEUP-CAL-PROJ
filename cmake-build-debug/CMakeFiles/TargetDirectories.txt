@@ -1,3 +1,0 @@
-C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/CMakeFiles/proj.dir
-C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/furta/OneDrive/Área de Trabalho/tomas/projcal/FEUP-CAL-PROJ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
