@@ -10,6 +10,7 @@ using namespace std;
 Application::Application() {
     currentMenu = buildMenu();
     menuStack.push(currentMenu);
+
 }
 
 void Application::start(){
@@ -32,7 +33,7 @@ bool Application::handleInput(string input) {
         isDone = !this->goBack();
     }
     else if(this->advanceMenu(input)){
-        if(!menuHandler(input)){
+        if(!menuHandler(input, this)){
             this->goBack();
         }
     }
