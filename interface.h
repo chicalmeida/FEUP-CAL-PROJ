@@ -6,12 +6,12 @@
 #define PROJECT_INTERFACE_H
 
 #include "Menu.h"
-
+#include "Application.h"
 Menu buildMenu();
 std::string readInput();
-bool menuHandler(std::string input);
-bool viewHandler(std::string type, std::string id);
-bool addHandler(std::string type, std::string id);
-bool removeHandler(std::string type, std::string id);
-bool loginHandler(std::string type, std::string id);
+bool menuHandler(const std::string &input, Application *application);
+bool viewHandler(const std::string &type,const  std::string &id, Application *application);
+bool addHandler(const std::string &type, const std::string &id, Application *application);
+bool removeHandler(const std::string &type, const std::string &id, Application *application);
+bool loginHandler(const std::string &type, const std::string &id, Application *application);
 #endif //PROJECT_INTERFACE_H
