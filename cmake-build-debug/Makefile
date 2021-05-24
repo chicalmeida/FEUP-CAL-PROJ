@@ -548,6 +548,33 @@ Path.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Path.cpp.s
 .PHONY : Path.cpp.s
 
+SingleBin.obj: SingleBin.cpp.obj
+
+.PHONY : SingleBin.obj
+
+# target to build an object file
+SingleBin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/SingleBin.cpp.obj
+.PHONY : SingleBin.cpp.obj
+
+SingleBin.i: SingleBin.cpp.i
+
+.PHONY : SingleBin.i
+
+# target to preprocess a source file
+SingleBin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/SingleBin.cpp.i
+.PHONY : SingleBin.cpp.i
+
+SingleBin.s: SingleBin.cpp.s
+
+.PHONY : SingleBin.s
+
+# target to generate assembly for a file
+SingleBin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/SingleBin.cpp.s
+.PHONY : SingleBin.cpp.s
+
 Truck.obj: Truck.cpp.obj
 
 .PHONY : Truck.obj
@@ -601,6 +628,33 @@ User.s: User.cpp.s
 User.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/User.cpp.s
 .PHONY : User.cpp.s
+
+Viewer.obj: Viewer.cpp.obj
+
+.PHONY : Viewer.obj
+
+# target to build an object file
+Viewer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Viewer.cpp.obj
+.PHONY : Viewer.cpp.obj
+
+Viewer.i: Viewer.cpp.i
+
+.PHONY : Viewer.i
+
+# target to preprocess a source file
+Viewer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Viewer.cpp.i
+.PHONY : Viewer.cpp.i
+
+Viewer.s: Viewer.cpp.s
+
+.PHONY : Viewer.s
+
+# target to generate assembly for a file
+Viewer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Viewer.cpp.s
+.PHONY : Viewer.cpp.s
 
 files.obj: files.cpp.obj
 
@@ -760,12 +814,18 @@ help:
 	@echo ... Path.obj
 	@echo ... Path.i
 	@echo ... Path.s
+	@echo ... SingleBin.obj
+	@echo ... SingleBin.i
+	@echo ... SingleBin.s
 	@echo ... Truck.obj
 	@echo ... Truck.i
 	@echo ... Truck.s
 	@echo ... User.obj
 	@echo ... User.i
 	@echo ... User.s
+	@echo ... Viewer.obj
+	@echo ... Viewer.i
+	@echo ... Viewer.s
 	@echo ... files.obj
 	@echo ... files.i
 	@echo ... files.s

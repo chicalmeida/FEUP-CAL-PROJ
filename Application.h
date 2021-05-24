@@ -30,6 +30,7 @@ public:
     void addBins(int n);
     void addCentrals(int n);
     void addHouses(int n);
+    void addTrucks(int n);
     void viewLocation(int id);
     void close();
     Graph<Location *> getGraph();
