@@ -12,14 +12,14 @@ Menu buildMenu(){
     Menu mainMenu = Menu("mainMenu", "");
 
     Menu viewMenu = Menu("view", "view <type> <id> -> view information on something [bin, client, truct, location, user, central]");
-    Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central, house]");
-    Menu removeMenu = Menu("remove", "remove <type> <id> -> remove something [bin, client, truck, location, user, central]");
+    //Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central, house]");
+    //Menu removeMenu = Menu("remove", "remove <type> <id> -> remove something [bin, client, truck, location, user, central]");
     Menu clientMenu = Menu("login", "login client <id> -> Login as a client");
     Menu userMenu = Menu("login", "login truck <id> -> Login as a truck user");
 
     mainMenu.addMenu(viewMenu);
-    mainMenu.addMenu(addMenu);
-    mainMenu.addMenu(removeMenu);
+    //mainMenu.addMenu(addMenu);
+    //mainMenu.addMenu(removeMenu);
     mainMenu.addMenu(clientMenu);
     mainMenu.addMenu(userMenu);
 
@@ -49,7 +49,7 @@ bool menuHandler(const std::string &input, Application *application){
     } else if(menu == "add"){
         ss >> type >> id;
         addHandler(type, id, application);
-    } else if(menu == "remove"){
+    } else if(menu == "remove" and false){
         ss >> type >> id;
         removeHandler(type, id, application);
     } else if(menu == "login"){

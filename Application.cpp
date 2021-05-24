@@ -221,9 +221,7 @@ void Application::addClient(int id, string name){
 }
 
 void Application::getNearestBin(GarbageType type, Client *client){
-    cout << "AQUII 1 \n";
-    viewer.resetappearance();
-    cout << "AQUI 2 \n";
+    //viewer.resetAppearance();
     Location * location = client->getAddress().getLocation();
     Vertex<Location *> *firstNode = graph.getVertex(location->getId());
     stack<Vertex<Location *> *> nodeStack;
@@ -278,11 +276,11 @@ void Application::getNearestBin(GarbageType type, Client *client){
     viewLocation(chosenBin->getId(),"Bin");
     viewLocation(client->getAddress().getLocation()->getId(),"YOU");
     focusLocation(chosenBin->getId());
-    cout << "OK???\n";
+
 }
 
 void Application::calculateRoute(Truck *truck, bool singleHouse){
-    viewer.resetappearance();
+    //viewer.resetAppearance();
     if(singleHouse){
         House * house = houses.at(rand() % houses.size()  + 1);
         Location *first = truck->getAddress().getLocation();
@@ -298,6 +296,11 @@ void Application::calculateRoute(Truck *truck, bool singleHouse){
         for(Location *location: pathLocations){
             path.push_back(location->getId());
         }
+        viewLocation(truck->getAddress().getLocation()->getId(),"Truck");
+        focusLocation(truck->getAddress().getLocation()->getId());
+        viewLocation(house->getLocation()->getId(),"House");
+        viewLocation(central.getLocation()->getId(),"Central");
+
         viewer.printpath(path);
 
 
@@ -412,7 +415,12 @@ void Application::viewLocation(int id, string label){
 }
 
 void Application::viewBin(int id){
-    Bin* bin = bins.at(id);
+    auto it =bins.find(id);
+    if(it == bins.end()){
+        cout << "No bin with id " << id << "\n";
+        return;
+    }
+    Bin* bin = it->second;
     viewer.focusLocation(bin->getLocation()->getId());
 }
 
@@ -429,6 +437,11 @@ Truck* Application::getTruck(int id){
 }
 
 void Application::viewClient(int id){
+    auto it =clients.find(id);
+    if(it == clients.end()){
+        cout << "No client with id " << id << "\n";
+        return;
+    }
     Client *client = clients.at(id);
     if(client==NULL){
         return;
@@ -440,12 +453,13 @@ void Application::viewTruck(int id){
     auto it = trucks.find(id);
     if(it == trucks.end()){
         cout << "No truck with id " << id << "\n";
+        return;
     }
-    Truck *truck = trucks.at(id);
+    Truck *truck = it->second;
     if(truck==NULL){
         return;
     }
-    viewer.focusLocation(truck->getLocation()->getId());
+    viewer.focusLocation(truck->getAddress().getLocation()->getId());
 }
 
 void Application::viewCentral(){
