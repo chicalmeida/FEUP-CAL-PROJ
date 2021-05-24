@@ -297,10 +297,6 @@ void Application::calculateRoute(Truck *truck, bool singleHouse){
         }
         viewer.printpath(path);
 
-
-
-
-
     }
 
 }
