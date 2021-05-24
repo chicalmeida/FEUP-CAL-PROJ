@@ -66,8 +66,8 @@ bool Application::goBack() {
 
 void Application::loadgraph(string city){
     map<int,Vertex<Location*>*> vertexmap;
-    string strnodes = "resources/"+city+"/full_nodes_xy.txt";
-    string stredges = "resources/"+city+"/full_edges.txt";
+    string strnodes = "resources/"+city+"/strong_nodes_xy.txt";
+    string stredges = "resources/"+city+"/strong_edges.txt";
     readNodes(graph,strnodes,vertexmap);
     readEdges(graph,stredges,vertexmap);
 }

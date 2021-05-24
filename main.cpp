@@ -6,9 +6,9 @@ using namespace std;
 int main() {
     Application app = Application();
     //app.start();
-    app.loadgraph("Porto");
+    app.loadgraph("Penafiel");
     Viewer viewer;
     Graph<Location*> graph= app.getGraph();
-    viewer.graphtoview(graph,"Porto");
+    viewer.graphtoview(graph,"Penafiel");
     return 0;
 }

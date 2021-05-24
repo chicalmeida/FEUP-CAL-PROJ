@@ -109,12 +109,13 @@ Vertex<T> * Edge<T>::getDest() const {
     return dest;
 }
 
+
 /*************************** Graph  **************************/
 
 template <class T>
 class Graph {
     std::vector<Vertex<T> *> vertexSet;    // vertex set
-    map<int, Vertex<T> *> vertexMap;
+	map<int, Vertex<T> *> vertexMap;
 public:
     Vertex<T> *findVertex(const T &in) const;
     void addVertex(Vertex<T> * in);
