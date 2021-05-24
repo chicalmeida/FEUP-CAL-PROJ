@@ -19,7 +19,7 @@ public:
     bool advanceMenu(std::string input);
     bool handleInput(std::string input);
     void readGraph(std::string path);
-    User addUser(std::string name, int nif);
+    void addUser();
 private:
     Graph<Location> graph;
     std::stack<Menu> menuStack;

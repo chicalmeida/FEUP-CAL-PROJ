@@ -67,7 +67,5 @@ void Application::readGraph(std::string path){
     readEdges(path, this->graph);
 }
 
-User Application::addUser(std::string name, int nif){
-    User u(nif, name);
-    return u;
-}
+void Application::addUser(){
+    User u(468083687,"Andre");
