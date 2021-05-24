@@ -231,7 +231,10 @@ void Application::getNearestBin(GarbageType type, Client *client){
     double currentDistance = 0;
     double minDistance = 999999.0;
     Location *chosenBin = nullptr;
+    int i = 0;
     while(!nodeStack.empty()){
+        i++;
+        cout << i << "\n";
         Vertex<Location *> *node = nodeStack.top();
         currentDistance = distanceStack.top();
         nodeStack.pop();
@@ -251,6 +254,7 @@ void Application::getNearestBin(GarbageType type, Client *client){
         }
 
         if(location->getBin() != nullptr){
+
             if(location->getBin()->hasType(type)){
                 if(currentDistance < minDistance){
                     minDistance = currentDistance;
@@ -260,7 +264,7 @@ void Application::getNearestBin(GarbageType type, Client *client){
             }
         }
 
-        vector<Edge<Location *>> edges = firstNode->getAdj();
+        vector<Edge<Location *>> edges = node->getAdj();
         for(Edge<Location *> &edge : edges){
             Vertex<Location *> *next = edge.getDest();
             int id = next->getInfo()->getId();
