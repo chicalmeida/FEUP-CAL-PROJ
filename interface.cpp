@@ -79,7 +79,7 @@ bool viewHandler(const string &type, const string &idStr, Application *applicati
         } else if (type == "truck") {
             application->viewTruck(id);
         } else if (type == "location") {
-            application->viewLocation(id);
+            application->focusLocation(id);
         } else if (type == "central") {
             application->viewCentral();
         } else {
