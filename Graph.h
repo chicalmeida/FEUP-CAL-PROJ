@@ -109,12 +109,12 @@ Vertex<T> * Edge<T>::getDest() const {
     return dest;
 }
 
+
 /*************************** Graph  **************************/
 
 template <class T>
 class Graph {
     std::vector<Vertex<T> *> vertexSet;    // vertex set
-
 public:
     Vertex<T> *findVertex(const T &in) const;
     void addVertex(Vertex<T> * in);
