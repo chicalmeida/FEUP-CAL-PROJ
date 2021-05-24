@@ -548,6 +548,9 @@
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/exceptions.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/files.cpp">
 			<Option target="project"/>
 		</Unit>
