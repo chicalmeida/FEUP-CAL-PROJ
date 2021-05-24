@@ -56,13 +56,14 @@ void Viewer::viewLocation(int idlocation, string label){
     gv.getNode(idlocation).setColor(GraphViewer::YELLOW);
     gv.getNode(idlocation).setSize(100);
     gv.getNode(idlocation).setLabel(label);
+    activeNodes.push_back(idlocation);
 }
 
 void Viewer::resetappearance(){
-    for(auto node : gv.getNodes()){
-        node->setColor(GraphViewer::RED);
-        node->setSize(10);
-        node->setLabel("");
+    for(auto id : activeNodes){
+        gv.getNode(id).setColor(GraphViewer::RED);
+        gv.getNode(id).setSize(10);
+        gv.getNode(id).setLabel("");
     }
 }
 

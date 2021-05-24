@@ -18,6 +18,7 @@ public:
     void resetappearance();
     void close();
 private:
+    vector<int> activeNodes;
     bool focused;
     int lastfocusid;
     GraphViewer gv;
