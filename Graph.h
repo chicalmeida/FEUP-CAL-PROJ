@@ -8,12 +8,12 @@
 #ifndef GRAPH_H_
 #define GRAPH_H_
 
-#includevector>
+#include <vector>
 #include <queue>
 #include <list>
 #include <limits>
 #include <cmath>
-// "MutablePriorityQueue.h"
+#include "MutablePriorityQueue.h"
 #include "Path.h"
 
 
@@ -227,7 +227,7 @@ void Graph<T>::unweightedShortestPath(const T &orig) {
 }
 
 
-/*template<class T>
+template<class T>
 void Graph<T>::dijkstraShortestPath(const T &origin) {
     auto s = initSingleSource(origin);
     MutablePriorityQueue<Vertex<T>> q;
@@ -244,7 +244,7 @@ void Graph<T>::dijkstraShortestPath(const T &origin) {
             }
         }
     }
-}*/
+}
 
 
 template<class T>
