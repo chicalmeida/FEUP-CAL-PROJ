@@ -7,6 +7,7 @@
 #include "Menu.h"
 #include "Read.h"
 #include <stack>
+#include "User.h"
 
 
 class Application {
@@ -18,6 +19,7 @@ public:
     bool advanceMenu(std::string input);
     bool handleInput(std::string input);
     void readGraph(std::string path);
+    User addUser(std::string name, int nif);
 private:
     Graph<Location> graph;
     std::stack<Menu> menuStack;

@@ -66,3 +66,8 @@ void Application::readGraph(std::string path){
     readNodes(path, this->graph);
     readEdges(path, this->graph);
 }
+
+User Application::addUser(std::string name, int nif){
+    User u(nif, name);
+    return u;
+}
