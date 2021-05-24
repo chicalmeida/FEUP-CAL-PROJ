@@ -8,7 +8,7 @@ int main() {
     //app.start();
     app.loadgraph("Penafiel");
     Viewer viewer;
-    Graph<Location> graph= app.getGraph();
+    Graph<Location*> graph= app.getGraph();
     viewer.graphtoview(graph);
     viewer.viewcentered(5142);
     return 0;

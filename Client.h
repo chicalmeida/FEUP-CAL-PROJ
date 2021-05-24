@@ -23,6 +23,14 @@ public:
     void removeGarbage(Garbage gb);
     double getCurrWeight();
     void deposit(Bin bin);
+
+    /**
+     * Write client in the file.
+     * @param os Stream where to save.
+     * @param client Client to be saved.
+     * @return Stream where was saved.
+     */
+    friend std::ostream& operator<< (std::ostream &os, const Client &client);
 };
 
 

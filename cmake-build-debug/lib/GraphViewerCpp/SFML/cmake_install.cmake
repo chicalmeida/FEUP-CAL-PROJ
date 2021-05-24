@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML
+# Install script for directory: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/FEUP_CAL_PROJ")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,34 +34,34 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/MinGW64_2/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/objdump.exe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/license.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/license.md")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/readme.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/readme.md")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/bin/x86/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/bin/x64/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake"
-         "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
+         "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -70,23 +70,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES
-    "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfig.cmake"
-    "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigDependencies.cmake"
-    "C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigVersion.cmake"
+    "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfig.cmake"
+    "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigDependencies.cmake"
+    "C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake")
+  include("C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake")
 
 endif()
 

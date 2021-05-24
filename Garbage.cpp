@@ -3,6 +3,9 @@
 //
 
 #include "Garbage.h"
+#include "files.h"
+
+const string Garbage::FILENAME =  "garbages.txt";
 
 garbageType Garbage::getType(string strtype){
     garbageType type;
@@ -74,5 +77,11 @@ bool Garbage::operator==(Garbage gb){
         return true;
     }
     return false;
+}
+
+ostream& operator<< (ostream &os, const Garbage &garbage){
+    //files::writeVariable(os, "name", garbage.name);
+    os << "\n";
+    return os;
 }
 

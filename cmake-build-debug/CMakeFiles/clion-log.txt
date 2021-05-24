@@ -1,7 +1,18 @@
-"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Francisca\Desktop\UNI\CAL\Projeto\proj
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.19 or higher is required.  You are running version 3.17.3
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Francisca/Desktop/UNI/CAL/Projeto/proj/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- Found OpenGL: opengl32   
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Found OpenAL: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libopenal32.a  
+-- Found VORBIS: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libogg.a  
+-- Found FLAC: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libFLAC.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug

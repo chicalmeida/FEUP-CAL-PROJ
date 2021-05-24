@@ -10,7 +10,7 @@
 class Viewer {
 public:
     Viewer();
-    void graphtoview(Graph<Location> &graph);
+    void graphtoview(Graph<Location *> &graph, string city);
     void printpath(vector<int> &path);
     void viewcentered(int idlocation);
 private:
@@ -20,8 +20,8 @@ private:
 
 Viewer::Viewer() {}
 
-void Viewer::graphtoview(Graph<Location> &graph) {
-    vector<Vertex<Location> *> vertexset = graph.getVertexSet();
+void Viewer::graphtoview(Graph<Location *> &graph) {
+    vector<Vertex<Location *> *> vertexset = graph.getVertexSet();
     int id=0;
 
     gv.setCenter(sf::Vector2f(0, 0));
@@ -30,15 +30,15 @@ void Viewer::graphtoview(Graph<Location> &graph) {
     gv.setBackground(bg);*/
 
     for(auto vertex : vertexset){
-        GraphViewer::Node node = gv.addNode(vertex->getInfo().getId(), sf::Vector2f(vertex->getInfo().getX(), vertex->getInfo().getY()));
-        cout<<vertex->getInfo().getId()<<"  "<<vertex->getInfo().getX()<<"  "<<vertex->getInfo().getY()<<endl;
+        GraphViewer::Node node = gv.addNode(vertex->getInfo()->getId(), sf::Vector2f(vertex->getInfo()->getX(), vertex->getInfo()->getY()));
+        cout<<vertex->getInfo()->getId()<<"  "<<vertex->getInfo()->getX()<<"  "<<vertex->getInfo()->getY()<<endl;
         //nodemap.insert(pair<int,GraphViewer::Node*>(vertex->getInfo().getId(),&node));
     }
 
     for(auto vertex : vertexset){
-        vector<Edge<Location> > edges = vertex->getAdj();
+        vector<Edge<Location *> > edges = vertex->getAdj();
         for(auto edge : edges){
-            GraphViewer::Edge adj = gv.addEdge(id,gv.getNode(vertex->getInfo().getId()),gv.getNode(edge.getDest()->getInfo().getId()), GraphViewer::Edge::EdgeType::DIRECTED);
+            GraphViewer::Edge adj = gv.addEdge(id,gv.getNode(vertex->getInfo()->getId()),gv.getNode(edge.getDest()->getInfo()->getId()), GraphViewer::Edge::EdgeType::DIRECTED);
             id++;
         }
     }
