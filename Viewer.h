@@ -15,7 +15,7 @@ public:
     void printpath(vector<int> &path);
     void focusLocation(int idlocation);
     void viewLocation(int idlocation, string label);
-    void resetappearance();
+    void resetAppearance();
     void close();
 private:
     vector<int> activeNodes;
