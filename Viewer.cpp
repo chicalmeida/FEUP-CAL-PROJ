@@ -34,6 +34,7 @@ void Viewer::printpath(vector<int> &path){
     for(auto point : path){
         //nodemap.at(point)->setColor(GraphViewer::BLUE);
         gv.getNode(point).setColor(GraphViewer::BLUE);
+        gv.getNode(point).setSize(15);
     }
 }
 

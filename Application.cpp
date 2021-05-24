@@ -286,6 +286,11 @@ void Application::calculateRoute(Truck *truck, bool singleHouse){
         for(Location *location: pathLocations){
             path.push_back(location->getId());
         }
+        graph.dijkstraShortestPath(house->getLocation());
+        pathLocations = graph.getPath(house->getLocation(), central.getLocation());
+        for(Location *location: pathLocations){
+            path.push_back(location->getId());
+        }
         viewer.printpath(path);
 
 
