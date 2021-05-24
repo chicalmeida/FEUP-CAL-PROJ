@@ -12,6 +12,7 @@ public:
     Viewer();
     void graphtoview(Graph<Location *> &graph, string city);
     void printpath(vector<int> &path);
+    void viewcentered(int idlocation);
 private:
     GraphViewer gv;
     //map<int,GraphViewer::Node*> nodemap;
@@ -19,7 +20,7 @@ private:
 
 Viewer::Viewer() {}
 
-void Viewer::graphtoview(Graph<Location *> &graph, string city) {
+void Viewer::graphtoview(Graph<Location *> &graph) {
     vector<Vertex<Location *> *> vertexset = graph.getVertexSet();
     int id=0;
 
@@ -50,4 +51,11 @@ void Viewer::printpath(vector<int> &path){
         gv.getNode(point).setColor(GraphViewer::BLUE);
     }
 }
+
+void Viewer::viewcentered(int idlocation){
+    gv.getNode(idlocation).setColor(GraphViewer::YELLOW);
+    gv.getNode(idlocation).setSize(1000);
+    gv.getNode(idlocation).setLabel("HERE");
+}
+
 #endif //FEUP_CAL_PROJ_VIEWER_H

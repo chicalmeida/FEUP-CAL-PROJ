@@ -6,7 +6,6 @@
 #include<sstream>
 #include <algorithm>
 #include "interface.h"
-#include "utils.h"
 #include "Application.h"
 using namespace std;
 Menu buildMenu(){
