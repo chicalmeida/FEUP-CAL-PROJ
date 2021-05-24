@@ -75,6 +75,7 @@ void Application::loadgraph(string city){
     string stredges = "resources/"+city+"/strong_edges.txt";
     readNodes(graph,strnodes,vertexmap);
     readEdges(graph,stredges,vertexmap);
+    viewer.graphtoview(graph);
 }
 
 double Application::getDistance(double x1, double x2, double y1, double y2){
@@ -262,3 +263,12 @@ void Application::saveData(){
     outSales.close();
      */
 }
+
+void Application::viewLocation(int id){
+    viewer.focusLocation(id);
+}
+
+void Application::close(){
+    viewer.close();
+}
+

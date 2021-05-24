@@ -1,16 +1,18 @@
 #include <iostream>
 #include "Application.h"
-#include "Viewer.h"
+#include <unistd.h>
 using namespace std;
 
 int main() {
-    Application app = Application();
-    //app.start();
+    Application app;
     app.loadgraph("Penafiel");
-    Viewer viewer;
-    Graph<Location*> graph= app.getGraph();
+    app.start();
+    /*Viewer viewer;
     viewer.graphtoview(graph);
-    viewer.viewcentered(5142);
+    viewer.focusLocation(5142);
+    usleep(3* 1000000);
+    viewer.focusLocation(5145);
+    viewer.close();*/
 
     app.addBins(400);
     app.addCentrals(1);

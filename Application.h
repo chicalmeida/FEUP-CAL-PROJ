@@ -5,14 +5,14 @@
 #ifndef PROJECT_APPLICATION_H
 #define PROJECT_APPLICATION_H
 #include "Menu.h"
-#include "Location.h"
-#include "Graph.h"
 #include <stack>
 #include <map>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include "Math.h"
+#include "Viewer.h"
+#include "Garbage.h"
 #include "Bin.h"
 #include "Client.h"
 #include "User.h"
@@ -30,10 +30,11 @@ public:
     void addBins(int n);
     void addCentrals(int n);
     void addHouses(int n);
-
+    void viewLocation(int id);
+    void close();
     Graph<Location *> getGraph();
-
 private:
+    Viewer viewer;
     Graph<Location*> graph;
     std::stack<Menu> menuStack;
     Central central;

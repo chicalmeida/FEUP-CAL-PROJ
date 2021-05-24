@@ -74,11 +74,11 @@ bool viewHandler(const string &type, const string &idStr, Application *applicati
     if(type == "bin"){
         //viewBin(type, id);
     } else if (type == "client"){
-        //viewClient(id);
+        //application->viewClient(id);
     } else if (type == "truck"){
-        //viewTruck(id);
+        //application->viewTruck(id);
     } else if (type == "location"){
-        //viewLocation(id);
+        application->viewLocation(id);
     } else if(type == "user"){
 
     } else if(type == "central"){

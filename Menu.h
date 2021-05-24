@@ -20,7 +20,6 @@ private:
     std::string name;
     std::string info;
     std::vector<Menu> availableMenus;
-
 };
 
 
