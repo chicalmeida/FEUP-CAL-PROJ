@@ -57,27 +57,51 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +112,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -96,11 +120,33 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,17 +175,108 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named project
+# Target rules for targets named FEUP_CAL_PROJ
 
 # Build rule for target.
-project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 project
-.PHONY : project
+FEUP_CAL_PROJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FEUP_CAL_PROJ
+.PHONY : FEUP_CAL_PROJ
 
 # fast build rule for target.
-project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
-.PHONY : project/fast
+FEUP_CAL_PROJ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/build
+.PHONY : FEUP_CAL_PROJ/fast
+
+#=============================================================================
+# Target rules for targets named graphviewer
+
+# Build rule for target.
+graphviewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graphviewer
+.PHONY : graphviewer
+
+# fast build rule for target.
+graphviewer/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build
+.PHONY : graphviewer/fast
+
+#=============================================================================
+# Target rules for targets named sfml-system
+
+# Build rule for target.
+sfml-system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-system
+.PHONY : sfml-system
+
+# fast build rule for target.
+sfml-system/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
+.PHONY : sfml-system/fast
+
+#=============================================================================
+# Target rules for targets named sfml-main
+
+# Build rule for target.
+sfml-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-main
+.PHONY : sfml-main
+
+# fast build rule for target.
+sfml-main/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Main\CMakeFiles\sfml-main.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/build
+.PHONY : sfml-main/fast
+
+#=============================================================================
+# Target rules for targets named sfml-window
+
+# Build rule for target.
+sfml-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-window
+.PHONY : sfml-window
+
+# fast build rule for target.
+sfml-window/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+.PHONY : sfml-window/fast
+
+#=============================================================================
+# Target rules for targets named sfml-network
+
+# Build rule for target.
+sfml-network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-network
+.PHONY : sfml-network
+
+# fast build rule for target.
+sfml-network/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Network\CMakeFiles\sfml-network.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+.PHONY : sfml-network/fast
+
+#=============================================================================
+# Target rules for targets named sfml-graphics
+
+# Build rule for target.
+sfml-graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-graphics
+.PHONY : sfml-graphics
+
+# fast build rule for target.
+sfml-graphics/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+.PHONY : sfml-graphics/fast
+
+#=============================================================================
+# Target rules for targets named sfml-audio
+
+# Build rule for target.
+sfml-audio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-audio
+.PHONY : sfml-audio
+
+# fast build rule for target.
+sfml-audio/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+.PHONY : sfml-audio/fast
 
 Address.obj: Address.cpp.obj
 
@@ -147,7 +284,7 @@ Address.obj: Address.cpp.obj
 
 # target to build an object file
 Address.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Address.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Address.cpp.obj
 .PHONY : Address.cpp.obj
 
 Address.i: Address.cpp.i
@@ -156,7 +293,7 @@ Address.i: Address.cpp.i
 
 # target to preprocess a source file
 Address.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Address.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Address.cpp.i
 .PHONY : Address.cpp.i
 
 Address.s: Address.cpp.s
@@ -165,7 +302,7 @@ Address.s: Address.cpp.s
 
 # target to generate assembly for a file
 Address.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Address.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Address.cpp.s
 .PHONY : Address.cpp.s
 
 Application.obj: Application.cpp.obj
@@ -174,7 +311,7 @@ Application.obj: Application.cpp.obj
 
 # target to build an object file
 Application.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Application.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Application.cpp.obj
 .PHONY : Application.cpp.obj
 
 Application.i: Application.cpp.i
@@ -183,7 +320,7 @@ Application.i: Application.cpp.i
 
 # target to preprocess a source file
 Application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Application.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Application.cpp.i
 .PHONY : Application.cpp.i
 
 Application.s: Application.cpp.s
@@ -192,7 +329,7 @@ Application.s: Application.cpp.s
 
 # target to generate assembly for a file
 Application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Application.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
 Bin.obj: Bin.cpp.obj
@@ -201,7 +338,7 @@ Bin.obj: Bin.cpp.obj
 
 # target to build an object file
 Bin.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Bin.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Bin.cpp.obj
 .PHONY : Bin.cpp.obj
 
 Bin.i: Bin.cpp.i
@@ -210,7 +347,7 @@ Bin.i: Bin.cpp.i
 
 # target to preprocess a source file
 Bin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Bin.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Bin.cpp.i
 .PHONY : Bin.cpp.i
 
 Bin.s: Bin.cpp.s
@@ -219,7 +356,7 @@ Bin.s: Bin.cpp.s
 
 # target to generate assembly for a file
 Bin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Bin.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Bin.cpp.s
 .PHONY : Bin.cpp.s
 
 Central.obj: Central.cpp.obj
@@ -228,7 +365,7 @@ Central.obj: Central.cpp.obj
 
 # target to build an object file
 Central.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Central.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Central.cpp.obj
 .PHONY : Central.cpp.obj
 
 Central.i: Central.cpp.i
@@ -237,7 +374,7 @@ Central.i: Central.cpp.i
 
 # target to preprocess a source file
 Central.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Central.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Central.cpp.i
 .PHONY : Central.cpp.i
 
 Central.s: Central.cpp.s
@@ -246,7 +383,7 @@ Central.s: Central.cpp.s
 
 # target to generate assembly for a file
 Central.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Central.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Central.cpp.s
 .PHONY : Central.cpp.s
 
 Client.obj: Client.cpp.obj
@@ -255,7 +392,7 @@ Client.obj: Client.cpp.obj
 
 # target to build an object file
 Client.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Client.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Client.cpp.obj
 .PHONY : Client.cpp.obj
 
 Client.i: Client.cpp.i
@@ -264,7 +401,7 @@ Client.i: Client.cpp.i
 
 # target to preprocess a source file
 Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Client.cpp.i
 .PHONY : Client.cpp.i
 
 Client.s: Client.cpp.s
@@ -273,7 +410,7 @@ Client.s: Client.cpp.s
 
 # target to generate assembly for a file
 Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
 Garbage.obj: Garbage.cpp.obj
@@ -282,7 +419,7 @@ Garbage.obj: Garbage.cpp.obj
 
 # target to build an object file
 Garbage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garbage.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Garbage.cpp.obj
 .PHONY : Garbage.cpp.obj
 
 Garbage.i: Garbage.cpp.i
@@ -291,7 +428,7 @@ Garbage.i: Garbage.cpp.i
 
 # target to preprocess a source file
 Garbage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garbage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Garbage.cpp.i
 .PHONY : Garbage.cpp.i
 
 Garbage.s: Garbage.cpp.s
@@ -300,7 +437,7 @@ Garbage.s: Garbage.cpp.s
 
 # target to generate assembly for a file
 Garbage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garbage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Garbage.cpp.s
 .PHONY : Garbage.cpp.s
 
 House.obj: House.cpp.obj
@@ -309,7 +446,7 @@ House.obj: House.cpp.obj
 
 # target to build an object file
 House.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/House.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/House.cpp.obj
 .PHONY : House.cpp.obj
 
 House.i: House.cpp.i
@@ -318,7 +455,7 @@ House.i: House.cpp.i
 
 # target to preprocess a source file
 House.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/House.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/House.cpp.i
 .PHONY : House.cpp.i
 
 House.s: House.cpp.s
@@ -327,7 +464,7 @@ House.s: House.cpp.s
 
 # target to generate assembly for a file
 House.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/House.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/House.cpp.s
 .PHONY : House.cpp.s
 
 Location.obj: Location.cpp.obj
@@ -336,7 +473,7 @@ Location.obj: Location.cpp.obj
 
 # target to build an object file
 Location.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Location.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Location.cpp.obj
 .PHONY : Location.cpp.obj
 
 Location.i: Location.cpp.i
@@ -345,7 +482,7 @@ Location.i: Location.cpp.i
 
 # target to preprocess a source file
 Location.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Location.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Location.cpp.i
 .PHONY : Location.cpp.i
 
 Location.s: Location.cpp.s
@@ -354,7 +491,7 @@ Location.s: Location.cpp.s
 
 # target to generate assembly for a file
 Location.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Location.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Location.cpp.s
 .PHONY : Location.cpp.s
 
 Menu.obj: Menu.cpp.obj
@@ -363,7 +500,7 @@ Menu.obj: Menu.cpp.obj
 
 # target to build an object file
 Menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Menu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Menu.cpp.obj
 .PHONY : Menu.cpp.obj
 
 Menu.i: Menu.cpp.i
@@ -372,7 +509,7 @@ Menu.i: Menu.cpp.i
 
 # target to preprocess a source file
 Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Menu.cpp.i
 .PHONY : Menu.cpp.i
 
 Menu.s: Menu.cpp.s
@@ -381,7 +518,7 @@ Menu.s: Menu.cpp.s
 
 # target to generate assembly for a file
 Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
 Path.obj: Path.cpp.obj
@@ -390,7 +527,7 @@ Path.obj: Path.cpp.obj
 
 # target to build an object file
 Path.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Path.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Path.cpp.obj
 .PHONY : Path.cpp.obj
 
 Path.i: Path.cpp.i
@@ -399,7 +536,7 @@ Path.i: Path.cpp.i
 
 # target to preprocess a source file
 Path.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Path.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Path.cpp.i
 .PHONY : Path.cpp.i
 
 Path.s: Path.cpp.s
@@ -408,7 +545,7 @@ Path.s: Path.cpp.s
 
 # target to generate assembly for a file
 Path.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Path.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Path.cpp.s
 .PHONY : Path.cpp.s
 
 Truck.obj: Truck.cpp.obj
@@ -417,7 +554,7 @@ Truck.obj: Truck.cpp.obj
 
 # target to build an object file
 Truck.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Truck.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Truck.cpp.obj
 .PHONY : Truck.cpp.obj
 
 Truck.i: Truck.cpp.i
@@ -426,7 +563,7 @@ Truck.i: Truck.cpp.i
 
 # target to preprocess a source file
 Truck.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Truck.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Truck.cpp.i
 .PHONY : Truck.cpp.i
 
 Truck.s: Truck.cpp.s
@@ -435,7 +572,7 @@ Truck.s: Truck.cpp.s
 
 # target to generate assembly for a file
 Truck.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Truck.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/Truck.cpp.s
 .PHONY : Truck.cpp.s
 
 User.obj: User.cpp.obj
@@ -444,7 +581,7 @@ User.obj: User.cpp.obj
 
 # target to build an object file
 User.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/User.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/User.cpp.obj
 .PHONY : User.cpp.obj
 
 User.i: User.cpp.i
@@ -453,7 +590,7 @@ User.i: User.cpp.i
 
 # target to preprocess a source file
 User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/User.cpp.i
 .PHONY : User.cpp.i
 
 User.s: User.cpp.s
@@ -462,7 +599,7 @@ User.s: User.cpp.s
 
 # target to generate assembly for a file
 User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/User.cpp.s
 .PHONY : User.cpp.s
 
 interface.obj: interface.cpp.obj
@@ -471,7 +608,7 @@ interface.obj: interface.cpp.obj
 
 # target to build an object file
 interface.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/interface.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/interface.cpp.obj
 .PHONY : interface.cpp.obj
 
 interface.i: interface.cpp.i
@@ -480,7 +617,7 @@ interface.i: interface.cpp.i
 
 # target to preprocess a source file
 interface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/interface.cpp.i
 .PHONY : interface.cpp.i
 
 interface.s: interface.cpp.s
@@ -489,7 +626,7 @@ interface.s: interface.cpp.s
 
 # target to generate assembly for a file
 interface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/interface.cpp.s
 .PHONY : interface.cpp.s
 
 main.obj: main.cpp.obj
@@ -498,7 +635,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -507,7 +644,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -516,7 +653,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FEUP_CAL_PROJ.dir\build.make CMakeFiles/FEUP_CAL_PROJ.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -526,8 +663,19 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... project
+	@echo ... FEUP_CAL_PROJ
+	@echo ... graphviewer
+	@echo ... sfml-audio
+	@echo ... sfml-graphics
+	@echo ... sfml-main
+	@echo ... sfml-network
+	@echo ... sfml-system
+	@echo ... sfml-window
 	@echo ... Address.obj
 	@echo ... Address.i
 	@echo ... Address.s

@@ -4,6 +4,7 @@
 #include <iostream>
 #include<string>
 #include<sstream>
+#include <algorithm>
 #include "interface.h"
 #include "utils.h"
 #include "Application.h"
@@ -164,7 +165,8 @@ bool loginHandler(const string &type, const string &idStr, Application *applicat
         return false;
     }
     return true;
-    return true;
 }
+
+bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.end(), ::isdigit);}
 
 

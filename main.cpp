@@ -1,15 +1,14 @@
 #include <iostream>
-#include "graphviewer.h"
 #include "Application.h"
-#include "lib/GraphViewerCpp/SFML/include/SFML/System/Vector2.hpp"
+#include "Viewer.h"
+using namespace std;
 
 int main() {
     Application app = Application();
-    app.start();
-    //GraphViewer gv;
-    //gv.setCenter(sf::Vector2f(300, 300));
-    //gv.createWindow(600, 600);
-    //gv.join();
-
+    //app.start();
+    app.loadgraph("Porto");
+    Viewer viewer;
+    Graph<Location> graph= app.getGraph();
+    viewer.graphtoview(graph,"Porto");
     return 0;
 }

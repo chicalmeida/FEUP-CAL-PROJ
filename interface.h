@@ -9,6 +9,7 @@
 #include "Application.h"
 Menu buildMenu();
 std::string readInput();
+bool isNumber(const std::string &idstr);
 bool menuHandler(const std::string &input, Application *application);
 bool viewHandler(const std::string &type,const  std::string &id, Application *application);
 bool addHandler(const std::string &type, const std::string &id, Application *application);

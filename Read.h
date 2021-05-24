@@ -14,8 +14,12 @@
 
 using namespace std;
 
-void readEdges(string path){
-    Graph<Location> graph;
+double getDistance(double x1, double x2, double y1, double y2){
+    return sqrt(pow(x1-x2,2)+pow(y1-y2,2));
+}
+
+void readEdges(string path, Graph<Location> &graph){
+    string line, str;
     ifstream file(path);
     int size,id1,id2;
     int count =0;
@@ -42,12 +46,8 @@ void readEdges(string path){
     file.close();
 }
 
-double getDistance(double x1, double x2, double y1, double y2){
-    return sqrt(pow(x1-x2,2)+pow(y1-y2,2));
-}
 
-void readNodes(string path){
-    Graph<Location> graph;
+void readNodes(string path, Graph<Location> graph){
     ifstream file(path);
     int size,id;
     int count =0;

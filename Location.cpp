@@ -12,11 +12,19 @@ Location::Location(){
     addresses.clear();
 }
 
+Location::Location(int id){
+    bin = Bin();
+    this->id = id;
+    x=0;
+    y=0;
+    addresses.clear();
+}
+
 Location::Location(int id, double x, double y){
     this->bin = Bin();
     this->id = id;
     this->x=x;
-    this->x=y;
+    this->y=y;
     addresses.clear();
 }
 
@@ -24,7 +32,7 @@ Location::Location(int id, double x, double y, Bin bin){
     this->bin = bin;
     this->id = id;
     this->x=x;
-    this->x=y;
+    this->y=y;
     addresses.clear();
 }
 
@@ -69,6 +77,6 @@ double Location::getY(){
     return y;
 }
 
-bool Location::operator==(Location l){
-    return (id==l.getId());
+bool Location::operator==(Location l) const{
+    return (this->id==l.getId());
 }
