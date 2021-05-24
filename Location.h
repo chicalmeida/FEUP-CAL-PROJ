@@ -21,6 +21,7 @@ private:
     double x,y;
 public:
     Location();
+    Location(int id);
     Location(int id, double x, double y);
     Location(int id,double x, double y, Bin bin);
     void addAddress(Address address);
@@ -32,7 +33,7 @@ public:
     bool removeAddress(Address address);
     double getX();
     double getY();
-    bool operator==(Location l);
+    bool operator==(const Location l) const;
 };
 
 

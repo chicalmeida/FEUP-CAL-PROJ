@@ -13,7 +13,7 @@
 #include <list>
 #include <limits>
 #include <cmath>
-#include "MutablePriorityQueue.h"
+// "MutablePriorityQueue.h"
 #include "Path.h"
 
 
@@ -37,17 +37,16 @@ class Vertex {
     bool visited = false;		// auxiliary field
     bool processing = false;	// auxiliary field
 
-    void addEdge(Vertex<T> *dest, double w);
-
 public:
     Vertex(T in);
     T getInfo() const;
     double getDist() const;
     Vertex *getPath() const;
-
+    std::vector<Edge<T> > getAdj() const;
+    void addEdge(Vertex<T> *dest, double w);
     bool operator<(Vertex<T> & vertex) const; // // required by MutablePriorityQueue
     friend class Graph<T>;
-    friend class MutablePriorityQueue<Vertex<T>>;
+    //friend class MutablePriorityQueue<Vertex<T>>;
 };
 
 
@@ -83,6 +82,12 @@ Vertex<T> *Vertex<T>::getPath() const {
     return this->path;
 }
 
+template <class T>
+std::vector<Edge<T> > Vertex<T>::getAdj() const {
+    return adj;
+}
+
+
 /********************** Edge  ****************************/
 
 template <class T>
@@ -91,6 +96,7 @@ class Edge {
     double weight;         // edge weight
 public:
     Edge(Vertex<T> *d, double w);
+    Vertex<T> * getDest() const;
     friend class Graph<T>;
     friend class Vertex<T>;
 };
@@ -98,6 +104,10 @@ public:
 template <class T>
 Edge<T>::Edge(Vertex<T> *d, double w): dest(d), weight(w) {}
 
+template <class T>
+Vertex<T> * Edge<T>::getDest() const {
+    return dest;
+}
 
 /*************************** Graph  **************************/
 
@@ -107,6 +117,7 @@ class Graph {
 
 public:
     Vertex<T> *findVertex(const T &in) const;
+    void addVertex(Vertex<T> * in);
     bool addVertex(const T &in);
     bool addEdge(const T &sourc, const T &dest, double w);
     int getNumVertex() const;
@@ -119,7 +130,7 @@ public:
     std::vector<T> getPath(const T &origin, const T &dest) const;
     std::vector<T> dfs() const;
     void dfsVisit(Vertex<T> *v, std::vector<T> & res) const;
-    Path aStarShortestPath(const int id_src, const int id_dest, function<double (pair<double, double>, pair<double, double>)> h);
+    //Path aStarShortestPath(const int id_src, const int id_dest, function<double (pair<double, double>, pair<double, double>)> h);
 
 
 };
@@ -155,6 +166,11 @@ bool Graph<T>::addVertex(const T &in) {
         return false;
     vertexSet.push_back(new Vertex<T>(in));
     return true;
+}
+
+template <class T>
+void Graph<T>::addVertex(Vertex<T> * in) {
+    vertexSet.push_back(in);
 }
 
 /*
@@ -211,7 +227,7 @@ void Graph<T>::unweightedShortestPath(const T &orig) {
 }
 
 
-template<class T>
+/*template<class T>
 void Graph<T>::dijkstraShortestPath(const T &origin) {
     auto s = initSingleSource(origin);
     MutablePriorityQueue<Vertex<T>> q;
@@ -228,7 +244,7 @@ void Graph<T>::dijkstraShortestPath(const T &origin) {
             }
         }
     }
-}
+}*/
 
 
 template<class T>
@@ -265,7 +281,7 @@ void Graph<T>::dfsVisit(Vertex<T> *v, std::vector<T> & res) const {
     }
 }
 
-template<class T>
+/*template<class T>
 Path Graph<T>::aStarShortestPath(const int id_src, const int id_dest, function<double (pair<double, double>, pair<double, double>)> h) {
     for (Vertex<T> *vert: vertexSet) {
         vert->dist = INT_MAX;
@@ -319,7 +335,7 @@ Path Graph<T>::aStarShortestPath(const int id_src, const int id_dest, function<d
     }
 
     return Path(length,path);
-}
+}*/
 
 #endif /* GRAPH_H_ */
 
