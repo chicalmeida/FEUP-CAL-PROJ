@@ -4,9 +4,11 @@
 
 #ifndef PROJ_BIN_H
 #define PROJ_BIN_H
+class Location;
 #include <vector>
 #include <string>
 #include "Garbage.h"
+#include "Location.h"
 #include <iostream>
 #include "SingleBin.h"
 using namespace std;
@@ -17,9 +19,11 @@ private:
     vector<SingleBin> bins;
     //vector<Garbage> content;
     double capacity;
+    Location *location;
 public:
-    Bin();
-    Bin(double capacity);
+    Location * getLocation();
+    Bin(Location *location);
+    Bin(double capacity, Location *location);
     double getCurrCapacity();
     void addBin(GarbageType type, int capacity);
     void addGarbage(Garbage elem);

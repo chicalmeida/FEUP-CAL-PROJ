@@ -151,7 +151,7 @@ void Application::addBins(int n){
         Location *location = locationMap.find(id)->second;
         if(locationMap.find(id) == locationMap.end()) continue;
         if(location->getBin() != nullptr){
-            Bin *newBin = new Bin();
+            Bin *newBin = new Bin(vertex->getInfo());
             GarbageType types[] = {paper, plastic, glass, organic, other };
             for(const GarbageType &type : types){
                 newBin->addBin(type, 100);
@@ -286,7 +286,20 @@ void Application::viewLocation(int id){
     viewer.focusLocation(id);
 }
 
+void Application::viewBin(int id){
+    Bin* bin = bins.at(id);
+    viewer.focusLocation(bin->getLocation()->getId());
+}
+
 void Application::close(){
     viewer.close();
+}
+
+Client* Application::getClient(int id){
+    return clients.at(id);
+}
+
+Truck* Application::getTruck(int id){
+    return trucks.at(id);
 }
 

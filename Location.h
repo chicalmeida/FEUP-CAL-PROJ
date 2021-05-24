@@ -4,6 +4,7 @@
 
 #ifndef PROJ_LOCATION_H
 #define PROJ_LOCATION_H
+class Bin;
 class Address;
 
 

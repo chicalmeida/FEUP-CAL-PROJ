@@ -32,7 +32,10 @@ public:
     void addHouses(int n);
     void addTrucks(int n);
     void viewLocation(int id);
+    void viewBin(int id);
     void close();
+    Client* getClient(int id);
+    Truck* getTruck(int id);
     Graph<Location *> getGraph();
 private:
     Viewer viewer;
@@ -42,7 +45,6 @@ private:
     std::map<int, Client*> clients;
     std::map<int, Truck*> trucks;
     std::map<int, Bin*> bins;
-    std::map<int, User*> users;
     std::map<int, House*> houses;
     std::map<int, Location*> locationMap;
     Menu currentMenu;

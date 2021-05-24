@@ -72,7 +72,7 @@ bool viewHandler(const string &type, const string &idStr, Application *applicati
         id = -1;
     }
     if(type == "bin"){
-        //viewBin(type, id);
+        application->viewBin(id);
     } else if (type == "client"){
         //application->viewClient(id);
     } else if (type == "truck"){
@@ -107,8 +107,6 @@ bool addHandler(const string &type, const string &idStr, Application *applicatio
         //viewTruck(id);
     } else if (type == "location"){
         //viewLocation(id);
-    } else if(type == "user"){
-
     } else if(type == "central"){
 
     } else {
@@ -157,9 +155,9 @@ bool loginHandler(const string &type, const string &idStr, Application *applicat
         id = -1;
     }
     if(type == "client"){
-        //viewBin(type, id);
-    } else if (type == "user"){
-        //viewClient(id);
+        //loginclient(id, application);
+    } else if (type == "truck"){
+        //logintruck(id, application);
     } else {
         return false;
     }
@@ -178,4 +176,27 @@ void addBin(Application *application){
 
 bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.end(), ::isdigit);}
 
+/*bool loginclient(int id, Application *application){
+    Client* client = application->getClient(id);
+    string str,str1,str2;
+    if(client==NULL){return false;}
+    cout << "Welcome "<<client->getName()<<" !"<<endl;
+    cout<<"find - find closest bin"<<endl;
+    cout<<"set - set garbage"<<endl;
+    cin>>str;
+    if(str=="find"){
+        return false;
+    }
+    else if(str == "set"){
+        cout<<"add (string type) (int weight)- add garbage"<<endl;
+        cin>>str>>str1>>str2;
+        if(str == "add"){
+
+        }
+    }
+    else {
+        return false;
+    }
+    return true;
+}*/
 
