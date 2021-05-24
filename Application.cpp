@@ -221,7 +221,9 @@ void Application::addClient(int id, string name){
 }
 
 void Application::getNearestBin(GarbageType type, Client *client){
+    cout << "AQUII 1 \n";
     viewer.resetappearance();
+    cout << "AQUI 2 \n";
     Location * location = client->getAddress().getLocation();
     Vertex<Location *> *firstNode = graph.getVertex(location->getId());
     stack<Vertex<Location *> *> nodeStack;
@@ -274,7 +276,9 @@ void Application::getNearestBin(GarbageType type, Client *client){
     }
     cout << "Found nearest bin with distance " << minDistance << "\n";
     viewLocation(chosenBin->getId(),"Bin");
-    viewLocation(client->getLocation()->getId(),"YOU");
+    viewLocation(client->getAddress().getLocation()->getId(),"YOU");
+    focusLocation(chosenBin->getId());
+    cout << "OK???\n";
 }
 
 void Application::calculateRoute(Truck *truck, bool singleHouse){

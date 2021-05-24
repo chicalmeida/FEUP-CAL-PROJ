@@ -48,7 +48,7 @@ void Viewer::focusLocation(int idlocation){
     gv.setScale(0.5);
     gv.getNode(idlocation).setColor(GraphViewer::YELLOW);
     gv.getNode(idlocation).setSize(100);
-    gv.getNode(idlocation).setLabel("HERE");
+    //gv.getNode(idlocation).setLabel("HERE");
     lastfocusid = idlocation;
 }
 
