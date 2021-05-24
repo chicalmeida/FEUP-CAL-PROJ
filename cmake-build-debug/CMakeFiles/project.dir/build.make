@@ -229,10 +229,24 @@ CMakeFiles/project.dir/Path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Path.cpp.s"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\Path.cpp -o CMakeFiles\project.dir\Path.cpp.s
 
+CMakeFiles/project.dir/SingleBin.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/SingleBin.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
+CMakeFiles/project.dir/SingleBin.cpp.obj: ../SingleBin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project.dir/SingleBin.cpp.obj"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\SingleBin.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\SingleBin.cpp
+
+CMakeFiles/project.dir/SingleBin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/SingleBin.cpp.i"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\SingleBin.cpp > CMakeFiles\project.dir\SingleBin.cpp.i
+
+CMakeFiles/project.dir/SingleBin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/SingleBin.cpp.s"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\SingleBin.cpp -o CMakeFiles\project.dir\SingleBin.cpp.s
+
 CMakeFiles/project.dir/Truck.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/Truck.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/Truck.cpp.obj: ../Truck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project.dir/Truck.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project.dir/Truck.cpp.obj"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\Truck.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\Truck.cpp
 
 CMakeFiles/project.dir/Truck.cpp.i: cmake_force
@@ -246,7 +260,7 @@ CMakeFiles/project.dir/Truck.cpp.s: cmake_force
 CMakeFiles/project.dir/User.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/User.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/User.cpp.obj: ../User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project.dir/User.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/User.cpp.obj"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\User.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\User.cpp
 
 CMakeFiles/project.dir/User.cpp.i: cmake_force
@@ -257,10 +271,24 @@ CMakeFiles/project.dir/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/User.cpp.s"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\User.cpp -o CMakeFiles\project.dir\User.cpp.s
 
+CMakeFiles/project.dir/Viewer.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Viewer.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
+CMakeFiles/project.dir/Viewer.cpp.obj: ../Viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/Viewer.cpp.obj"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\Viewer.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\Viewer.cpp
+
+CMakeFiles/project.dir/Viewer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Viewer.cpp.i"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\Viewer.cpp > CMakeFiles\project.dir\Viewer.cpp.i
+
+CMakeFiles/project.dir/Viewer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Viewer.cpp.s"
+	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\Viewer.cpp -o CMakeFiles\project.dir\Viewer.cpp.s
+
 CMakeFiles/project.dir/files.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/files.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/files.cpp.obj: ../files.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/files.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/files.cpp.obj"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\files.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\files.cpp
 
 CMakeFiles/project.dir/files.cpp.i: cmake_force
@@ -274,7 +302,7 @@ CMakeFiles/project.dir/files.cpp.s: cmake_force
 CMakeFiles/project.dir/interface.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/interface.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/interface.cpp.obj: ../interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/interface.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project.dir/interface.cpp.obj"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\interface.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\interface.cpp
 
 CMakeFiles/project.dir/interface.cpp.i: cmake_force
@@ -288,7 +316,7 @@ CMakeFiles/project.dir/interface.cpp.s: cmake_force
 CMakeFiles/project.dir/utils.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/utils.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/utils.cpp.obj: ../utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/utils.cpp.obj"
 	C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\utils.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\utils.cpp
 
 CMakeFiles/project.dir/utils.cpp.i: cmake_force
@@ -312,8 +340,10 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/Location.cpp.obj" \
 "CMakeFiles/project.dir/Menu.cpp.obj" \
 "CMakeFiles/project.dir/Path.cpp.obj" \
+"CMakeFiles/project.dir/SingleBin.cpp.obj" \
 "CMakeFiles/project.dir/Truck.cpp.obj" \
 "CMakeFiles/project.dir/User.cpp.obj" \
+"CMakeFiles/project.dir/Viewer.cpp.obj" \
 "CMakeFiles/project.dir/files.cpp.obj" \
 "CMakeFiles/project.dir/interface.cpp.obj" \
 "CMakeFiles/project.dir/utils.cpp.obj"
@@ -332,8 +362,10 @@ project.exe: CMakeFiles/project.dir/House.cpp.obj
 project.exe: CMakeFiles/project.dir/Location.cpp.obj
 project.exe: CMakeFiles/project.dir/Menu.cpp.obj
 project.exe: CMakeFiles/project.dir/Path.cpp.obj
+project.exe: CMakeFiles/project.dir/SingleBin.cpp.obj
 project.exe: CMakeFiles/project.dir/Truck.cpp.obj
 project.exe: CMakeFiles/project.dir/User.cpp.obj
+project.exe: CMakeFiles/project.dir/Viewer.cpp.obj
 project.exe: CMakeFiles/project.dir/files.cpp.obj
 project.exe: CMakeFiles/project.dir/interface.cpp.obj
 project.exe: CMakeFiles/project.dir/utils.cpp.obj
@@ -345,7 +377,7 @@ project.exe: lib/GraphViewerCpp/SFML/lib/libsfml-system-d.a
 project.exe: CMakeFiles/project.dir/linklibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
 project.exe: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

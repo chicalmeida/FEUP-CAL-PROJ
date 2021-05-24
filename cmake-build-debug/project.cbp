@@ -530,7 +530,10 @@
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Path.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Read.h">
+		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.cpp">
@@ -543,6 +546,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.cpp">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.h">

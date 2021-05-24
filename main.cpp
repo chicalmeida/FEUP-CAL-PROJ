@@ -6,6 +6,10 @@ using namespace std;
 int main() {
     Application app;
     app.loadgraph("Penafiel");
+    app.addBins(400);
+    app.addCentrals(1);
+    app.addHouses(800);
+    
     app.start();
     /*Viewer viewer;
     viewer.graphtoview(graph);
@@ -14,7 +18,6 @@ int main() {
     viewer.focusLocation(5145);
     viewer.close();*/
 
-    app.addBins(400);
-    app.addCentrals(1);
+
     return 0;
 }

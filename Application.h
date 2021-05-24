@@ -30,6 +30,7 @@ public:
     void addBins(int n);
     void addCentrals(int n);
     void addHouses(int n);
+    void addTrucks(int n);
     void viewLocation(int id);
     void viewBin(int id);
     void close();
@@ -45,6 +46,7 @@ private:
     std::map<int, Truck*> trucks;
     std::map<int, Bin*> bins;
     std::map<int, House*> houses;
+    std::map<int, Location*> locationMap;
     Menu currentMenu;
     double getDistance(double x1, double x2, double y1, double y2);
     void readNodes(Graph<Location*> &graph, string path, map<int,Vertex<Location*>*> &vertexmap);

@@ -16,6 +16,7 @@ protected:
     int NIF;
     string name;
     Address address;
+    Location *location;
 public:
     User();
     User(int nif, string name);
