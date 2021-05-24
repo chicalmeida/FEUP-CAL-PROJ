@@ -14,5 +14,6 @@ int main() {
 
     app.addBins(400);
     app.addCentrals(1);
+    app.addHouses(800);
     return 0;
 }

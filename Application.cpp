@@ -181,10 +181,23 @@ void Application::addHouses(int n){
             i++;
             location->addAddress((Address *) newHouse);
         }
-        //TODO
     }
 }
 
+void Application::addTrucks(int n){
+    /*int i=0;
+    while(i < n){
+        int id = rand() % graph.getNumVertex();
+        Vertex<Location*> *vertex = graph.getVertex(id);
+        Location *location = vertex->getInfo();
+        if(true){
+            Truck *newTruck = new Truck(id, 100, location);
+            trucks.insert(std::pair<int, Truck*>(i+1, newHouse));
+            i++;
+            location->addAddress((Address *) newHouse);
+        }
+    }*/
+}
 void Application::loadData() {
     string line;
     string path = "resources/data/";
