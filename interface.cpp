@@ -15,7 +15,7 @@ Menu buildMenu(){
     Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central, house]");
     Menu removeMenu = Menu("remove", "remove <type> <id> -> remove something [bin, client, truck, location, user, central]");
     Menu clientMenu = Menu("login", "login client <id> -> Login as a client");
-    Menu userMenu = Menu("login", "login user <id> -> Login as an user");
+    Menu userMenu = Menu("login", "login truck <id> -> Login as a truck user");
 
     mainMenu.addMenu(viewMenu);
     mainMenu.addMenu(addMenu);
@@ -143,9 +143,75 @@ bool removeHandler(const string &type, const string &idStr, Application *applica
     }
     return true;
 }
-bool loginHandler(const string &type, const string &idStr, Application *application){
 
-    if(idStr == "" || !isNumber(idStr)){
+GarbageType getGbType(string str){
+    if(str == "paper"){
+        return paper;
+    }
+    else if(str == "plastic"){
+        return plastic;
+    }
+    else if(str == "glass"){
+        return glass;
+    }
+    else if(str == "organic"){
+        return organic;
+    }
+    else {
+        return other;
+    }
+}
+
+bool loginclient(int id, Application *application){
+    Client* client = application->getClient(id);
+    string str,str1,str2;
+    if(client==NULL){return false;}
+    cout << "Welcome "<<client->getName()<<" !"<<endl;
+    cout<<"find - find closest bin"<<endl;
+    cout<<"set - set garbage"<<endl;
+    cin>>str;
+    if(str=="find"){
+        //application->getNearestBin(paper, client);
+    }
+    else if(str == "set"){
+        cout<<"add (string type) (int weight) - add garbage of type(paper,plastic,glass,organic, other)"<<endl;
+        cin>>str>>str1>>str2;
+        if(str == "add" ){
+            client->addGarbage(Garbage(getGbType(str1),stoi(str2)));
+        }
+        else{
+            return false;
+        }
+    }
+    else {
+        return false;
+    }
+    return true;
+}
+
+bool logintruck(int id, Application *application){
+    Truck* client = application->getTruck(id);
+    string str,str1,str2;
+    if(client==NULL){return false;}
+    cout << "Welcome "<<client->getName()<<" !"<<endl;
+    cout<<"find - find course ro collect garbage"<<endl;
+    cout<<"set (int)- set capacity"<<endl;
+    cin>>str;
+    if(str=="find"){
+        return false;
+    }
+    else if(str == "set"){
+        cin>>str1;
+        client->setCapacity(stod(str1));
+    }
+    else {
+        return false;
+    }
+    return true;
+}
+
+bool loginHandler(const string &type, const string &idStr, Application *application){
+    if(idStr != "" && !isNumber(idStr)){
         return false;
     }
     int id;
@@ -158,7 +224,7 @@ bool loginHandler(const string &type, const string &idStr, Application *applicat
     if(type == "client"){
         loginclient(id, application);
     } else if (type == "truck"){
-        //logintruck(id, application);
+        logintruck(id, application);
     } else {
         return false;
     }
@@ -177,28 +243,5 @@ void addBin(Application *application){
 
 bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.end(), ::isdigit);}
 
-bool loginclient(int id, Application *application){
-    Client* client = application->getClient(id);
-    string str,str1,str2;
-    if(client==NULL){return false;}
-    cout << "Welcome "<<client->getName()<<" !"<<endl;
-    cout<<"find - find closest bin"<<endl;
-    cout<<"set - set garbage"<<endl;
-    cin>>str;
-    if(str=="find"){
-        cout << "Got here\n";
-        application->getNearestBin(paper, client);
-    }
-    else if(str == "set"){
-        cout<<"add (string type) (int weight)- add garbage"<<endl;
-        cin>>str>>str1>>str2;
-        if(str == "add"){
 
-        }
-    }
-    else {
-        return false;
-    }
-    return true;
-}
 
