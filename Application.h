@@ -36,6 +36,9 @@ public:
     Address* getRandomAddress();
     void viewLocation(int id);
     void viewBin(int id);
+    //void viewClient(int id);
+    //void viewTruck(int id);
+    //void viewCentral(int id);
     void close();
     Client* getClient(int id);
     Truck* getTruck(int id);

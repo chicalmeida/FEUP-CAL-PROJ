@@ -61,30 +61,45 @@ bool menuHandler(const std::string &input, Application *application){
 }
 
 bool viewHandler(const string &type, const string &idStr, Application *application){
-    if(idStr != "" && !isNumber(idStr)){
+    if(!isNumber(idStr)){
         return false;
     }
-    int id;
-    if(isNumber(idStr)){
-        stringstream ss(idStr);
-        ss >> id;
-    } else {
-        id = -1;
+    if(idStr!="") {
+        int id;
+        if (isNumber(idStr)) {
+            stringstream ss(idStr);
+            ss >> id;
+        } else {
+            id = -1;
+        }
+        if (type == "bin") {
+            application->viewBin(id);
+        } else if (type == "client") {
+            //application->viewClient(id);
+        } else if (type == "truck") {
+            //application->viewTruck(id);
+        } else if (type == "location") {
+            application->viewLocation(id);
+        } else if (type == "central") {
+            //application->viewCentral(id);
+        } else {
+            return false;
+        }
     }
-    if(type == "bin"){
-        application->viewBin(id);
-    } else if (type == "client"){
-        //application->viewClient(id);
-    } else if (type == "truck"){
-        //application->viewTruck(id);
-    } else if (type == "location"){
-        application->viewLocation(id);
-    } else if(type == "user"){
-
-    } else if(type == "central"){
-
-    } else {
-        return false;
+    else{
+        if (type == "bin") {
+            //application->viewBins();
+        } else if (type == "client") {
+            //application->viewClients();
+        } else if (type == "truck") {
+            //application->viewTrucks();
+        } else if (type == "location") {
+            //application->viewLocations();
+        } else if (type == "central") {
+            //application->viewCentral();
+        } else {
+            return false;
+        }
     }
     return true;
 }

@@ -14,6 +14,8 @@ public:
     void graphtoview(Graph<Location *> &graph);
     void printpath(vector<int> &path);
     void focusLocation(int idlocation);
+    void viewLocation(int idlocation, string label);
+    void resetappearance();
     void close();
 private:
     bool focused;

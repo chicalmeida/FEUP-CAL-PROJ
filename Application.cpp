@@ -391,3 +391,18 @@ Truck* Application::getTruck(int id){
     return trucks.at(id);
 }
 
+/*void Application::viewClient(int id){
+    Client *client = clients.at(id);
+    if(id==NULL){
+        return;
+    }
+    viewer.focusLocation()
+}
+
+void Application::viewTruck(int id){
+
+}
+
+void Application::viewCentral(int id){
+
+}*/
