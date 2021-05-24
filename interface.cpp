@@ -75,28 +75,28 @@ bool viewHandler(const string &type, const string &idStr, Application *applicati
         if (type == "bin") {
             application->viewBin(id);
         } else if (type == "client") {
-            //application->viewClient(id);
+            application->viewClient(id);
         } else if (type == "truck") {
-            //application->viewTruck(id);
+            application->viewTruck(id);
         } else if (type == "location") {
             application->viewLocation(id);
         } else if (type == "central") {
-            //application->viewCentral(id);
+            application->viewCentral();
         } else {
             return false;
         }
     }
     else{
         if (type == "bin") {
-            //application->viewBins();
+            application->viewBins();
         } else if (type == "client") {
-            //application->viewClients();
+            application->viewClients();
         } else if (type == "truck") {
-            //application->viewTrucks();
+            application->viewTrucks();
         } else if (type == "location") {
-            //application->viewLocations();
+            application->viewLocations();
         } else if (type == "central") {
-            //application->viewCentral();
+            application->viewCentral();
         } else {
             return false;
         }
@@ -193,6 +193,7 @@ bool loginclient(int id, Application *application){
         cin>>str>>str1>>str2;
         if(str == "add" ){
             client->addGarbage(Garbage(getGbType(str1),stoi(str2)));
+            cout<<"Success!"<<endl;
         }
         else{
             return false;
