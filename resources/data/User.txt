@@ -1,0 +1,6 @@
+nif=" 468083687 " name=" Andre " address=" 110 "
+nif=" 386407289 " name=" Joaquina " address=" 345 "
+nif=" 486926587 " name=" Rodrigo " address=" 467 "
+nif=" 983646298 " name=" Joao " address=" 123 "
+nif=" 137603656 " name=" Filipa " address=" 250 "
+nif=" 572946493 " name=" Ana " address=" 437 "
