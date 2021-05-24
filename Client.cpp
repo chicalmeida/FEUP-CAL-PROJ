@@ -3,7 +3,7 @@
 //
 
 #include "Client.h"
-
+#include "files.h"
 using namespace std;
 
 Client::Client() : User(){
@@ -53,6 +53,11 @@ void Client::deposit(Bin bin){
     }
 }
 
+ostream& operator<< (ostream &os, const Client &client){
+    files::writeVariable(os, "name", client.name);
+    os << "\n";
+    return os;
+}
 
 
 

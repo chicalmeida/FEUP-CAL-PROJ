@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -88,31 +88,31 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -133,25 +133,25 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\\CMakeFiles\progress.marks
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\\CMakeFiles\progress.marks
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/clean
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -161,22 +161,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/preinstall
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/preinstall
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule
 .PHONY : lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ graphviewer: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule
 
 # fast build rule for target.
 graphviewer/fast:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build
 .PHONY : graphviewer/fast
 
 src/edge.obj: src/edge.cpp.obj
@@ -195,7 +195,7 @@ src/edge.obj: src/edge.cpp.obj
 
 # target to build an object file
 src/edge.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj
 .PHONY : src/edge.cpp.obj
 
 src/edge.i: src/edge.cpp.i
@@ -204,7 +204,7 @@ src/edge.i: src/edge.cpp.i
 
 # target to preprocess a source file
 src/edge.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.i
 .PHONY : src/edge.cpp.i
 
 src/edge.s: src/edge.cpp.s
@@ -213,7 +213,7 @@ src/edge.s: src/edge.cpp.s
 
 # target to generate assembly for a file
 src/edge.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.s
 .PHONY : src/edge.cpp.s
 
 src/fpsmonitor.obj: src/fpsmonitor.cpp.obj
@@ -222,7 +222,7 @@ src/fpsmonitor.obj: src/fpsmonitor.cpp.obj
 
 # target to build an object file
 src/fpsmonitor.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj
 .PHONY : src/fpsmonitor.cpp.obj
 
 src/fpsmonitor.i: src/fpsmonitor.cpp.i
@@ -231,7 +231,7 @@ src/fpsmonitor.i: src/fpsmonitor.cpp.i
 
 # target to preprocess a source file
 src/fpsmonitor.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.i
 .PHONY : src/fpsmonitor.cpp.i
 
 src/fpsmonitor.s: src/fpsmonitor.cpp.s
@@ -240,7 +240,7 @@ src/fpsmonitor.s: src/fpsmonitor.cpp.s
 
 # target to generate assembly for a file
 src/fpsmonitor.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.s
 .PHONY : src/fpsmonitor.cpp.s
 
 src/graphviewer.obj: src/graphviewer.cpp.obj
@@ -249,7 +249,7 @@ src/graphviewer.obj: src/graphviewer.cpp.obj
 
 # target to build an object file
 src/graphviewer.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj
 .PHONY : src/graphviewer.cpp.obj
 
 src/graphviewer.i: src/graphviewer.cpp.i
@@ -258,7 +258,7 @@ src/graphviewer.i: src/graphviewer.cpp.i
 
 # target to preprocess a source file
 src/graphviewer.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.i
 .PHONY : src/graphviewer.cpp.i
 
 src/graphviewer.s: src/graphviewer.cpp.s
@@ -267,7 +267,7 @@ src/graphviewer.s: src/graphviewer.cpp.s
 
 # target to generate assembly for a file
 src/graphviewer.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.s
 .PHONY : src/graphviewer.cpp.s
 
 src/lines.obj: src/lines.cpp.obj
@@ -276,7 +276,7 @@ src/lines.obj: src/lines.cpp.obj
 
 # target to build an object file
 src/lines.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj
 .PHONY : src/lines.cpp.obj
 
 src/lines.i: src/lines.cpp.i
@@ -285,7 +285,7 @@ src/lines.i: src/lines.cpp.i
 
 # target to preprocess a source file
 src/lines.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.i
 .PHONY : src/lines.cpp.i
 
 src/lines.s: src/lines.cpp.s
@@ -294,7 +294,7 @@ src/lines.s: src/lines.cpp.s
 
 # target to generate assembly for a file
 src/lines.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.s
 .PHONY : src/lines.cpp.s
 
 src/node.obj: src/node.cpp.obj
@@ -303,7 +303,7 @@ src/node.obj: src/node.cpp.obj
 
 # target to build an object file
 src/node.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj
 .PHONY : src/node.cpp.obj
 
 src/node.i: src/node.cpp.i
@@ -312,7 +312,7 @@ src/node.i: src/node.cpp.i
 
 # target to preprocess a source file
 src/node.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.i
 .PHONY : src/node.cpp.i
 
 src/node.s: src/node.cpp.s
@@ -321,7 +321,7 @@ src/node.s: src/node.cpp.s
 
 # target to generate assembly for a file
 src/node.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.s
 .PHONY : src/node.cpp.s
 
 # Help Target
@@ -363,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

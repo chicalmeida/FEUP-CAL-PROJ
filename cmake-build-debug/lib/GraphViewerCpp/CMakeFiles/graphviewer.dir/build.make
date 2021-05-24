@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/depend.make
@@ -78,72 +78,72 @@ include lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/includes_CXX.rsp
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj: ../lib/GraphViewerCpp/src/graphviewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\graphviewer.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\graphviewer.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphviewer.dir/src/graphviewer.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp > CMakeFiles\graphviewer.dir\src\graphviewer.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp > CMakeFiles\graphviewer.dir\src\graphviewer.cpp.i
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/graphviewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphviewer.dir/src/graphviewer.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp -o CMakeFiles\graphviewer.dir\src\graphviewer.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\graphviewer.cpp -o CMakeFiles\graphviewer.dir\src\graphviewer.cpp.s
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/includes_CXX.rsp
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj: ../lib/GraphViewerCpp/src/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\node.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\node.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphviewer.dir/src/node.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp > CMakeFiles\graphviewer.dir\src\node.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp > CMakeFiles\graphviewer.dir\src\node.cpp.i
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphviewer.dir/src/node.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp -o CMakeFiles\graphviewer.dir\src\node.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\node.cpp -o CMakeFiles\graphviewer.dir\src\node.cpp.s
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/includes_CXX.rsp
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj: ../lib/GraphViewerCpp/src/edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\edge.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\edge.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphviewer.dir/src/edge.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp > CMakeFiles\graphviewer.dir\src\edge.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp > CMakeFiles\graphviewer.dir\src\edge.cpp.i
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/edge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphviewer.dir/src/edge.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp -o CMakeFiles\graphviewer.dir\src\edge.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\edge.cpp -o CMakeFiles\graphviewer.dir\src\edge.cpp.s
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/includes_CXX.rsp
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj: ../lib/GraphViewerCpp/src/lines.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\lines.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\lines.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphviewer.dir/src/lines.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp > CMakeFiles\graphviewer.dir\src\lines.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp > CMakeFiles\graphviewer.dir\src\lines.cpp.i
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/lines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphviewer.dir/src/lines.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp -o CMakeFiles\graphviewer.dir\src\lines.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\lines.cpp -o CMakeFiles\graphviewer.dir\src\lines.cpp.s
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/flags.make
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/includes_CXX.rsp
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj: ../lib/GraphViewerCpp/src/fpsmonitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp > CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp > CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.i
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp -o CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\src\fpsmonitor.cpp -o CMakeFiles\graphviewer.dir\src\fpsmonitor.cpp.s
 
 # Object files for target graphviewer
 graphviewer_OBJECTS = \
@@ -163,9 +163,9 @@ graphviewer_EXTERNAL_OBJECTS =
 ../lib/GraphViewerCpp/lib/libgraphviewer.a: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/src/fpsmonitor.cpp.obj
 ../lib/GraphViewerCpp/lib/libgraphviewer.a: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build.make
 ../lib/GraphViewerCpp/lib/libgraphviewer.a: lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ..\..\..\lib\GraphViewerCpp\lib\libgraphviewer.a"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -P CMakeFiles\graphviewer.dir\cmake_clean_target.cmake
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\graphviewer.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ..\..\..\lib\GraphViewerCpp\lib\libgraphviewer.a"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -P CMakeFiles\graphviewer.dir\cmake_clean_target.cmake
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\graphviewer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build: ../lib/GraphViewerCpp/lib/libgraphviewer.a
@@ -173,10 +173,10 @@ lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build: ../lib/GraphViewerCpp/lib/l
 .PHONY : lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/clean:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -P CMakeFiles\graphviewer.dir\cmake_clean.cmake
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp && $(CMAKE_COMMAND) -P CMakeFiles\graphviewer.dir\cmake_clean.cmake
 .PHONY : lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/clean
 
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\furta\CLionProjects\FEUP-CAL-PROJ C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/depend
 

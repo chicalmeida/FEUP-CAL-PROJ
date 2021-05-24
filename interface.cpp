@@ -13,7 +13,7 @@ Menu buildMenu(){
     Menu mainMenu = Menu("mainMenu", "");
 
     Menu viewMenu = Menu("view", "view <type> <id> -> view information on something [bin, client, truct, location, user, central]");
-    Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central]");
+    Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central, house]");
     Menu removeMenu = Menu("remove", "remove <type> <id> -> remove something [bin, client, truck, location, user, central]");
     Menu clientMenu = Menu("client", "login client <id> -> Login as a client");
     Menu userMenu = Menu("user", "login user <id> -> Login as an user");
@@ -101,7 +101,7 @@ bool addHandler(const string &type, const string &idStr, Application *applicatio
         id = -1;
     }
     if(type == "bin"){
-        //viewBin(type, id);
+        addBin(application);
     } else if (type == "client"){
         //viewClient(id);
     } else if (type == "truck"){
@@ -165,6 +165,16 @@ bool loginHandler(const string &type, const string &idStr, Application *applicat
         return false;
     }
     return true;
+}
+
+void addBin(Application *application){
+    int n;
+    do{
+        cout << "Type the number of bins you wish to add( > 0)\n";
+        cin >> n;
+    }while (n > 0);
+
+    application->addBins(n);
 }
 
 bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.end(), ::isdigit);}

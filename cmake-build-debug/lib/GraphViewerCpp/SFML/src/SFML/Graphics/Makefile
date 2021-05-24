@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -88,31 +88,31 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -133,25 +133,25 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Graphics\\CMakeFiles\progress.marks
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Graphics\\CMakeFiles\progress.marks
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/clean
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/clean
 .PHONY : clean
 
 # The main clean target
@@ -161,22 +161,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/preinstall
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/preinstall
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ sfml-graphics: lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphic
 
 # fast build rule for target.
 sfml-graphics/fast:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
 .PHONY : sfml-graphics/fast
 
 BlendMode.obj: BlendMode.cpp.obj
@@ -195,7 +195,7 @@ BlendMode.obj: BlendMode.cpp.obj
 
 # target to build an object file
 BlendMode.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.obj
 .PHONY : BlendMode.cpp.obj
 
 BlendMode.i: BlendMode.cpp.i
@@ -204,7 +204,7 @@ BlendMode.i: BlendMode.cpp.i
 
 # target to preprocess a source file
 BlendMode.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.i
 .PHONY : BlendMode.cpp.i
 
 BlendMode.s: BlendMode.cpp.s
@@ -213,7 +213,7 @@ BlendMode.s: BlendMode.cpp.s
 
 # target to generate assembly for a file
 BlendMode.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.s
 .PHONY : BlendMode.cpp.s
 
 CircleShape.obj: CircleShape.cpp.obj
@@ -222,7 +222,7 @@ CircleShape.obj: CircleShape.cpp.obj
 
 # target to build an object file
 CircleShape.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.obj
 .PHONY : CircleShape.cpp.obj
 
 CircleShape.i: CircleShape.cpp.i
@@ -231,7 +231,7 @@ CircleShape.i: CircleShape.cpp.i
 
 # target to preprocess a source file
 CircleShape.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.i
 .PHONY : CircleShape.cpp.i
 
 CircleShape.s: CircleShape.cpp.s
@@ -240,7 +240,7 @@ CircleShape.s: CircleShape.cpp.s
 
 # target to generate assembly for a file
 CircleShape.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.s
 .PHONY : CircleShape.cpp.s
 
 Color.obj: Color.cpp.obj
@@ -249,7 +249,7 @@ Color.obj: Color.cpp.obj
 
 # target to build an object file
 Color.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.obj
 .PHONY : Color.cpp.obj
 
 Color.i: Color.cpp.i
@@ -258,7 +258,7 @@ Color.i: Color.cpp.i
 
 # target to preprocess a source file
 Color.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.i
 .PHONY : Color.cpp.i
 
 Color.s: Color.cpp.s
@@ -267,7 +267,7 @@ Color.s: Color.cpp.s
 
 # target to generate assembly for a file
 Color.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.s
 .PHONY : Color.cpp.s
 
 ConvexShape.obj: ConvexShape.cpp.obj
@@ -276,7 +276,7 @@ ConvexShape.obj: ConvexShape.cpp.obj
 
 # target to build an object file
 ConvexShape.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.obj
 .PHONY : ConvexShape.cpp.obj
 
 ConvexShape.i: ConvexShape.cpp.i
@@ -285,7 +285,7 @@ ConvexShape.i: ConvexShape.cpp.i
 
 # target to preprocess a source file
 ConvexShape.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.i
 .PHONY : ConvexShape.cpp.i
 
 ConvexShape.s: ConvexShape.cpp.s
@@ -294,7 +294,7 @@ ConvexShape.s: ConvexShape.cpp.s
 
 # target to generate assembly for a file
 ConvexShape.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.s
 .PHONY : ConvexShape.cpp.s
 
 Font.obj: Font.cpp.obj
@@ -303,7 +303,7 @@ Font.obj: Font.cpp.obj
 
 # target to build an object file
 Font.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.obj
 .PHONY : Font.cpp.obj
 
 Font.i: Font.cpp.i
@@ -312,7 +312,7 @@ Font.i: Font.cpp.i
 
 # target to preprocess a source file
 Font.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.i
 .PHONY : Font.cpp.i
 
 Font.s: Font.cpp.s
@@ -321,7 +321,7 @@ Font.s: Font.cpp.s
 
 # target to generate assembly for a file
 Font.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.s
 .PHONY : Font.cpp.s
 
 GLCheck.obj: GLCheck.cpp.obj
@@ -330,7 +330,7 @@ GLCheck.obj: GLCheck.cpp.obj
 
 # target to build an object file
 GLCheck.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.obj
 .PHONY : GLCheck.cpp.obj
 
 GLCheck.i: GLCheck.cpp.i
@@ -339,7 +339,7 @@ GLCheck.i: GLCheck.cpp.i
 
 # target to preprocess a source file
 GLCheck.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.i
 .PHONY : GLCheck.cpp.i
 
 GLCheck.s: GLCheck.cpp.s
@@ -348,7 +348,7 @@ GLCheck.s: GLCheck.cpp.s
 
 # target to generate assembly for a file
 GLCheck.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.s
 .PHONY : GLCheck.cpp.s
 
 GLExtensions.obj: GLExtensions.cpp.obj
@@ -357,7 +357,7 @@ GLExtensions.obj: GLExtensions.cpp.obj
 
 # target to build an object file
 GLExtensions.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.obj
 .PHONY : GLExtensions.cpp.obj
 
 GLExtensions.i: GLExtensions.cpp.i
@@ -366,7 +366,7 @@ GLExtensions.i: GLExtensions.cpp.i
 
 # target to preprocess a source file
 GLExtensions.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.i
 .PHONY : GLExtensions.cpp.i
 
 GLExtensions.s: GLExtensions.cpp.s
@@ -375,7 +375,7 @@ GLExtensions.s: GLExtensions.cpp.s
 
 # target to generate assembly for a file
 GLExtensions.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.s
 .PHONY : GLExtensions.cpp.s
 
 GLLoader.obj: GLLoader.cpp.obj
@@ -384,7 +384,7 @@ GLLoader.obj: GLLoader.cpp.obj
 
 # target to build an object file
 GLLoader.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.obj
 .PHONY : GLLoader.cpp.obj
 
 GLLoader.i: GLLoader.cpp.i
@@ -393,7 +393,7 @@ GLLoader.i: GLLoader.cpp.i
 
 # target to preprocess a source file
 GLLoader.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.i
 .PHONY : GLLoader.cpp.i
 
 GLLoader.s: GLLoader.cpp.s
@@ -402,7 +402,7 @@ GLLoader.s: GLLoader.cpp.s
 
 # target to generate assembly for a file
 GLLoader.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLLoader.cpp.s
 .PHONY : GLLoader.cpp.s
 
 Glsl.obj: Glsl.cpp.obj
@@ -411,7 +411,7 @@ Glsl.obj: Glsl.cpp.obj
 
 # target to build an object file
 Glsl.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.obj
 .PHONY : Glsl.cpp.obj
 
 Glsl.i: Glsl.cpp.i
@@ -420,7 +420,7 @@ Glsl.i: Glsl.cpp.i
 
 # target to preprocess a source file
 Glsl.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.i
 .PHONY : Glsl.cpp.i
 
 Glsl.s: Glsl.cpp.s
@@ -429,7 +429,7 @@ Glsl.s: Glsl.cpp.s
 
 # target to generate assembly for a file
 Glsl.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.s
 .PHONY : Glsl.cpp.s
 
 Image.obj: Image.cpp.obj
@@ -438,7 +438,7 @@ Image.obj: Image.cpp.obj
 
 # target to build an object file
 Image.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.obj
 .PHONY : Image.cpp.obj
 
 Image.i: Image.cpp.i
@@ -447,7 +447,7 @@ Image.i: Image.cpp.i
 
 # target to preprocess a source file
 Image.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.i
 .PHONY : Image.cpp.i
 
 Image.s: Image.cpp.s
@@ -456,7 +456,7 @@ Image.s: Image.cpp.s
 
 # target to generate assembly for a file
 Image.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.s
 .PHONY : Image.cpp.s
 
 ImageLoader.obj: ImageLoader.cpp.obj
@@ -465,7 +465,7 @@ ImageLoader.obj: ImageLoader.cpp.obj
 
 # target to build an object file
 ImageLoader.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.obj
 .PHONY : ImageLoader.cpp.obj
 
 ImageLoader.i: ImageLoader.cpp.i
@@ -474,7 +474,7 @@ ImageLoader.i: ImageLoader.cpp.i
 
 # target to preprocess a source file
 ImageLoader.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.i
 .PHONY : ImageLoader.cpp.i
 
 ImageLoader.s: ImageLoader.cpp.s
@@ -483,7 +483,7 @@ ImageLoader.s: ImageLoader.cpp.s
 
 # target to generate assembly for a file
 ImageLoader.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.s
 .PHONY : ImageLoader.cpp.s
 
 RectangleShape.obj: RectangleShape.cpp.obj
@@ -492,7 +492,7 @@ RectangleShape.obj: RectangleShape.cpp.obj
 
 # target to build an object file
 RectangleShape.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.obj
 .PHONY : RectangleShape.cpp.obj
 
 RectangleShape.i: RectangleShape.cpp.i
@@ -501,7 +501,7 @@ RectangleShape.i: RectangleShape.cpp.i
 
 # target to preprocess a source file
 RectangleShape.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.i
 .PHONY : RectangleShape.cpp.i
 
 RectangleShape.s: RectangleShape.cpp.s
@@ -510,7 +510,7 @@ RectangleShape.s: RectangleShape.cpp.s
 
 # target to generate assembly for a file
 RectangleShape.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.s
 .PHONY : RectangleShape.cpp.s
 
 RenderStates.obj: RenderStates.cpp.obj
@@ -519,7 +519,7 @@ RenderStates.obj: RenderStates.cpp.obj
 
 # target to build an object file
 RenderStates.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.obj
 .PHONY : RenderStates.cpp.obj
 
 RenderStates.i: RenderStates.cpp.i
@@ -528,7 +528,7 @@ RenderStates.i: RenderStates.cpp.i
 
 # target to preprocess a source file
 RenderStates.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.i
 .PHONY : RenderStates.cpp.i
 
 RenderStates.s: RenderStates.cpp.s
@@ -537,7 +537,7 @@ RenderStates.s: RenderStates.cpp.s
 
 # target to generate assembly for a file
 RenderStates.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.s
 .PHONY : RenderStates.cpp.s
 
 RenderTarget.obj: RenderTarget.cpp.obj
@@ -546,7 +546,7 @@ RenderTarget.obj: RenderTarget.cpp.obj
 
 # target to build an object file
 RenderTarget.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.obj
 .PHONY : RenderTarget.cpp.obj
 
 RenderTarget.i: RenderTarget.cpp.i
@@ -555,7 +555,7 @@ RenderTarget.i: RenderTarget.cpp.i
 
 # target to preprocess a source file
 RenderTarget.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.i
 .PHONY : RenderTarget.cpp.i
 
 RenderTarget.s: RenderTarget.cpp.s
@@ -564,7 +564,7 @@ RenderTarget.s: RenderTarget.cpp.s
 
 # target to generate assembly for a file
 RenderTarget.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.s
 .PHONY : RenderTarget.cpp.s
 
 RenderTexture.obj: RenderTexture.cpp.obj
@@ -573,7 +573,7 @@ RenderTexture.obj: RenderTexture.cpp.obj
 
 # target to build an object file
 RenderTexture.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.obj
 .PHONY : RenderTexture.cpp.obj
 
 RenderTexture.i: RenderTexture.cpp.i
@@ -582,7 +582,7 @@ RenderTexture.i: RenderTexture.cpp.i
 
 # target to preprocess a source file
 RenderTexture.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.i
 .PHONY : RenderTexture.cpp.i
 
 RenderTexture.s: RenderTexture.cpp.s
@@ -591,7 +591,7 @@ RenderTexture.s: RenderTexture.cpp.s
 
 # target to generate assembly for a file
 RenderTexture.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.s
 .PHONY : RenderTexture.cpp.s
 
 RenderTextureImpl.obj: RenderTextureImpl.cpp.obj
@@ -600,7 +600,7 @@ RenderTextureImpl.obj: RenderTextureImpl.cpp.obj
 
 # target to build an object file
 RenderTextureImpl.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.obj
 .PHONY : RenderTextureImpl.cpp.obj
 
 RenderTextureImpl.i: RenderTextureImpl.cpp.i
@@ -609,7 +609,7 @@ RenderTextureImpl.i: RenderTextureImpl.cpp.i
 
 # target to preprocess a source file
 RenderTextureImpl.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.i
 .PHONY : RenderTextureImpl.cpp.i
 
 RenderTextureImpl.s: RenderTextureImpl.cpp.s
@@ -618,7 +618,7 @@ RenderTextureImpl.s: RenderTextureImpl.cpp.s
 
 # target to generate assembly for a file
 RenderTextureImpl.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.s
 .PHONY : RenderTextureImpl.cpp.s
 
 RenderTextureImplDefault.obj: RenderTextureImplDefault.cpp.obj
@@ -627,7 +627,7 @@ RenderTextureImplDefault.obj: RenderTextureImplDefault.cpp.obj
 
 # target to build an object file
 RenderTextureImplDefault.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.obj
 .PHONY : RenderTextureImplDefault.cpp.obj
 
 RenderTextureImplDefault.i: RenderTextureImplDefault.cpp.i
@@ -636,7 +636,7 @@ RenderTextureImplDefault.i: RenderTextureImplDefault.cpp.i
 
 # target to preprocess a source file
 RenderTextureImplDefault.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.i
 .PHONY : RenderTextureImplDefault.cpp.i
 
 RenderTextureImplDefault.s: RenderTextureImplDefault.cpp.s
@@ -645,7 +645,7 @@ RenderTextureImplDefault.s: RenderTextureImplDefault.cpp.s
 
 # target to generate assembly for a file
 RenderTextureImplDefault.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.s
 .PHONY : RenderTextureImplDefault.cpp.s
 
 RenderTextureImplFBO.obj: RenderTextureImplFBO.cpp.obj
@@ -654,7 +654,7 @@ RenderTextureImplFBO.obj: RenderTextureImplFBO.cpp.obj
 
 # target to build an object file
 RenderTextureImplFBO.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.obj
 .PHONY : RenderTextureImplFBO.cpp.obj
 
 RenderTextureImplFBO.i: RenderTextureImplFBO.cpp.i
@@ -663,7 +663,7 @@ RenderTextureImplFBO.i: RenderTextureImplFBO.cpp.i
 
 # target to preprocess a source file
 RenderTextureImplFBO.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.i
 .PHONY : RenderTextureImplFBO.cpp.i
 
 RenderTextureImplFBO.s: RenderTextureImplFBO.cpp.s
@@ -672,7 +672,7 @@ RenderTextureImplFBO.s: RenderTextureImplFBO.cpp.s
 
 # target to generate assembly for a file
 RenderTextureImplFBO.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.s
 .PHONY : RenderTextureImplFBO.cpp.s
 
 RenderWindow.obj: RenderWindow.cpp.obj
@@ -681,7 +681,7 @@ RenderWindow.obj: RenderWindow.cpp.obj
 
 # target to build an object file
 RenderWindow.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.obj
 .PHONY : RenderWindow.cpp.obj
 
 RenderWindow.i: RenderWindow.cpp.i
@@ -690,7 +690,7 @@ RenderWindow.i: RenderWindow.cpp.i
 
 # target to preprocess a source file
 RenderWindow.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.i
 .PHONY : RenderWindow.cpp.i
 
 RenderWindow.s: RenderWindow.cpp.s
@@ -699,7 +699,7 @@ RenderWindow.s: RenderWindow.cpp.s
 
 # target to generate assembly for a file
 RenderWindow.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.s
 .PHONY : RenderWindow.cpp.s
 
 Shader.obj: Shader.cpp.obj
@@ -708,7 +708,7 @@ Shader.obj: Shader.cpp.obj
 
 # target to build an object file
 Shader.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.obj
 .PHONY : Shader.cpp.obj
 
 Shader.i: Shader.cpp.i
@@ -717,7 +717,7 @@ Shader.i: Shader.cpp.i
 
 # target to preprocess a source file
 Shader.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.i
 .PHONY : Shader.cpp.i
 
 Shader.s: Shader.cpp.s
@@ -726,7 +726,7 @@ Shader.s: Shader.cpp.s
 
 # target to generate assembly for a file
 Shader.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.s
 .PHONY : Shader.cpp.s
 
 Shape.obj: Shape.cpp.obj
@@ -735,7 +735,7 @@ Shape.obj: Shape.cpp.obj
 
 # target to build an object file
 Shape.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.obj
 .PHONY : Shape.cpp.obj
 
 Shape.i: Shape.cpp.i
@@ -744,7 +744,7 @@ Shape.i: Shape.cpp.i
 
 # target to preprocess a source file
 Shape.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.i
 .PHONY : Shape.cpp.i
 
 Shape.s: Shape.cpp.s
@@ -753,7 +753,7 @@ Shape.s: Shape.cpp.s
 
 # target to generate assembly for a file
 Shape.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.s
 .PHONY : Shape.cpp.s
 
 Sprite.obj: Sprite.cpp.obj
@@ -762,7 +762,7 @@ Sprite.obj: Sprite.cpp.obj
 
 # target to build an object file
 Sprite.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.obj
 .PHONY : Sprite.cpp.obj
 
 Sprite.i: Sprite.cpp.i
@@ -771,7 +771,7 @@ Sprite.i: Sprite.cpp.i
 
 # target to preprocess a source file
 Sprite.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.i
 .PHONY : Sprite.cpp.i
 
 Sprite.s: Sprite.cpp.s
@@ -780,7 +780,7 @@ Sprite.s: Sprite.cpp.s
 
 # target to generate assembly for a file
 Sprite.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.s
 .PHONY : Sprite.cpp.s
 
 Text.obj: Text.cpp.obj
@@ -789,7 +789,7 @@ Text.obj: Text.cpp.obj
 
 # target to build an object file
 Text.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.obj
 .PHONY : Text.cpp.obj
 
 Text.i: Text.cpp.i
@@ -798,7 +798,7 @@ Text.i: Text.cpp.i
 
 # target to preprocess a source file
 Text.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.i
 .PHONY : Text.cpp.i
 
 Text.s: Text.cpp.s
@@ -807,7 +807,7 @@ Text.s: Text.cpp.s
 
 # target to generate assembly for a file
 Text.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.s
 .PHONY : Text.cpp.s
 
 Texture.obj: Texture.cpp.obj
@@ -816,7 +816,7 @@ Texture.obj: Texture.cpp.obj
 
 # target to build an object file
 Texture.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj
 .PHONY : Texture.cpp.obj
 
 Texture.i: Texture.cpp.i
@@ -825,7 +825,7 @@ Texture.i: Texture.cpp.i
 
 # target to preprocess a source file
 Texture.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.i
 .PHONY : Texture.cpp.i
 
 Texture.s: Texture.cpp.s
@@ -834,7 +834,7 @@ Texture.s: Texture.cpp.s
 
 # target to generate assembly for a file
 Texture.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.s
 .PHONY : Texture.cpp.s
 
 TextureSaver.obj: TextureSaver.cpp.obj
@@ -843,7 +843,7 @@ TextureSaver.obj: TextureSaver.cpp.obj
 
 # target to build an object file
 TextureSaver.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.obj
 .PHONY : TextureSaver.cpp.obj
 
 TextureSaver.i: TextureSaver.cpp.i
@@ -852,7 +852,7 @@ TextureSaver.i: TextureSaver.cpp.i
 
 # target to preprocess a source file
 TextureSaver.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.i
 .PHONY : TextureSaver.cpp.i
 
 TextureSaver.s: TextureSaver.cpp.s
@@ -861,7 +861,7 @@ TextureSaver.s: TextureSaver.cpp.s
 
 # target to generate assembly for a file
 TextureSaver.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.s
 .PHONY : TextureSaver.cpp.s
 
 Transform.obj: Transform.cpp.obj
@@ -870,7 +870,7 @@ Transform.obj: Transform.cpp.obj
 
 # target to build an object file
 Transform.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.obj
 .PHONY : Transform.cpp.obj
 
 Transform.i: Transform.cpp.i
@@ -879,7 +879,7 @@ Transform.i: Transform.cpp.i
 
 # target to preprocess a source file
 Transform.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.i
 .PHONY : Transform.cpp.i
 
 Transform.s: Transform.cpp.s
@@ -888,7 +888,7 @@ Transform.s: Transform.cpp.s
 
 # target to generate assembly for a file
 Transform.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.s
 .PHONY : Transform.cpp.s
 
 Transformable.obj: Transformable.cpp.obj
@@ -897,7 +897,7 @@ Transformable.obj: Transformable.cpp.obj
 
 # target to build an object file
 Transformable.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.obj
 .PHONY : Transformable.cpp.obj
 
 Transformable.i: Transformable.cpp.i
@@ -906,7 +906,7 @@ Transformable.i: Transformable.cpp.i
 
 # target to preprocess a source file
 Transformable.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.i
 .PHONY : Transformable.cpp.i
 
 Transformable.s: Transformable.cpp.s
@@ -915,7 +915,7 @@ Transformable.s: Transformable.cpp.s
 
 # target to generate assembly for a file
 Transformable.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.s
 .PHONY : Transformable.cpp.s
 
 Vertex.obj: Vertex.cpp.obj
@@ -924,7 +924,7 @@ Vertex.obj: Vertex.cpp.obj
 
 # target to build an object file
 Vertex.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.obj
 .PHONY : Vertex.cpp.obj
 
 Vertex.i: Vertex.cpp.i
@@ -933,7 +933,7 @@ Vertex.i: Vertex.cpp.i
 
 # target to preprocess a source file
 Vertex.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.i
 .PHONY : Vertex.cpp.i
 
 Vertex.s: Vertex.cpp.s
@@ -942,7 +942,7 @@ Vertex.s: Vertex.cpp.s
 
 # target to generate assembly for a file
 Vertex.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.s
 .PHONY : Vertex.cpp.s
 
 VertexArray.obj: VertexArray.cpp.obj
@@ -951,7 +951,7 @@ VertexArray.obj: VertexArray.cpp.obj
 
 # target to build an object file
 VertexArray.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.obj
 .PHONY : VertexArray.cpp.obj
 
 VertexArray.i: VertexArray.cpp.i
@@ -960,7 +960,7 @@ VertexArray.i: VertexArray.cpp.i
 
 # target to preprocess a source file
 VertexArray.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.i
 .PHONY : VertexArray.cpp.i
 
 VertexArray.s: VertexArray.cpp.s
@@ -969,7 +969,7 @@ VertexArray.s: VertexArray.cpp.s
 
 # target to generate assembly for a file
 VertexArray.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.s
 .PHONY : VertexArray.cpp.s
 
 VertexBuffer.obj: VertexBuffer.cpp.obj
@@ -978,7 +978,7 @@ VertexBuffer.obj: VertexBuffer.cpp.obj
 
 # target to build an object file
 VertexBuffer.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.obj
 .PHONY : VertexBuffer.cpp.obj
 
 VertexBuffer.i: VertexBuffer.cpp.i
@@ -987,7 +987,7 @@ VertexBuffer.i: VertexBuffer.cpp.i
 
 # target to preprocess a source file
 VertexBuffer.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.i
 .PHONY : VertexBuffer.cpp.i
 
 VertexBuffer.s: VertexBuffer.cpp.s
@@ -996,7 +996,7 @@ VertexBuffer.s: VertexBuffer.cpp.s
 
 # target to generate assembly for a file
 VertexBuffer.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.s
 .PHONY : VertexBuffer.cpp.s
 
 View.obj: View.cpp.obj
@@ -1005,7 +1005,7 @@ View.obj: View.cpp.obj
 
 # target to build an object file
 View.cpp.obj:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.obj
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.obj
 .PHONY : View.cpp.obj
 
 View.i: View.cpp.i
@@ -1014,7 +1014,7 @@ View.i: View.cpp.i
 
 # target to preprocess a source file
 View.cpp.i:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.i
 .PHONY : View.cpp.i
 
 View.s: View.cpp.s
@@ -1023,7 +1023,7 @@ View.s: View.cpp.s
 
 # target to generate assembly for a file
 View.cpp.s:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.s
 .PHONY : View.cpp.s
 
 # Help Target
@@ -1143,6 +1143,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

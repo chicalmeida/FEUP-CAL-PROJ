@@ -8,7 +8,7 @@ int main() {
     //app.start();
     app.loadgraph("Porto");
     Viewer viewer;
-    Graph<Location> graph= app.getGraph();
+    Graph<Location*> graph= app.getGraph();
     viewer.graphtoview(graph,"Porto");
     return 0;
 }

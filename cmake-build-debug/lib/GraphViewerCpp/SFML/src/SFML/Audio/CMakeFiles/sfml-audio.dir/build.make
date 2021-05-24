@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
+CMAKE_SOURCE_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend.make
@@ -78,282 +78,282 @@ include lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.m
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/ALCheck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\ALCheck.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\ALCheck.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/ALCheck.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp > CMakeFiles\sfml-audio.dir\ALCheck.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp > CMakeFiles\sfml-audio.dir\ALCheck.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/ALCheck.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp -o CMakeFiles\sfml-audio.dir\ALCheck.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\ALCheck.cpp -o CMakeFiles\sfml-audio.dir\ALCheck.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/AlResource.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\AlResource.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\AlResource.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/AlResource.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp > CMakeFiles\sfml-audio.dir\AlResource.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp > CMakeFiles\sfml-audio.dir\AlResource.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/AlResource.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp -o CMakeFiles\sfml-audio.dir\AlResource.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AlResource.cpp -o CMakeFiles\sfml-audio.dir\AlResource.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/AudioDevice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\AudioDevice.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\AudioDevice.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/AudioDevice.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp > CMakeFiles\sfml-audio.dir\AudioDevice.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp > CMakeFiles\sfml-audio.dir\AudioDevice.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/AudioDevice.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp -o CMakeFiles\sfml-audio.dir\AudioDevice.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\AudioDevice.cpp -o CMakeFiles\sfml-audio.dir\AudioDevice.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/Listener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Listener.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Listener.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/Listener.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp > CMakeFiles\sfml-audio.dir\Listener.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp > CMakeFiles\sfml-audio.dir\Listener.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/Listener.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp -o CMakeFiles\sfml-audio.dir\Listener.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Listener.cpp -o CMakeFiles\sfml-audio.dir\Listener.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/Music.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Music.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Music.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/Music.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp > CMakeFiles\sfml-audio.dir\Music.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp > CMakeFiles\sfml-audio.dir\Music.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/Music.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp -o CMakeFiles\sfml-audio.dir\Music.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Music.cpp -o CMakeFiles\sfml-audio.dir\Music.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/Sound.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Sound.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\Sound.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/Sound.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp > CMakeFiles\sfml-audio.dir\Sound.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp > CMakeFiles\sfml-audio.dir\Sound.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/Sound.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp -o CMakeFiles\sfml-audio.dir\Sound.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\Sound.cpp -o CMakeFiles\sfml-audio.dir\Sound.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp > CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp > CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp -o CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBuffer.cpp -o CMakeFiles\sfml-audio.dir\SoundBuffer.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundBufferRecorder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp > CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp > CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp -o CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundBufferRecorder.cpp -o CMakeFiles\sfml-audio.dir\SoundBufferRecorder.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/InputSoundFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp > CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp > CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp -o CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\InputSoundFile.cpp -o CMakeFiles\sfml-audio.dir\InputSoundFile.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/OutputSoundFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp > CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp > CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp -o CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\OutputSoundFile.cpp -o CMakeFiles\sfml-audio.dir\OutputSoundFile.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundRecorder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp > CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp > CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp -o CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundRecorder.cpp -o CMakeFiles\sfml-audio.dir\SoundRecorder.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundSource.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundSource.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundSource.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundSource.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp > CMakeFiles\sfml-audio.dir\SoundSource.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp > CMakeFiles\sfml-audio.dir\SoundSource.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundSource.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp -o CMakeFiles\sfml-audio.dir\SoundSource.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundSource.cpp -o CMakeFiles\sfml-audio.dir\SoundSource.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundStream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundStream.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundStream.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundStream.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp > CMakeFiles\sfml-audio.dir\SoundStream.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp > CMakeFiles\sfml-audio.dir\SoundStream.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundStream.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp -o CMakeFiles\sfml-audio.dir\SoundStream.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundStream.cpp -o CMakeFiles\sfml-audio.dir\SoundStream.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp > CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp > CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp -o CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileFactory.cpp -o CMakeFiles\sfml-audio.dir\SoundFileFactory.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileReaderFlac.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderFlac.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderFlac.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileReaderOgg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderOgg.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderOgg.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileReaderWav.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp > CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileReaderWav.cpp -o CMakeFiles\sfml-audio.dir\SoundFileReaderWav.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileWriterFlac.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterFlac.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterFlac.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileWriterOgg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterOgg.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterOgg.cpp.s
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/flags.make
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/includes_CXX.rsp
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj: ../lib/GraphViewerCpp/SFML/src/SFML/Audio/SoundFileWriterWav.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.obj -c C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.obj -c C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.i"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.i
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp > CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.i
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.s"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.s
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && C:\MinGW64_2\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio\SoundFileWriterWav.cpp -o CMakeFiles\sfml-audio.dir\SoundFileWriterWav.cpp.s
 
 # Object files for target sfml-audio
 sfml__audio_OBJECTS = \
@@ -403,17 +403,17 @@ sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/lib/libsfml-system-d.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libopenal32.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libvorbisenc.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libvorbisfile.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libvorbis.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libogg.a
-sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x86/libFLAC.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libopenal32.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisenc.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisfile.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbis.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libogg.a
+sfml-audio-d-2.dll: ../lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libFLAC.a
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/linklibs.rsp
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/objects1.rsp
 sfml-audio-d-2.dll: lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library ..\..\..\..\..\..\sfml-audio-d-2.dll"
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sfml-audio.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library ..\..\..\..\..\..\sfml-audio-d-2.dll"
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sfml-audio.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build: sfml-audio-d-2.dll
@@ -421,10 +421,10 @@ lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build: sfml-aud
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/clean:
-	cd /d C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && $(CMAKE_COMMAND) -P CMakeFiles\sfml-audio.dir\cmake_clean.cmake
+	cd /d C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio && $(CMAKE_COMMAND) -P CMakeFiles\sfml-audio.dir\cmake_clean.cmake
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/clean
 
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\furta\CLionProjects\FEUP-CAL-PROJ C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio C:\Users\furta\CLionProjects\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio\CMakeFiles\sfml-audio.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\lib\GraphViewerCpp\SFML\src\SFML\Audio C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\Audio\CMakeFiles\sfml-audio.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 

@@ -1,4 +1,18 @@
-"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\furta\CLionProjects\FEUP-CAL-PROJ
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\ultra\Documents\Projects\project\FEUP-CAL-PROJ
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- Found OpenGL: opengl32   
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Found OpenAL: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libopenal32.a  
+-- Found VORBIS: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libogg.a  
+-- Found FLAC: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/libFLAC.a  
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/furta/CLionProjects/FEUP-CAL-PROJ/cmake-build-debug
+-- Build files have been written to: C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/cmake-build-debug

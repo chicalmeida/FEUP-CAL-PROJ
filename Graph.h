@@ -15,7 +15,7 @@
 #include <cmath>
 #include "MutablePriorityQueue.h"
 #include "Path.h"
-
+#include<map>
 
 template <class T> class Edge;
 template <class T> class Graph;
@@ -114,14 +114,16 @@ Vertex<T> * Edge<T>::getDest() const {
 template <class T>
 class Graph {
     std::vector<Vertex<T> *> vertexSet;    // vertex set
-
+    map<int, Vertex<T> *> vertexMap;
 public:
     Vertex<T> *findVertex(const T &in) const;
     void addVertex(Vertex<T> * in);
     bool addVertex(const T &in);
+    void addVertex(Vertex<T> *in, int id);
     bool addEdge(const T &sourc, const T &dest, double w);
     int getNumVertex() const;
     std::vector<Vertex<T> *> getVertexSet() const;
+    Vertex<T>* getVertex(int id);
 
     Vertex<T> * initSingleSource(const T &origin);
     inline bool relax(Vertex<T> *v, Vertex<T> *w, double weight);
@@ -135,9 +137,16 @@ public:
 
 };
 
+
+
 template <class T>
 int Graph<T>::getNumVertex() const {
     return vertexSet.size();
+}
+
+template <class T>
+Vertex<T> * Graph<T>::getVertex(int id){
+    return vertexMap.find(id)->second;
 }
 
 template <class T>
@@ -169,8 +178,9 @@ bool Graph<T>::addVertex(const T &in) {
 }
 
 template <class T>
-void Graph<T>::addVertex(Vertex<T> * in) {
+void Graph<T>::addVertex(Vertex<T>  *in, int id) {
     vertexSet.push_back(in);
+    vertexMap.insert(std::pair<int, Vertex<T>*>(id, in));
 }
 
 /*

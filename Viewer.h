@@ -10,7 +10,7 @@
 class Viewer {
 public:
     Viewer();
-    void graphtoview(Graph<Location> &graph, string city);
+    void graphtoview(Graph<Location *> &graph, string city);
     void printpath(vector<int> &path)const;
 private:
     GraphViewer gv;
@@ -25,8 +25,8 @@ Viewer::Viewer() {
     gvedges.clear();
 }
 
-void Viewer::graphtoview(Graph<Location> &graph, string city) {
-    vector<Vertex<Location> *> vertexset = graph.getVertexSet();
+void Viewer::graphtoview(Graph<Location *> &graph, string city) {
+    vector<Vertex<Location *> *> vertexset = graph.getVertexSet();
     int id=0;
 
     gv.setCenter(sf::Vector2f(0, 0));
@@ -35,16 +35,16 @@ void Viewer::graphtoview(Graph<Location> &graph, string city) {
     gv.setBackground(bg);
 
     for(auto vertex : vertexset){
-        GraphViewer::Node node = gv.addNode(vertex->getInfo().getId(), sf::Vector2f(vertex->getInfo().getX(), vertex->getInfo().getY()));
-        cout<<vertex->getInfo().getId()<<"  "<<vertex->getInfo().getX()<<"  "<<vertex->getInfo().getY()<<endl;
+        GraphViewer::Node node = gv.addNode(vertex->getInfo()->getId(), sf::Vector2f(vertex->getInfo()->getX(), vertex->getInfo()->getY()));
+        cout<<vertex->getInfo()->getId()<<"  "<<vertex->getInfo()->getX()<<"  "<<vertex->getInfo()->getY()<<endl;
         gvnodes.push_back(node);
-        nodemap.insert(pair<int,GraphViewer::Node*>(vertex->getInfo().getId(),&node));
+        nodemap.insert(pair<int,GraphViewer::Node*>(vertex->getInfo()->getId(),&node));
     }
 
     for(auto vertex : vertexset){
-        vector<Edge<Location> > edges = vertex->getAdj();
+        vector<Edge<Location *> > edges = vertex->getAdj();
         for(auto edge : edges){
-            GraphViewer::Edge adj = gv.addEdge(id,*nodemap.at(vertex->getInfo().getId()),*nodemap.at(edge.getDest()->getInfo().getId()), GraphViewer::Edge::EdgeType::DIRECTED);
+            GraphViewer::Edge adj = gv.addEdge(id,*nodemap.at(vertex->getInfo()->getId()),*nodemap.at(edge.getDest()->getInfo()->getId()), GraphViewer::Edge::EdgeType::DIRECTED);
             gvedges.push_back(adj);
             id++;
         }

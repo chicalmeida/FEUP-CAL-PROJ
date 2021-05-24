@@ -15,7 +15,7 @@ using namespace std;
 
 class Location{
 private:
-    Bin bin;
+    Bin *bin;
     vector<Address> addresses;
     int id;
     double x,y;
@@ -23,12 +23,12 @@ public:
     Location();
     Location(int id);
     Location(int id, double x, double y);
-    Location(int id,double x, double y, Bin bin);
+    Location(int id,double x, double y, Bin *bin);
     void addAddress(Address address);
-    Bin getBin();
+    Bin* getBin();
     vector<Address> getAddresses();
     int getId();
-    void setBin(Bin bin);
+    void setBin(Bin *bin);
     void resetBin();
     bool removeAddress(Address address);
     double getX();
