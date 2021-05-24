@@ -171,7 +171,7 @@ bool loginclient(int id, Application *application){
     cout<<"set - set garbage"<<endl;
     cin>>str;
     if(str=="find"){
-        //application->getNearestBin(paper, client);
+        application->getNearestBin(paper, client);
     }
     else if(str == "set"){
         cout<<"add (string type) (int weight) - add garbage of type(paper,plastic,glass,organic, other)"<<endl;
@@ -198,7 +198,7 @@ bool logintruck(int id, Application *application){
     cout<<"set (int)- set capacity"<<endl;
     cin>>str;
     if(str=="find"){
-        return false;
+        //application->getNearestBin(client, )
     }
     else if(str == "set"){
         cin>>str1;

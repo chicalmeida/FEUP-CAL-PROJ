@@ -30,11 +30,14 @@ public:
     void addBins(int n);
     void addCentrals(int n);
     void addHouses(int n);
-    void addTrucks(int n);
+    void addTrucks();
+    void addTruck(int id, double cap);
     void addClient(int id, string name);
     void addClients();
+    void calculateRoute(Truck *truck, bool singleHouse);
     Address* getRandomAddress();
     void viewLocation(int id);
+    //void viewLocation(int id);
     void viewBin(int id);
     void close();
     Client* getClient(int id);

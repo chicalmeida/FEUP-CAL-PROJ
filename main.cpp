@@ -5,11 +5,13 @@ using namespace std;
 
 int main() {
     Application app;
+    srand(clock());
     app.loadgraph("Penafiel");
     app.addBins(400);
     app.addCentrals(1);
     app.addHouses(800);
     app.addClients();
+    app.addTrucks();
 
     app.start();
     /*Viewer viewer;

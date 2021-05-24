@@ -862,6 +862,10 @@ vector
 Address.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
 
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.cpp
+Viewer.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.h
+
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.h
 Graph.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Graph.h
@@ -880,9 +884,31 @@ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/files.h
 map
 -
 
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/interface.cpp
+iostream
+-
+string
+-
+sstream
+-
+algorithm
+-
+interface.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/interface.h
+Application.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
+
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/interface.h
 Menu.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
 Application.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
+
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/main.cpp
+iostream
+-
+Application.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
+unistd.h
+-
 

@@ -231,10 +231,7 @@ void Application::getNearestBin(GarbageType type, Client *client){
     double currentDistance = 0;
     double minDistance = 999999.0;
     Location *chosenBin = nullptr;
-    int i = 0;
     while(!nodeStack.empty()){
-        i++;
-        cout << i << "\n";
         Vertex<Location *> *node = nodeStack.top();
         currentDistance = distanceStack.top();
         nodeStack.pop();
@@ -274,22 +271,47 @@ void Application::getNearestBin(GarbageType type, Client *client){
             }
         }
     }
-    cout << "Found with distance " << minDistance << "\n";
-    //viewBin(location->getId());
+    cout << "Found nearest bin with distance " << minDistance << "\n";
+    viewLocation(chosenBin->getId());
+}
+
+void Application::calculateRoute(Truck *truck, bool singleHouse){
+    if(singleHouse){
+        House * house = houses.at(rand() % houses.size()  + 1);
+        Location *first = truck->getAddress().getLocation();
+
+        graph.dijkstraShortestPath(first);
+        vector<Location *> pathLocations = graph.getPath(first, house->getLocation());
+        vector<int> path;
+        for(Location *location: pathLocations){
+            path.push_back(location->getId());
+        }
+        viewer.printpath(path);
+
+
+
+
+
+    }
 
 }
-void Application::addTrucks(int n){
-    /*int i=0;
-    while(i < n){
-        int id = rand() % graph.getNumVertex();
-        Location *location = locationMap.find(id)->second;
-        if(true){
-            Truck *newTruck = new Truck(id, 100, location);
-            trucks.insert(std::pair<int, Truck*>(i+1, newHouse));
-            i++;
-            location->addAddress((Address *) newHouse);
-        }
-    }*/
+void Application::addTrucks(){
+    addTruck(1,1234.0);
+    addTruck(2,4874.0);
+    addTruck(3,1088.0);
+    addTruck(4,100.0);
+    addTruck(5,374.0);
+    addTruck(6,276.0);
+    addTruck(7,1976.0);
+    addTruck(8,355.0);
+    addTruck(9,250.0);
+    addTruck(10,100.0);
+}
+
+void Application::addTruck(int id, double cap){
+    Truck *truck = new Truck(id,"", cap);
+    truck->setAddress(*getRandomAddress());
+    trucks.insert(pair<int, Truck*>(truck->getNIF(), truck));
 }
 void Application::loadData() {
     string line;
