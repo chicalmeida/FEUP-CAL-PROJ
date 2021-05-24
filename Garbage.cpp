@@ -62,22 +62,19 @@ Garbage::Garbage() {
     this->weight=0;
 }
 
-Garbage::Garbage(string type, int weigth) {
-    if(verifyGarbage(type)) {
-        this->type = type;
-    }
-    else{
-        this->type = "";
-    }
+Garbage::Garbage(GarbageType type, int weigth) {
+    this->type = type;
     this->weight=weigth;
 }
 
+/*
 bool Garbage::operator==(Garbage gb){
     if(type == gb.getType() && weight == gb.getWeight()){
         return true;
     }
     return false;
 }
+ */
 
 ostream& operator<< (ostream &os, const Garbage &garbage){
     //files::writeVariable(os, "name", garbage.name);

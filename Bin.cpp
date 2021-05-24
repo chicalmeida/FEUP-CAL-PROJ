@@ -5,52 +5,34 @@
 
 #include "Bin.h"
 
-void Bin::setContent(vector<Garbage> content) {
-    for(int j=0; j<content.size();j++){
-        this->content[j]=content[j];
-    }
+
+
+void Bin::addBin(GarbageType type, int capacity) {
+    SingleBin singleBin = SingleBin(type, capacity);
+    bins.push_back(singleBin);
 }
 
-void Bin::setCapacity(double capacity) {
-    this->capacity=capacity;
-}
-
-vector<Garbage> Bin::getContent() {
-    return content;
-}
-
-double Bin::getCapacity() {
-    return capacity;
-}
-
-double Bin::getCurrCapacity() {
-    double total = 0;
-    for(auto garbage : content){
-        total+=garbage.getWeight();
-    }
-    return total;
-}
-
-void Bin::addElem(Garbage elem) {
-    if(getCurrCapacity()<capacity){
-        content.push_back(elem);
-    }
-    else{
-        cout<<"Bin is full\n";
+void Bin::addGarbage(Garbage elem) {
+    for(SingleBin bin : bins){
+        if(bin.getType() == elem.getType()){
+            if(!bin.add(elem.getWeight())){
+                cout <<"Couldn't add \n";
+            }
+        }
     }
 
 }
 
 Bin::Bin() {
     this->capacity=0;
-    this->content={};
+
 }
 
 Bin::Bin(double capacity) {
     this->capacity=capacity;
-    this->content={};
+
 }
 
 void Bin::resetBin(){
-    content.clear();
+    this->bins = {};
 }

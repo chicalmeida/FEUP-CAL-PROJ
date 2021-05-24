@@ -13,12 +13,12 @@
 #include <fstream>
 #include <sstream>
 #include "Math.h"
-#include "Garbage.h"
+#include "Bin.h"
 #include "Client.h"
 #include "User.h"
 #include "Truck.h"
 #include "House.h"
-
+#include "Central.h"
 class Application {
 public:
     Application();
@@ -28,16 +28,20 @@ public:
     bool handleInput(std::string input);
     void loadgraph(string city);
     void addBins(int n);
+    void addCentrals(int n);
+    void addHouses(int n);
+
     Graph<Location *> getGraph();
 
 private:
     Graph<Location*> graph;
     std::stack<Menu> menuStack;
-    std::map<int, Client> clients;
-    std::map<int, Truck> trucks;
-    std::map<int, Garbage> garbages;
-    std::map<int, User> users;
-    std::map<int, House> houses;
+    Central central;
+    std::map<int, Client*> clients;
+    std::map<int, Truck*> trucks;
+    std::map<int, Bin*> bins;
+    std::map<int, User*> users;
+    std::map<int, House*> houses;
     Menu currentMenu;
     double getDistance(double x1, double x2, double y1, double y2);
     void readNodes(Graph<Location*> &graph, string path, map<int,Vertex<Location*>*> &vertexmap);

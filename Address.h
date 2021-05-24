@@ -9,15 +9,16 @@ class Location;
 #include "Location.h"
 
 using namespace std;
-
+enum AddressType {house, central};
 class Address{
 private:
     int id;
     Location *location;
+    AddressType type;
 public:
     Address();
     Address(int id);
-    Address(int id, Location *location);
+    Address(int id, Location *location, AddressType type);
     void setLocation(Location *location);
     int getId();
     Location* getLocation();

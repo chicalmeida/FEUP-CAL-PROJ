@@ -9,24 +9,24 @@
 
 using namespace std;
 
-enum garbageType {paper,plastic,glass,metal,organic};
+enum GarbageType {paper,plastic,glass,organic, other};
 
 class Garbage {
 private:
 
     string type;
     int weight;
-    garbageType getType(string strtype);
+    GarbageType getType(string strtype);
     bool verifyGarbage(string type);
 public:
     const static std::string FILENAME;
     Garbage();
-    Garbage(string type, int weight);
+    Garbage(GarbageType type, int weight);
     bool setType(string type);
     void setWeight(int weight);
-    string getType();
+    GarbageType getType();
     int getWeight();
-    bool operator==(Garbage gb);
+    //bool operator==(Garbage gb);
 
     /**
      * Write garbage in the file.

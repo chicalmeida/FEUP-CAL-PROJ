@@ -7,12 +7,17 @@
 #include "interface.h"
 #include "exceptions.h"
 #include "files.h"
+#include "House.h"
+#include "Central.h"
 using namespace std;
 
 Application::Application() {
     graph = Graph<Location*>();
     currentMenu = buildMenu();
     menuStack.push(currentMenu);
+
+
+
 }
 
 void Application::start(){
@@ -142,13 +147,40 @@ void Application::addBins(int n){
         Location *location = vertex->getInfo();
         if(location->getBin() != nullptr){
             Bin *newBin = new Bin();
-            string types[] = {"paper", "plastic", "glass", "metal", "organic"};
-            for(const string &str : types){
-                Garbage garbage = Garbage(str, 100);
-                newBin->addElem(garbage);
+            GarbageType types[] = {paper, plastic, glass, organic, other };
+            for(const GarbageType &type : types){
+                newBin->addBin(type, 100);
             }
+            bins.insert(std::pair<int, Bin*>(i+1, newBin));
             i++;
         }
+    }
+}
+
+void Application::addCentrals(int n){
+    int i=0;
+    while(i < n){
+        int id = rand() % graph.getNumVertex();
+        Vertex<Location*> *vertex = graph.getVertex(id);
+        Location *location = vertex->getInfo();
+        Central central = Central(i+1, location);
+        this->central = central;
+        i++;
+    }
+}
+
+void Application::addHouses(int n){
+    int i=0;
+    while(i < n){
+        int id = rand() % graph.getNumVertex();
+        Vertex<Location*> *vertex = graph.getVertex(id);
+        Location *location = vertex->getInfo();
+        if(true){
+            House *newHouse = new House(id, location);
+            houses.insert(std::pair<int, House*>(i+1, newHouse));
+            i++;
+        }
+        //TODO
     }
 }
 
@@ -159,13 +191,12 @@ void Application::loadData() {
     /*
     std::map<int, Client> clients;
     std::map<int, Truck> trucks;
-    std::map<int, Garbage> garbages;
+    std::map<int, Bin> bins;
     std::map<int, User> users;
     std::map<int, House> houses;
 
-
-    try {
-        ifstream is(path + Garbage::FILENAME);
+     try {
+        ifstream is(path + "bins.txt");
         //Load breads
         try {
             while (!is.eof() && is.is_open()) {
@@ -175,6 +206,7 @@ void Application::loadData() {
                 }
                 map<string, string> mapping = files::readData(line);
             }
+            Bin *bin = new Bin(mapping);
             is.close();
         }catch(exception &e){
             throw ReadingDataException("Breads");

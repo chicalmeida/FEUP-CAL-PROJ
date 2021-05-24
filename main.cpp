@@ -10,5 +10,8 @@ int main() {
     Viewer viewer;
     Graph<Location*> graph= app.getGraph();
     viewer.graphtoview(graph,"Penafiel");
+
+    app.addBins(400);
+    app.addCentrals(1);
     return 0;
 }
