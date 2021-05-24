@@ -31,12 +31,16 @@ public:
     void addCentrals(int n);
     void addHouses(int n);
     void addTrucks(int n);
+    void addClient(int id, string name);
+    void addClients();
+    Address* getRandomAddress();
     void viewLocation(int id);
     void viewBin(int id);
     void close();
     Client* getClient(int id);
     Truck* getTruck(int id);
     Graph<Location *> getGraph();
+    void getNearestBin(GarbageType type, Client *client);
 private:
     Viewer viewer;
     Graph<Location*> graph;

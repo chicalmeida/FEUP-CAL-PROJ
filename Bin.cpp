@@ -20,7 +20,13 @@ void Bin::addGarbage(Garbage elem) {
             }
         }
     }
+}
 
+bool Bin::hasType(GarbageType type) {
+    for(SingleBin bin : bins){
+        if(bin.getType() == type) return true;
+    }
+    return false;
 }
 
 Bin::Bin(Location *location) {

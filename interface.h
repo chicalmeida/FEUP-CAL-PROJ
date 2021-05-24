@@ -15,6 +15,7 @@ bool viewHandler(const std::string &type,const  std::string &id, Application *ap
 bool addHandler(const std::string &type, const std::string &id, Application *application);
 bool removeHandler(const std::string &type, const std::string &id, Application *application);
 bool loginHandler(const std::string &type, const std::string &id, Application *application);
+bool loginclient(int id, Application *application);
 
 void addBin(Application *application);
 #endif //PROJECT_INTERFACE_H

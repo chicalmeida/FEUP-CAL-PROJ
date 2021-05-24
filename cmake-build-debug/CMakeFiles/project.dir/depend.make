@@ -106,9 +106,11 @@ CMakeFiles/project.dir/Application.cpp.obj: ../exceptions.h
 CMakeFiles/project.dir/Application.cpp.obj: ../files.h
 CMakeFiles/project.dir/Application.cpp.obj: ../interface.h
 
+CMakeFiles/project.dir/Bin.cpp.obj: ../Address.h
 CMakeFiles/project.dir/Bin.cpp.obj: ../Bin.cpp
 CMakeFiles/project.dir/Bin.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/Bin.cpp.obj: ../Garbage.h
+CMakeFiles/project.dir/Bin.cpp.obj: ../Location.h
 CMakeFiles/project.dir/Bin.cpp.obj: ../SingleBin.h
 
 CMakeFiles/project.dir/Central.cpp.obj: ../Address.h

@@ -150,8 +150,8 @@ void Application::addBins(int n){
 
         Location *location = locationMap.find(id)->second;
         if(locationMap.find(id) == locationMap.end()) continue;
-        if(location->getBin() != nullptr){
-            Bin *newBin = new Bin(vertex->getInfo());
+        if(location->getBin() == nullptr){
+            Bin *newBin = new Bin(location);
             GarbageType types[] = {paper, plastic, glass, organic, other };
             for(const GarbageType &type : types){
                 newBin->addBin(type, 100);
@@ -191,6 +191,89 @@ void Application::addHouses(int n){
     int x = 0;
 }
 
+Address* Application::getRandomAddress(){
+    do{
+        int id = rand() % houses.size() ;
+        auto p = houses.find(id);
+        if(p == houses.end()) continue;
+        return ((Address *) p->second);
+    }while(true);
+}
+
+void Application::addClients(){
+    addClient(1,"Jose");
+    addClient(2,"Tiago");
+    addClient(3,"Filipa");
+    addClient(4,"Marcia");
+    addClient(5,"Raquel");
+    addClient(6,"Manel");
+    addClient(7,"Francisco");
+    addClient(8,"Conceicao");
+    addClient(9,"Graca");
+    addClient(10,"Martim");
+}
+
+void Application::addClient(int id, string name){
+    Client *client = new Client(id, name);
+    client->setAddress(*getRandomAddress());
+    clients.insert(pair<int, Client*>(client->getNIF(), client));
+
+}
+
+void Application::getNearestBin(GarbageType type, Client *client){
+    Location * location = client->getAddress().getLocation();
+    Vertex<Location *> *firstNode = graph.getVertex(location->getId());
+    stack<Vertex<Location *> *> nodeStack;
+    stack<double> distanceStack;
+    map<int, double> visited;
+    nodeStack.push(firstNode);
+    distanceStack.push(0.0);
+    double currentDistance = 0;
+    double minDistance = 999999.0;
+    Location *chosenBin = nullptr;
+    while(!nodeStack.empty()){
+        Vertex<Location *> *node = nodeStack.top();
+        currentDistance = distanceStack.top();
+        nodeStack.pop();
+        distanceStack.pop();
+        Location *location = node->getInfo();
+
+        if(minDistance < currentDistance)
+            continue;
+
+        if(visited.find(location->getId()) != visited.end()){
+            if(visited.find(location->getId()) -> second > currentDistance){
+                visited.insert(pair<int, double>(location->getId(), currentDistance));
+            } else
+                continue;
+        } else {
+            visited.insert(pair<int, double>(location->getId(), currentDistance));
+        }
+
+        if(location->getBin() != nullptr){
+            if(location->getBin()->hasType(type)){
+                if(currentDistance < minDistance){
+                    minDistance = currentDistance;
+                    chosenBin = location;
+                    continue;
+                }
+            }
+        }
+
+        vector<Edge<Location *>> edges = firstNode->getAdj();
+        for(Edge<Location *> &edge : edges){
+            Vertex<Location *> *next = edge.getDest();
+            int id = next->getInfo()->getId();
+            if(visited.find(id) == visited.end() || (visited.find(id)->second < currentDistance)){
+                nodeStack.push(next);
+                distanceStack.push(currentDistance + edge.getWeight());
+            }
+        }
+    }
+    cout << "Found with distance " << minDistance << "\n";
+    //viewBin(location->getId());
+
+}
 void Application::addTrucks(int n){
     /*int i=0;
     while(i < n){
@@ -296,6 +379,7 @@ void Application::close(){
 }
 
 Client* Application::getClient(int id){
+    cout << "Entrou aqui??";
     return clients.at(id);
 }
 

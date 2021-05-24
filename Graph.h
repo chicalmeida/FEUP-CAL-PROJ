@@ -97,6 +97,7 @@ class Edge {
 public:
     Edge(Vertex<T> *d, double w);
     Vertex<T> * getDest() const;
+    double getWeight() const {return weight;}
     friend class Graph<T>;
     friend class Vertex<T>;
 };

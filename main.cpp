@@ -9,7 +9,8 @@ int main() {
     app.addBins(400);
     app.addCentrals(1);
     app.addHouses(800);
-    
+    app.addClients();
+
     app.start();
     /*Viewer viewer;
     viewer.graphtoview(graph);

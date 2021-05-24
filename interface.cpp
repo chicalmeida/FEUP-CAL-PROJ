@@ -14,8 +14,8 @@ Menu buildMenu(){
     Menu viewMenu = Menu("view", "view <type> <id> -> view information on something [bin, client, truct, location, user, central]");
     Menu addMenu = Menu("add", "add <type> -> add something [bin, client, truck, location, user, central, house]");
     Menu removeMenu = Menu("remove", "remove <type> <id> -> remove something [bin, client, truck, location, user, central]");
-    Menu clientMenu = Menu("client", "login client <id> -> Login as a client");
-    Menu userMenu = Menu("user", "login user <id> -> Login as an user");
+    Menu clientMenu = Menu("login", "login client <id> -> Login as a client");
+    Menu userMenu = Menu("login", "login user <id> -> Login as an user");
 
     mainMenu.addMenu(viewMenu);
     mainMenu.addMenu(addMenu);
@@ -144,7 +144,8 @@ bool removeHandler(const string &type, const string &idStr, Application *applica
     return true;
 }
 bool loginHandler(const string &type, const string &idStr, Application *application){
-    if(idStr != "" && !isNumber(idStr)){
+
+    if(idStr == "" || !isNumber(idStr)){
         return false;
     }
     int id;
@@ -155,7 +156,7 @@ bool loginHandler(const string &type, const string &idStr, Application *applicat
         id = -1;
     }
     if(type == "client"){
-        //loginclient(id, application);
+        loginclient(id, application);
     } else if (type == "truck"){
         //logintruck(id, application);
     } else {
@@ -176,7 +177,7 @@ void addBin(Application *application){
 
 bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.end(), ::isdigit);}
 
-/*bool loginclient(int id, Application *application){
+bool loginclient(int id, Application *application){
     Client* client = application->getClient(id);
     string str,str1,str2;
     if(client==NULL){return false;}
@@ -185,7 +186,8 @@ bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.
     cout<<"set - set garbage"<<endl;
     cin>>str;
     if(str=="find"){
-        return false;
+        cout << "Got here\n";
+        application->getNearestBin(paper, client);
     }
     else if(str == "set"){
         cout<<"add (string type) (int weight)- add garbage"<<endl;
@@ -198,5 +200,5 @@ bool isNumber(const std::string &idstr){return std::all_of(idstr.begin(), idstr.
         return false;
     }
     return true;
-}*/
+}
 

@@ -25,6 +25,7 @@ public:
     Bin(Location *location);
     Bin(double capacity, Location *location);
     double getCurrCapacity();
+    bool hasType(GarbageType type);
     void addBin(GarbageType type, int capacity);
     void addGarbage(Garbage elem);
     void resetBin();
