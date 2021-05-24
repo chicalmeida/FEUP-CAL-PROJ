@@ -16,7 +16,7 @@ using namespace std;
 class Location{
 private:
     Bin *bin;
-    vector<Address> addresses;
+    vector<Address *> addresses;
     int id;
     double x,y;
 public:
@@ -24,9 +24,9 @@ public:
     Location(int id);
     Location(int id, double x, double y);
     Location(int id,double x, double y, Bin *bin);
-    void addAddress(Address address);
+    void addAddress(Address *address);
     Bin* getBin();
-    vector<Address> getAddresses();
+    vector<Address*> getAddresses();
     int getId();
     void setBin(Bin *bin);
     void resetBin();

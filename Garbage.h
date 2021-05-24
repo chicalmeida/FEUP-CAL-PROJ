@@ -14,7 +14,7 @@ enum GarbageType {paper,plastic,glass,organic, other};
 class Garbage {
 private:
 
-    string type;
+    GarbageType type;
     int weight;
     GarbageType getType(string strtype);
     bool verifyGarbage(string type);
@@ -22,11 +22,11 @@ public:
     const static std::string FILENAME;
     Garbage();
     Garbage(GarbageType type, int weight);
-    bool setType(string type);
+    bool setType(GarbageType type);
     void setWeight(int weight);
     GarbageType getType();
     int getWeight();
-    //bool operator==(Garbage gb);
+    bool operator==(Garbage gb);
 
     /**
      * Write garbage in the file.

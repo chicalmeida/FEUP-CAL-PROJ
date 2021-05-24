@@ -12,7 +12,7 @@ private:
     int current, capacity;
 public:
 
-    SingleBin(GarbageType type, int capacity) : type{ type} , capacty{capacity};
+    SingleBin(GarbageType type, int capacity) : type{ type} , capacity{capacity}{}
     int getCurrent(){return current;}
     int getCapacity(){return capacity;}
     GarbageType getType(){return type;}
@@ -25,7 +25,7 @@ public:
         return false;
     }
 
-    bool reset(){current = 0;}
+    void reset(){current = 0;}
 };
 
 

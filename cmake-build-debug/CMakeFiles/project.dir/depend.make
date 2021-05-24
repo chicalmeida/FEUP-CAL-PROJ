@@ -6,11 +6,13 @@ CMakeFiles/project.dir/Address.cpp.obj: ../Address.h
 CMakeFiles/project.dir/Address.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/Address.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Address.cpp.obj: ../Location.h
+CMakeFiles/project.dir/Address.cpp.obj: ../SingleBin.h
 
 CMakeFiles/project.dir/Application.cpp.obj: ../Address.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Application.cpp
 CMakeFiles/project.dir/Application.cpp.obj: ../Application.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Bin.h
+CMakeFiles/project.dir/Application.cpp.obj: ../Central.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Client.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Graph.h
@@ -19,6 +21,7 @@ CMakeFiles/project.dir/Application.cpp.obj: ../Location.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Menu.h
 CMakeFiles/project.dir/Application.cpp.obj: ../MutablePriorityQueue.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Path.h
+CMakeFiles/project.dir/Application.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/Application.cpp.obj: ../Truck.h
 CMakeFiles/project.dir/Application.cpp.obj: ../User.h
 CMakeFiles/project.dir/Application.cpp.obj: ../exceptions.h
@@ -28,6 +31,7 @@ CMakeFiles/project.dir/Application.cpp.obj: ../interface.h
 CMakeFiles/project.dir/Bin.cpp.obj: ../Bin.cpp
 CMakeFiles/project.dir/Bin.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/Bin.cpp.obj: ../Garbage.h
+CMakeFiles/project.dir/Bin.cpp.obj: ../SingleBin.h
 
 CMakeFiles/project.dir/Central.cpp.obj: ../Address.h
 CMakeFiles/project.dir/Central.cpp.obj: ../Bin.h
@@ -35,6 +39,7 @@ CMakeFiles/project.dir/Central.cpp.obj: ../Central.cpp
 CMakeFiles/project.dir/Central.cpp.obj: ../Central.h
 CMakeFiles/project.dir/Central.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Central.cpp.obj: ../Location.h
+CMakeFiles/project.dir/Central.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/Central.cpp.obj: ../User.h
 
 CMakeFiles/project.dir/Client.cpp.obj: ../Address.h
@@ -43,6 +48,7 @@ CMakeFiles/project.dir/Client.cpp.obj: ../Client.cpp
 CMakeFiles/project.dir/Client.cpp.obj: ../Client.h
 CMakeFiles/project.dir/Client.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Client.cpp.obj: ../Location.h
+CMakeFiles/project.dir/Client.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/Client.cpp.obj: ../User.h
 CMakeFiles/project.dir/Client.cpp.obj: ../files.h
 
@@ -56,6 +62,7 @@ CMakeFiles/project.dir/House.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/House.cpp.obj: ../House.cpp
 CMakeFiles/project.dir/House.cpp.obj: ../House.h
 CMakeFiles/project.dir/House.cpp.obj: ../Location.h
+CMakeFiles/project.dir/House.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/House.cpp.obj: ../User.h
 
 CMakeFiles/project.dir/Location.cpp.obj: ../Address.h
@@ -63,6 +70,7 @@ CMakeFiles/project.dir/Location.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/Location.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Location.cpp.obj: ../Location.cpp
 CMakeFiles/project.dir/Location.cpp.obj: ../Location.h
+CMakeFiles/project.dir/Location.cpp.obj: ../SingleBin.h
 
 CMakeFiles/project.dir/Menu.cpp.obj: ../Menu.cpp
 CMakeFiles/project.dir/Menu.cpp.obj: ../Menu.h
@@ -75,6 +83,7 @@ CMakeFiles/project.dir/Truck.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/Truck.cpp.obj: ../Client.h
 CMakeFiles/project.dir/Truck.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/Truck.cpp.obj: ../Location.h
+CMakeFiles/project.dir/Truck.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/Truck.cpp.obj: ../Truck.cpp
 CMakeFiles/project.dir/Truck.cpp.obj: ../Truck.h
 CMakeFiles/project.dir/Truck.cpp.obj: ../User.h
@@ -83,6 +92,7 @@ CMakeFiles/project.dir/User.cpp.obj: ../Address.h
 CMakeFiles/project.dir/User.cpp.obj: ../Bin.h
 CMakeFiles/project.dir/User.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/User.cpp.obj: ../Location.h
+CMakeFiles/project.dir/User.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/User.cpp.obj: ../User.cpp
 CMakeFiles/project.dir/User.cpp.obj: ../User.h
 
@@ -92,6 +102,7 @@ CMakeFiles/project.dir/files.cpp.obj: ../files.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Address.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Application.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Bin.h
+CMakeFiles/project.dir/interface.cpp.obj: ../Central.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Client.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Graph.h
@@ -100,11 +111,11 @@ CMakeFiles/project.dir/interface.cpp.obj: ../Location.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Menu.h
 CMakeFiles/project.dir/interface.cpp.obj: ../MutablePriorityQueue.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Path.h
+CMakeFiles/project.dir/interface.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/interface.cpp.obj: ../Truck.h
 CMakeFiles/project.dir/interface.cpp.obj: ../User.h
 CMakeFiles/project.dir/interface.cpp.obj: ../interface.cpp
 CMakeFiles/project.dir/interface.cpp.obj: ../interface.h
-CMakeFiles/project.dir/interface.cpp.obj: ../utils.h
 
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp
@@ -186,6 +197,7 @@ CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/include/lines.h
 CMakeFiles/project.dir/main.cpp.obj: ../Address.h
 CMakeFiles/project.dir/main.cpp.obj: ../Application.h
 CMakeFiles/project.dir/main.cpp.obj: ../Bin.h
+CMakeFiles/project.dir/main.cpp.obj: ../Central.h
 CMakeFiles/project.dir/main.cpp.obj: ../Client.h
 CMakeFiles/project.dir/main.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/main.cpp.obj: ../Graph.h
@@ -194,6 +206,7 @@ CMakeFiles/project.dir/main.cpp.obj: ../Location.h
 CMakeFiles/project.dir/main.cpp.obj: ../Menu.h
 CMakeFiles/project.dir/main.cpp.obj: ../MutablePriorityQueue.h
 CMakeFiles/project.dir/main.cpp.obj: ../Path.h
+CMakeFiles/project.dir/main.cpp.obj: ../SingleBin.h
 CMakeFiles/project.dir/main.cpp.obj: ../Truck.h
 CMakeFiles/project.dir/main.cpp.obj: ../User.h
 CMakeFiles/project.dir/main.cpp.obj: ../Viewer.h

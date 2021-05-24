@@ -179,6 +179,7 @@ void Application::addHouses(int n){
             House *newHouse = new House(id, location);
             houses.insert(std::pair<int, House*>(i+1, newHouse));
             i++;
+            location->addAddress((Address *) newHouse);
         }
         //TODO
     }

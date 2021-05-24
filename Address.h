@@ -9,7 +9,7 @@ class Location;
 #include "Location.h"
 
 using namespace std;
-enum AddressType {house, central};
+enum AddressType {house, central, generic};
 class Address{
 private:
     int id;

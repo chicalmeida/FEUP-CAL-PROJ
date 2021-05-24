@@ -7,11 +7,13 @@ CMakeFiles/project.dir/Address.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
 CMakeFiles/project.dir/Application.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Central.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Graph.h
@@ -20,6 +22,7 @@ CMakeFiles/project.dir/Application.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/MutablePriorityQueue.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Path.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/exceptions.h
@@ -29,6 +32,7 @@ CMakeFiles/project.dir/Bin.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
 CMakeFiles/project.dir/Central.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
@@ -36,6 +40,7 @@ CMakeFiles/project.dir/Central.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Central.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
 CMakeFiles/project.dir/Client.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
@@ -44,6 +49,7 @@ CMakeFiles/project.dir/Client.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/files.h
 CMakeFiles/project.dir/Garbage.cpp.obj
@@ -57,6 +63,7 @@ CMakeFiles/project.dir/House.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/House.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/House.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
 CMakeFiles/project.dir/Location.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
@@ -64,6 +71,7 @@ CMakeFiles/project.dir/Location.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
 CMakeFiles/project.dir/Menu.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
@@ -76,6 +84,7 @@ CMakeFiles/project.dir/Truck.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
@@ -84,6 +93,7 @@ CMakeFiles/project.dir/User.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
 CMakeFiles/project.dir/files.cpp.obj
@@ -93,6 +103,7 @@ CMakeFiles/project.dir/interface.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Central.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Graph.h
@@ -101,11 +112,11 @@ CMakeFiles/project.dir/interface.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/MutablePriorityQueue.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Path.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/interface.cpp
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/interface.h
- C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/utils.h
 CMakeFiles/project.dir/main.cpp.obj
  ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp
@@ -187,6 +198,7 @@ CMakeFiles/project.dir/main.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Address.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Central.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Graph.h
@@ -195,6 +207,7 @@ CMakeFiles/project.dir/main.cpp.obj
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/MutablePriorityQueue.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Path.h
+ C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
  C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Viewer.h

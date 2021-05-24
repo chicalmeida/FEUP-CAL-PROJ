@@ -48,7 +48,7 @@ double Client::getCurrWeight(){
 
 void Client::deposit(Bin bin){
     for(auto garbage : cContent){
-        bin.addElem(garbage);
+        bin.addGarbage(garbage);
         removeGarbage(garbage);
     }
 }

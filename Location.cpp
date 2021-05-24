@@ -36,7 +36,7 @@ Location::Location(int id, double x, double y, Bin *bin){
     addresses.clear();
 }
 
-void Location::addAddress(Address address){
+void Location::addAddress(Address *address){
     addresses.push_back(address);
 }
 
@@ -49,12 +49,14 @@ void Location::resetBin(){
 }
 
 bool Location::removeAddress(Address address){
+    /*
     for (auto it = addresses.begin(); it!=addresses.end(); it++){
         if(it->getId() == address.getId()){
             addresses.erase(it);
             return true;
         }
     }
+     */
     return false;
 }
 
@@ -62,7 +64,7 @@ Bin *Location::getBin(){
     return bin;
 }
 
-vector<Address> Location::getAddresses(){
+vector<Address *> Location::getAddresses(){
     return addresses;
 }
 

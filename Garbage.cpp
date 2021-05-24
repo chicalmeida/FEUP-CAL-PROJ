@@ -7,49 +7,18 @@
 
 const string Garbage::FILENAME =  "garbages.txt";
 
-garbageType Garbage::getType(string strtype){
-    garbageType type;
-    if(strtype == "paper"){
-        type = paper;
-    }
-    else if (strtype == "plastic"){
-        type = plastic;
-    }
-    else if (strtype == "glass"){
-        type = glass;
-    }
-    else if (strtype == "metal"){
-        type = metal;
-    }
-    else if (strtype == "organic"){
-        type = organic;
-    }
-    else {
-        cout<<strtype<<" trash type not accepted! (available types are only 'paper', 'plastic', 'glass', 'metal' and 'organic')"<<endl;
-    }
-    return type;
-}
 
-bool Garbage::verifyGarbage(string type){
-    if(type == "paper" || type == "plastic" || type == "glass" || type == "metal" || type == "organic"){
-        return true;
-    }
-    return false;
-}
 
-bool Garbage::setType(string type) {
-    if(verifyGarbage(type)) {
-        this->type = type;
-        return true;
-    }
-    return false;
+bool Garbage::setType(GarbageType type) {
+    this->type = type;
+    return true;
 }
 
 void Garbage::setWeight(int weight) {
     this->weight=weight;
 }
 
-string Garbage::getType() {
+GarbageType Garbage::getType() {
     return type;
 }
 
@@ -58,7 +27,7 @@ int Garbage::getWeight() {
 }
 
 Garbage::Garbage() {
-    this->type="";
+    this->type=other;
     this->weight=0;
 }
 
@@ -67,14 +36,14 @@ Garbage::Garbage(GarbageType type, int weigth) {
     this->weight=weigth;
 }
 
-/*
+
 bool Garbage::operator==(Garbage gb){
     if(type == gb.getType() && weight == gb.getWeight()){
         return true;
     }
     return false;
 }
- */
+
 
 ostream& operator<< (ostream &os, const Garbage &garbage){
     //files::writeVariable(os, "name", garbage.name);
