@@ -16,8 +16,6 @@ private:
 
     GarbageType type;
     int weight;
-    GarbageType getType(string strtype);
-    bool verifyGarbage(string type);
 public:
     const static std::string FILENAME;
     Garbage();
