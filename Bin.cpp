@@ -23,16 +23,21 @@ void Bin::addGarbage(Garbage elem) {
 
 }
 
-Bin::Bin() {
+Bin::Bin(Location *location) {
     this->capacity=0;
-
+    this->location = location;
 }
 
-Bin::Bin(double capacity) {
+Bin::Bin(double capacity, Location *location) {
     this->capacity=capacity;
-
+    this->location = location;
 }
 
 void Bin::resetBin(){
     this->bins = {};
 }
+
+Location * Bin::getLocation(){
+    return location;
+}
+

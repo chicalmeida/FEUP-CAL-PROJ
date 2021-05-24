@@ -31,7 +31,10 @@ public:
     void addCentrals(int n);
     void addHouses(int n);
     void viewLocation(int id);
+    void viewBin(int id);
     void close();
+    Client* getClient(int id);
+    Truck* getTruck(int id);
     Graph<Location *> getGraph();
 private:
     Viewer viewer;
@@ -41,7 +44,6 @@ private:
     std::map<int, Client*> clients;
     std::map<int, Truck*> trucks;
     std::map<int, Bin*> bins;
-    std::map<int, User*> users;
     std::map<int, House*> houses;
     Menu currentMenu;
     double getDistance(double x1, double x2, double y1, double y2);
