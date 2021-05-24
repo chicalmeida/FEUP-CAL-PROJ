@@ -39,6 +39,13 @@ public:
     void viewLocation(int id);
     //void viewLocation(int id);
     void viewBin(int id);
+    void viewClient(int id);
+    void viewTruck(int id);
+    void viewBins();
+    void viewClients();
+    void viewTrucks();
+    void viewCentral();
+    void viewLocations();
     void close();
     Client* getClient(int id);
     Truck* getTruck(int id);

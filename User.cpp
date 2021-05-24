@@ -47,3 +47,7 @@ User::User(int nif, string name, Address address) {
     this->address=address;
 }
 
+Location *User::getLocation(){
+    return location;
+}
+

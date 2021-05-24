@@ -405,7 +405,6 @@ void Application::close(){
 }
 
 Client* Application::getClient(int id){
-    cout << "Entrou aqui??";
     return clients.at(id);
 }
 
@@ -413,3 +412,46 @@ Truck* Application::getTruck(int id){
     return trucks.at(id);
 }
 
+void Application::viewClient(int id){
+    Client *client = clients.at(id);
+    if(client==NULL){
+        return;
+    }
+    viewer.focusLocation(client->getLocation()->getId());
+}
+
+void Application::viewTruck(int id){
+    Truck *truck = trucks.at(id);
+    if(truck==NULL){
+        return;
+    }
+    viewer.focusLocation(truck->getLocation()->getId());
+}
+
+void Application::viewCentral(){
+    viewer.focusLocation(central.getLocation()->getId());
+}
+
+void Application::viewBins(){
+    for(auto it = bins.begin(); it!=bins.end();it++){
+        cout<<it->first<<"  "<<it->second->getLocation()->getX()<<"  "<<it->second->getLocation()->getY()<<endl;
+    }
+}
+
+void Application::viewClients(){
+    for(auto it = clients.begin(); it!=clients.end();it++){
+        cout<<it->first<<"  "<<it->second->getName()<<endl;
+    }
+}
+
+void Application::viewTrucks(){
+    for(auto it = trucks.begin(); it!=trucks.end();it++){
+        cout<<it->first<<"  "<<it->second->getName()<<endl;
+    }
+}
+
+void Application::viewLocations(){
+    for(auto it = locationMap.begin(); it!=locationMap.end();it++){
+        cout<<it->first<<"  "<<it->second->getX()<<"  "<<it->second->getY()<<endl;
+    }
+}

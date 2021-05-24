@@ -51,6 +51,20 @@ void Viewer::focusLocation(int idlocation){
     lastfocusid = idlocation;
 }
 
+void Viewer::viewLocation(int idlocation, string label){
+    gv.getNode(idlocation).setColor(GraphViewer::YELLOW);
+    gv.getNode(idlocation).setSize(100);
+    gv.getNode(idlocation).setLabel(label);
+}
+
+void Viewer::resetappearance(){
+    for(auto node : gv.getNodes()){
+        node->setColor(GraphViewer::RED);
+        node->setSize(10);
+        node->setLabel("");
+    }
+}
+
 void Viewer::close(){
     gv.join();
 }

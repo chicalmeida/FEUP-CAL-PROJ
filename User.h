@@ -27,6 +27,7 @@ public:
     int getNIF();
     string getName();
     Address getAddress();
+    Location *getLocation();
 };
 
 #endif //BIN_CPP_USER_H
