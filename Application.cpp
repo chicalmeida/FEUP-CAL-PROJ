@@ -426,6 +426,10 @@ void Application::viewClient(int id){
 }
 
 void Application::viewTruck(int id){
+    auto it = trucks.find(id);
+    if(it == trucks.end()){
+        cout << "No truck with id " << id << "\n";
+    }
     Truck *truck = trucks.at(id);
     if(truck==NULL){
         return;
