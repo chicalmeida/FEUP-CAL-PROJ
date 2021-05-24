@@ -127,10 +127,13 @@ void Application::readNodes(Graph<Location*> &graph, string path, map<int,Vertex
 
         ss>>id>>comma>>x>>comma>>y;
 
+        //Location * location = (Location *) malloc(sizeof(Location));
+
         Location *location = new Location(id,x,y);
         Vertex<Location*> *v = new Vertex<Location*>(location);
         graph.addVertex(v, id);
         vertexmap.insert(pair<int,Vertex<Location*>*>(id,v));
+        locationMap.insert(pair<int,Location*>(id,location));
         count++;
     }
     file.close();
@@ -144,14 +147,16 @@ void Application::addBins(int n){
     int i=0;
     while(i < n){
         int id = rand() % graph.getNumVertex();
-        Vertex<Location*> *vertex = graph.getVertex(id);
-        Location *location = vertex->getInfo();
+
+        Location *location = locationMap.find(id)->second;
+        if(locationMap.find(id) == locationMap.end()) continue;
         if(location->getBin() != nullptr){
             Bin *newBin = new Bin();
             GarbageType types[] = {paper, plastic, glass, organic, other };
             for(const GarbageType &type : types){
                 newBin->addBin(type, 100);
             }
+            location->setBin(newBin);
             bins.insert(std::pair<int, Bin*>(i+1, newBin));
             i++;
         }
@@ -162,8 +167,8 @@ void Application::addCentrals(int n){
     int i=0;
     while(i < n){
         int id = rand() % graph.getNumVertex();
-        Vertex<Location*> *vertex = graph.getVertex(id);
-        Location *location = vertex->getInfo();
+        Location *location = locationMap.find(id)->second;
+        if(locationMap.find(id) == locationMap.end()) continue;
         Central central = Central(i+1, location);
         this->central = central;
         i++;
@@ -174,8 +179,8 @@ void Application::addHouses(int n){
     int i=0;
     while(i < n){
         int id = rand() % graph.getNumVertex();
-        Vertex<Location*> *vertex = graph.getVertex(id);
-        Location *location = vertex->getInfo();
+        if(locationMap.find(id) == locationMap.end()) continue;
+        Location *location = locationMap.find(id)->second;
         if(true){
             House *newHouse = new House(id, location);
             houses.insert(std::pair<int, House*>(i+1, newHouse));
@@ -183,14 +188,14 @@ void Application::addHouses(int n){
             location->addAddress((Address *) newHouse);
         }
     }
+    int x = 0;
 }
 
 void Application::addTrucks(int n){
     /*int i=0;
     while(i < n){
         int id = rand() % graph.getNumVertex();
-        Vertex<Location*> *vertex = graph.getVertex(id);
-        Location *location = vertex->getInfo();
+        Location *location = locationMap.find(id)->second;
         if(true){
             Truck *newTruck = new Truck(id, 100, location);
             trucks.insert(std::pair<int, Truck*>(i+1, newHouse));

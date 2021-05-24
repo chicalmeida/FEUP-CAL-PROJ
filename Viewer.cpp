@@ -17,7 +17,7 @@ void Viewer::graphtoview(Graph<Location *> &graph) {
 
     for(auto vertex : vertexset){
         GraphViewer::Node node = gv.addNode(vertex->getInfo()->getId(), sf::Vector2f(vertex->getInfo()->getX(), vertex->getInfo()->getY()));
-        cout<<vertex->getInfo()->getId()<<"  "<<vertex->getInfo()->getX()<<"  "<<vertex->getInfo()->getY()<<endl;
+        //cout<<vertex->getInfo()->getId()<<"  "<<vertex->getInfo()->getX()<<"  "<<vertex->getInfo()->getY()<<endl;
         //nodemap.insert(pair<int,GraphViewer::Node*>(vertex->getInfo().getId(),&node));
     }
 

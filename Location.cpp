@@ -5,7 +5,7 @@
 #include "Location.h"
 
 Location::Location(){
-    bin = new Bin();
+    this->bin = nullptr;
     id = 0;
     x=0;
     y=0;
@@ -13,7 +13,7 @@ Location::Location(){
 }
 
 Location::Location(int id){
-    bin = new Bin();
+    bin = nullptr;
     this->id = id;
     x=0;
     y=0;
@@ -21,10 +21,10 @@ Location::Location(int id){
 }
 
 Location::Location(int id, double x, double y){
-    this->bin = new Bin();
     this->id = id;
     this->x=x;
     this->y=y;
+    this->bin = nullptr;
     addresses.clear();
 }
 
@@ -61,6 +61,7 @@ bool Location::removeAddress(Address address){
 }
 
 Bin *Location::getBin(){
+    if(bin == nullptr) return nullptr;
     return bin;
 }
 

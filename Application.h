@@ -44,6 +44,7 @@ private:
     std::map<int, Bin*> bins;
     std::map<int, User*> users;
     std::map<int, House*> houses;
+    std::map<int, Location*> locationMap;
     Menu currentMenu;
     double getDistance(double x1, double x2, double y1, double y2);
     void readNodes(Graph<Location*> &graph, string path, map<int,Vertex<Location*>*> &vertexmap);
