@@ -29,7 +29,7 @@ void Viewer::graphtoview(Graph<Location> &graph, string city) {
     vector<Vertex<Location> *> vertexset = graph.getVertexSet();
     int id=0;
 
-    gv.setCenter(sf::Vector2f(750, 350));
+    gv.setCenter(sf::Vector2f(0, 0));
     gv.createWindow(1500, 700);
     string bg = "resources/" + city + "/full.png";
     gv.setBackground(bg);
