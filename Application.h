@@ -36,8 +36,8 @@ public:
     void addClients();
     void calculateRoute(Truck *truck, bool singleHouse);
     Address* getRandomAddress();
-    void viewLocation(int id);
-    //void viewLocation(int id);
+    void viewLocation(int id,string label);
+    void focusLocation(int id);
     void viewBin(int id);
     void viewClient(int id);
     void viewTruck(int id);
