@@ -144,7 +144,7 @@ Graph<Location*> Application::getGraph(){
 }
 
 void Application::addBins(int n){
-    int i=0;
+    int i=0, currentId = bins.size();
     while(i < n){
         int id = rand() % graph.getNumVertex();
 
@@ -157,7 +157,7 @@ void Application::addBins(int n){
                 newBin->addBin(type, 100);
             }
             location->setBin(newBin);
-            bins.insert(std::pair<int, Bin*>(i+1, newBin));
+            bins.insert(std::pair<int, Bin*>(currentId + i+1, newBin));
             i++;
         }
     }
@@ -176,14 +176,14 @@ void Application::addCentrals(int n){
 }
 
 void Application::addHouses(int n){
-    int i=0;
+    int i=0, currentId = houses.size();
     while(i < n){
         int id = rand() % graph.getNumVertex();
         if(locationMap.find(id) == locationMap.end()) continue;
         Location *location = locationMap.find(id)->second;
         if(true){
             House *newHouse = new House(id, location);
-            houses.insert(std::pair<int, House*>(i+1, newHouse));
+            houses.insert(std::pair<int, House*>(currentId + i+1, newHouse));
             i++;
             location->addAddress((Address *) newHouse);
         }
