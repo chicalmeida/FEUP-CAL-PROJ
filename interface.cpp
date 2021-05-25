@@ -214,7 +214,7 @@ bool logintruck(int id, Application *application){
     cout<<"set (int)- set capacity"<<endl;
     cin>>str;
     if(str=="find"){
-        application->calculateRoute(client, true);
+        application->calculateRoute(client, false);
     }
     else if(str == "set"){
         cin>>str1;

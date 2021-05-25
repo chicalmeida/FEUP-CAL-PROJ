@@ -138,6 +138,7 @@ CMakeFiles/project.dir/Garbage.cpp.obj: ../files.h
 
 CMakeFiles/project.dir/House.cpp.obj: ../Address.h
 CMakeFiles/project.dir/House.cpp.obj: ../Bin.h
+CMakeFiles/project.dir/House.cpp.obj: ../Client.h
 CMakeFiles/project.dir/House.cpp.obj: ../Garbage.h
 CMakeFiles/project.dir/House.cpp.obj: ../House.cpp
 CMakeFiles/project.dir/House.cpp.obj: ../House.h

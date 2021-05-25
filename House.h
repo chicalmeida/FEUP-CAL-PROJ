@@ -7,21 +7,24 @@
 
 #include "User.h"
 #include "Bin.h"
-
+#include "Client.h"
 using namespace std;
 
 
 class House : public Address{
 private:
-    vector<User> habitants;
+    vector<Client *> habitants;
+    int garbage;
 public:
     House();
     House(int id);
     House(int id, Location *location);
-    void addHabitant(User habitant);
-    bool removeHabitant(User habitant);
+    void addHabitant(Client  *habitant);
+    bool removeHabitant(Client *habitant);
     int geNumHabitants();
-    vector<User> getHabitants();
+    vector<Client *> getHabitants();
+    int getGarbage();
+    int setGarbage(int n);
 };
 
 

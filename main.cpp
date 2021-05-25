@@ -12,7 +12,7 @@ int main() {
     app.addHouses(800);
     app.addClients();
     app.addTrucks();
-
+    app.addGarbage(10);
     app.start();
     /*Viewer viewer;
     viewer.graphtoview(graph);

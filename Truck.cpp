@@ -32,7 +32,7 @@ double Truck::getCurCapacity() {
     for (auto garbage : tContent ){
         total+=garbage.getWeight();
     }
-    return total;
+    return capacity - total;
 }
 
 vector<Garbage> Truck::getTContent() {
@@ -44,8 +44,13 @@ void Truck::addGarbage(Garbage elem) {
         tContent.push_back(elem);
     }
     else{
-        cout<<"Truck is full\n";
+        //cout<<"Truck is full\n";
     }
+}
+
+void Truck::resetGarbage(){
+    vector<Garbage> v;
+    tContent = v;
 }
 
 void Truck::pickup(Client client) {

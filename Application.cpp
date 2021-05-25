@@ -275,7 +275,7 @@ void Application::getNearestBin(GarbageType type, Client *client){
     cout << "Found nearest bin with distance " << minDistance << "\n";
     viewLocation(chosenBin->getId(),"Bin");
     viewLocation(client->getAddress().getLocation()->getId(),"YOU");
-    //focusLocation(chosenBin->getId());
+    focusLocation(chosenBin->getId());
 }
 
 void Application::calculateRoute(Truck *truck, bool singleHouse){
@@ -297,9 +297,79 @@ void Application::calculateRoute(Truck *truck, bool singleHouse){
         }
         viewer.printpath(path);
 
+        focusLocation(truck->getAddress().getLocation()->getId());
+        viewLocation(house->getLocation()->getId(), "House");
+        viewLocation(central.getLocation()->getId(), "Central");
+    } else {
+        GarbageType type = paper;
+        vector<House *> housesToDrive;
+        for(auto it = houses.begin(); it != houses.end(); it++){
+
+            if(it->second->getGarbage() > 0 && it->second->getGarbage() < (int) truck->getCapacity()){
+                housesToDrive.push_back(it->second);
+            }
+        }
+        Location *currentLocation = central.getLocation();
+        vector<int> path;
+        vector<Location *> pathLocations;
+        while(!housesToDrive.empty()) {
+            vector<House *> currentSetToDrive;
+            bool returnToCentral = false;
+            while (!returnToCentral) {
+                if (housesToDrive.size() == 0) returnToCentral = true;
+                graph.dijkstraShortestPath(currentLocation);
+                double min = 1000000;
+                House *closest;
+                for (House *house: housesToDrive) {
+                    if (graph.getVertex(house->getLocation()->getId())->getDist() < min) {
+                        closest = house;
+                        min = graph.getVertex(house->getLocation()->getId())->getDist();
+                    }
+                }
+                for(auto it = housesToDrive.begin(); it != housesToDrive.end(); it++){
+                    if((*it)->getId() == closest->getId()){
+                        housesToDrive.erase(it);
+                        break;
+                    }
+                }
+                if (closest->getGarbage() <= truck->getCurCapacity()) {
+                    truck->addGarbage(Garbage(other, closest->getGarbage()));
+                    closest->setGarbage(0);
+                    pathLocations = graph.getPath(currentLocation, closest->getLocation());
+                    for(Location *location: pathLocations){
+                        path.push_back(location->getId());
+                    }
+                    viewLocation(closest->getLocation()->getId(), "House");
+                    currentLocation = closest->getLocation();
+                } else {
+                    returnToCentral = true;
+                }
+            }
+            graph.dijkstraShortestPath(currentLocation);
+            pathLocations = graph.getPath(currentLocation, central.getLocation());
+            for(Location *location: pathLocations){
+                path.push_back(location->getId());
+            }
+            currentLocation = central.getLocation();
+            truck->resetGarbage();
+        }
+        viewLocation(central.getLocation()->getId(), "Central");
+        focusLocation(central.getLocation()->getId());
+        viewer.printpath(path);
     }
 
 }
+
+void Application::addGarbage(int n){
+    int garbageValues[] = {10, 20, 30, 40, 50};
+    for(int i=0; i<n; i++){
+        int id = rand()  % houses.size() + 1;
+        if(houses.find(id) != houses.end()){
+            houses.find(id)->second->setGarbage(garbageValues[rand()%5]);
+        }
+    }
+}
+
 void Application::addTrucks(){
     addTruck(1,1234.0);
     addTruck(2,4874.0);
@@ -395,6 +465,9 @@ void Application::saveData(){
     outSales.close();
      */
 }
+
+
+
 
 void Application::focusLocation(int id){
     viewer.focusLocation(id);

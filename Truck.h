@@ -29,6 +29,7 @@ public:
     void addGarbage(Garbage elem);
     void pickup(Client client);
     void deposit();
+    void resetGarbage();
 };
 
 

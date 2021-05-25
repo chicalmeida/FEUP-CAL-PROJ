@@ -813,6 +813,8 @@ User.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/User.h
 Bin.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Bin.h
+Client.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Client.h
 
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Location.h
 Bin.h
@@ -839,6 +841,10 @@ unordered_map
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/SingleBin.h
 Garbage.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Garbage.h
+
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.cpp
+Truck.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
 
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Truck.h
 Garbage.h
@@ -899,4 +905,12 @@ Menu.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Menu.h
 Application.h
 C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
+
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/main.cpp
+iostream
+-
+Application.h
+C:/Users/ultra/Documents/Projects/project/FEUP-CAL-PROJ/Application.h
+unistd.h
+-
 

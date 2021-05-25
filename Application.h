@@ -51,6 +51,7 @@ public:
     Truck* getTruck(int id);
     Graph<Location *> getGraph();
     void getNearestBin(GarbageType type, Client *client);
+    void addGarbage(int n);
 private:
     Viewer viewer;
     Graph<Location*> graph;

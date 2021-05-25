@@ -31,10 +31,14 @@ void Viewer::graphtoview(Graph<Location *> &graph) {
 }
 
 void Viewer::printpath(vector<int> &path){
-    for(auto point : path){
+    for(int point : path){
         //nodemap.at(point)->setColor(GraphViewer::BLUE);
+        try{
         gv.getNode(point).setColor(GraphViewer::BLUE);
         gv.getNode(point).setSize(15);
+        } catch(int e){
+
+        }
     }
 }
 
